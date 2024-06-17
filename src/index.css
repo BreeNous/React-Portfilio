@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.cutive-mono-regular {
+    font-family: "Cutive Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.Header {
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.Outlet {
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+.Footer {
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+  }
+
+.Card:hover {
+    transform: scale(1.05);
+    transition: all .2s ease-in-out;
+}
+
+.Card:hover .Video {
+    filter: none;
+    transition: all .2s ease-in-out;
+}
+
+.Video {
+    max-height: 75%;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+.nav-link {
+    color: #831843;
+    text-decoration: none;
+}
+
+.nav-link.active {
+    color: #65a30d; /* Highlight color */
+    border-bottom: solid 1px #65a30d;
+}
