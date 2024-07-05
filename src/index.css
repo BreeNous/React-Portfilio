@@ -15,14 +15,13 @@
 }
 
 .Header {
-    height: 10vh;
     position: sticky;
     top: 0;
     width: 100%;
 }
 
 .Outlet {
-    height: 80vh;
+    height: 75vh;
     overflow-y: scroll;
 }
 
@@ -49,11 +48,10 @@
 }
 
 .nav-link {
-    color: #831843;
+    color: black;
     text-decoration: none;
 }
 
 .nav-link.active {
     color: #65a30d; /* Highlight color */
-    border-bottom: solid 1px #65a30d;
 }
