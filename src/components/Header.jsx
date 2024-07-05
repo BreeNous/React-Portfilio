@@ -5,8 +5,8 @@ function Header() {
 
     return(
         <>
-        <header className="cutive-mono-regular flex justify-between px-10 Header items-center border-b border-lime-600">
-            <h1 className="text-2xl text-pink-900">BN</h1>
+        <header className="cutive-mono-regular flex justify-between px-10 Header items-center h-32">
+            <h1 className="text-2xl text-slate-950">BN</h1>
             <NavTabs/>
         </header>
         </>
