@@ -6,7 +6,7 @@ function BookShadow() {
 
             {/* // LEFT PAGE OF BOOK */}
             <div className="flex w-1/2 opacity-75">
-                <div className="bg-gradient-to-l from-amber-50 from-5% to-35% ... w-full"></div>
+                <div className="bg-gradient-to-l from-amber-50 from-5% to-45% ... w-full"></div>
             </div>
 
             {/* RIGHT PAGE OF BOOK */}

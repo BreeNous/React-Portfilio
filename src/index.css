@@ -17,6 +17,12 @@
 .bg-image {
     background-image: url('/public/assets/paper-bg.jpg');
     background-size: cover;
+    position: fixed;
+}
+
+.bg-bookmark {
+    background-image: url('/public/assets/bookmark-bg.jpg');
+    background-size: 700px;
 }
 
 .Header {
@@ -59,5 +65,14 @@
 }
 
 .nav-link.active {
-    color: #65a30d; /* Highlight color */
+    color: white; /* Highlight color */
+    
+}
+
+.nav-link.active > div {
+    height: 100%;
+}
+
+.nav-link.active > div > p {
+    padding-left: 35px;
 }
