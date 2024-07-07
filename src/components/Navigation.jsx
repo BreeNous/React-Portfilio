@@ -11,40 +11,40 @@ function NavTabs() {
 
                     <li>
                         <Link to="/" className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>
-                            <div className="bg-slate-300 w-10 h-full">
-                                <p className='rotate-90 pl-5'>Home</p>
+                            <div className="bg-bookmark shadow-md w-10 h-5/6">
+                                <p className='child-text rotate-90 pl-5 font-black'>Home</p>
                             </div>
                         </Link>
                     </li>
 
                     <li>
                         <Link to="/About" className={currentPage === '/About' ? 'nav-link active' : 'nav-link'}>
-                            <div className="bg-slate-300 w-10 h-full">
-                                <p className='rotate-90 pl-5'>About</p>
+                            <div className="bg-bookmark shadow-md w-10 h-5/6">
+                                <p className='rotate-90 pl-5 font-black'>About</p>
                             </div>
                         </Link>
                     </li>
 
                     <li>
                         <Link to="/Portfolio" className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}>
-                            <div className="bg-slate-300 w-10 h-full">
-                                <p className='rotate-90 pl-5'>Portfolio</p>
+                            <div className="bg-bookmark shadow-md w-10 h-5/6">
+                                <p className='rotate-90 pl-5 font-black'>Works</p>
                             </div>
                         </Link>
                     </li>
 
                     <li>
                         <Link to="/Contact" className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}>
-                            <div className="bg-slate-300 w-10 h-full">
-                                <p className='rotate-90 pl-5'>Contact</p>
+                            <div className="bg-bookmark shadow-md w-10 h-5/6">
+                                <p className='rotate-90 pl-5 font-black'>Contact</p>
                             </div>
                         </Link>
                     </li>
 
                     <li>
                         <Link to="/Resume" className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}>
-                            <div  className="bg-slate-300 w-10 h-full">
-                                <p className='rotate-90 pl-5'>Resume</p>
+                            <div  className="bg-bookmark shadow-md w-10 h-5/6">
+                                <p className='rotate-90 pl-5 font-black'>Resume</p>
                             </div>
                         </Link>
                     </li>
