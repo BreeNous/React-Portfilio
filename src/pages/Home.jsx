@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import BulletTabs from '../../src/components/BulletTabs';
 
+
 function Home() {
     const [selectedTab, setSelectedTab] = useState(1); // Default to 'Front-end'
 
@@ -20,15 +21,15 @@ function Home() {
                         <img className='drop-shadow-sm w-full h-full' src='/assets/light-bulb.png' />
                     </div>
                     {/* TITLE CARD */}
-                    <div className='flex bg-amber-50 w-64 h-44 z-30 -rotate-1 absolute right-12 bottom-20 shadow-sm justify-center items-center'>
-                        <h1 className='text-2xl font-black'>Front-end</h1>
+                    <div className='flex bg-white-texture w-64 h-44 z-30 -rotate-1 absolute right-12 bottom-20 shadow-sm justify-center items-center'>
+                        <h1 className='homemade-apple-regular text-2xl font-black'>Front-end</h1>
                     </div>
                     {/* ACCENT IMAGE */}
                     <div className='flex w-50 h-36 z-20 rotate-2 absolute left-28 bottom-28 shadow-sm'>
                         <img src='/assets/frontend-code.jpg' />
                     </div>
                     {/* SMALL STICKER */}
-                    <div className='drop-shadow-sm flex bg-green-texture w-14 h-14 z-50 absolute bottom-52 left-40 rounded-full'></div>
+                    <img src='/assets/wax-seal.png' className='drop-shadow-sm flex w-24 z-50 absolute bottom-44 left-[9rem]'></img>
                     {/* LONG TAPE */}
                     <img className='flex w-52 h-20 z-50 rotate-[6deg] absolute bottom-9 right-16' src='assets/long-tape.png' />
                 </>
@@ -45,17 +46,17 @@ function Home() {
                     {/* MAIN PICTURE */}
                     <div className='flex bg-back-end w-80 h-60 z-40 rotate-3 absolute top-16 left-24 shadow-sm' />
                     {/* ACCENT STICKER */}
-                    <img className='flex w-52 z-50 -rotate-3 absolute right-2 top-36 drop-shadow-sm' src='/assets/files.png' />
+                    <img className='flex w-44 z-50 rotate-[40deg] absolute right-4 top-36 drop-shadow-sm' src='/assets/files.png' />
                     {/* TITLE CARD */}
-                    <div className='flex bg-amber-50 w-64 h-44 z-30 -rotate-1 absolute right-12 bottom-20 shadow-sm justify-center items-center'>
-                        <h1 className='text-2xl font-black'>Back-end</h1>
+                    <div className='flex bg-white-texture w-64 h-44 z-30 -rotate-1 absolute right-12 bottom-20 shadow-sm justify-center items-center'>
+                        <h1 className='homemade-apple-regular text-2xl font-black'>Back-end</h1>
                     </div>
                     {/* ACCENT IMAGE */}
                     <div className='flex w-50 h-36 z-20 rotate-2 absolute left-28 bottom-28 shadow-sm'>
                         <img src='/assets/backend-code.jpg' />
                     </div>
                     {/* SMALL STICKER */}
-                    <div className='drop-shadow-sm flex bg-green-texture w-14 h-14 z-50 absolute bottom-52 left-40 rounded-full'></div>
+                    <img src='/assets/wax-seal.png' className='drop-shadow-sm flex w-24 z-50 absolute bottom-44 left-[9rem]'></img>
                     {/* LONG TAPE */}
                     <img className='flex w-52 h-20 z-50 rotate-[6deg] absolute bottom-9 right-16' src='assets/long-tape.png' />
                 </>
@@ -70,21 +71,21 @@ function Home() {
                     {/* SMALL TAPE */}
                     <img className='flex w-34 h-14 z-50 -rotate-6 absolute top-10 left-16' src='assets/small-tape.png' />
                     {/* MAIN PICTURE */}
-                    <div className='flex bg-tools w-80 h-60 z-40 rotate-3 absolute top-16 left-24 shadow-sm' />
+                    <div className='flex bg-tools w-80 h-60 z-40 rotate-3 absolute top-16 left-24 shadow-md' />
                     {/* ACCENT STICKER */}
-                    <div className='flex w-32 h-44 z-50 -rotate-3 absolute right-6 top-44'>
-                        <img className='drop-shadow-sm w-full h-full' src='/assets/tools.png' />
+                    <div className='flex w-38 h-44 z-50 rotate-[-32deg] absolute right-0 top-44'>
+                        <img className='drop-shadow-sm w-full' src='/assets/hammer.png' />
                     </div>
                     {/* TITLE CARD */}
-                    <div className='flex bg-amber-50 w-64 h-44 z-30 -rotate-1 absolute right-12 bottom-20 shadow-sm justify-center items-center'>
-                        <h1 className='text-2xl font-black'>Tools/etc</h1>
+                    <div className='flex bg-white-texture w-64 h-44 z-30 -rotate-1 absolute right-12 bottom-20 shadow-sm justify-center items-center'>
+                        <h1 className='homemade-apple-regular text-2xl font-black'>Tools/etc</h1>
                     </div>
                     {/* ACCENT IMAGE */}
                     <div className='flex w-50 h-36 z-20 rotate-2 absolute left-28 bottom-28 shadow-sm'>
-                        <img src='/assets/tools-code.png' />
+                        <img src='/assets/tools-code.jpg' />
                     </div>
                     {/* SMALL STICKER */}
-                    <div className='drop-shadow-sm flex bg-green-texture w-14 h-14 z-50 absolute bottom-52 left-40 rounded-full'></div>
+                    <img src='/assets/wax-seal.png' className='drop-shadow-sm flex w-24 z-50 absolute bottom-44 left-[9rem]'></img>
                     {/* LONG TAPE */}
                     <img className='flex w-52 h-20 z-50 rotate-[6deg] absolute bottom-9 right-16' src='assets/long-tape.png' />
                 </>
@@ -94,13 +95,26 @@ function Home() {
 
     const renderContent = () => tabContents[selectedTab]?.mainContent;
 
+    const getHighlightClass = () => {
+        switch (selectedTab) {
+            case 1:
+                return 'front-end-highlight';
+            case 2:
+                return 'back-end-highlight';
+            case 3:
+                return 'tools-highlight';
+            default:
+                return '';
+        }
+    };
+
     return (
         <div className="flex h-full w-full">
             {/* LEFT SIDE */}
             <div className="w-1/2 h-full relative">
                 {/* HEY BUBBLE */}
                 <img src='/assets/thought.png' className='z-40 w-[18rem] absolute left-28 top-10 rotate-[-15deg] drop-shadow-sm' />
-                <p className='cutive-mono-regular text-4xl font-black z-50 absolute left-[210px] top-[115px] rotate-[-15deg]'>Hey!</p>
+                <p className='homemade-apple-regular text-3xl font-black z-50 absolute left-[175px] top-[125px] rotate-[-15deg]'>Hey there!</p>
                 
                 {/* TOP RIGHT TAPE */}
                 <img className="rotate-[12deg] absolute z-40 w-34 h-14 right-44 top-6 drop-shadow-sm" src="/assets/small-tape.png" />
@@ -109,17 +123,19 @@ function Home() {
                 {/* LEFT TAPE */}
                 <img className="flex absolute z-30 w-52 h-20 bottom-40 left-2 rotate-[93deg]" src="/assets/long-tape.png" />
                 {/* WHITE HELLO SQUARE */}
-                <div className="cutive-mono-regular -rotate-1 z-20 h-[23rem] w-[30rem] bottom-10 left-28 absolute bg-amber-50 shadow-sm">
+                <div className="cutive-mono-regular -rotate-1 z-20 h-[23rem] w-[30rem] bottom-10 left-28 absolute bg-white-texture shadow-sm">
                     <p className='text-xl font-black relative top-20 left-16'>It's nice <br/>to meet you</p>
                 </div>
                 {/* GREEN INTRODUCTORY SQUARE */}
-                <div className="cutive-mono-regular z-30 flex h-[7.5rem] w-[29rem] absolute bottom-20 right-28 bg-green-texture shadow-sm">
-                    <h2 className="text-start text-amber-50 text-2xl font-black px-5 py-5">I'm Breeanna Nouskhajian, <br/> a fullstack web developer</h2>
+                <div className="cutive-mono-regular z-30 flex items-center h-[7.5rem] w-[29rem] absolute bottom-20 right-28 bg-green-texture shadow-sm">
+                    <h2 className="text-start text-amber-50 text-2xl font-black px-5 py-5">I'm <span className='special-elite-regular'>Breeanna Nouskhajian</span>, <br/> a fullstack web developer</h2>
                 </div>
             </div>
 
+            <img src='/assets/pond-painting-small-cutout.png' className='h-[33rem] absolute -left-4 bottom-0'></img>
+
             {/* RIGHT SIDE */}
-            <div className="w-1/2 h-full flex flex-col cutive-mono-regular font-black">
+            <div className="w-1/2 h-full flex flex-col cutive-mono-regular font-black z-10">
                 {/* NAV BAR */}
                 <div className="self-center items-center bg-green-texture mt-12 flex text-xl justify-center h-14 w-4/5 shadow-sm">
                     <BulletTabs onSelect={setSelectedTab} />
@@ -131,22 +147,26 @@ function Home() {
                         {renderContent()}
                     </div>
                     {/* RIGHT SECTION */}
-                    <div className='w-1/3 h-full flex flex-col mt-16 items-center'>
-                        <p className='flex text-2xl font-black w-full h-10'>{tabContents[selectedTab]?.title} Languages:</p>
+                    <div className='w-1/3 h-full flex flex-col pt-16'>
+                        <p className='special-elite-regular flex text-2xl font-black w-full h-10'>{tabContents[selectedTab]?.title} Languages:</p>
                         <p className='flex w-full h-14 '>__________________</p>
-                        <div className='w-full h-1/2 flex flex-col justify-center'>
-                            <ul className='font-black text-xl'>
+                        
+                            <ul className='flex flex-col font-black text-xl items-start'>
                                 {tabContents[selectedTab]?.listItems.map((item, index) => (
-                                    <li className='pb-2' key={index}>{item}</li>
+                                    <li className='pb-2' key={index}>
+                                        <span className={getHighlightClass()}>{item}</span>
+                                    </li>
                                 ))}
                             </ul>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
+
+            <img src='/assets/clouds-painting.png' className='h-[33rem] absolute right-0 top-0 drop-shadow-sm'></img>
+
         </div>
     );
 }
 
 export default Home;
-
