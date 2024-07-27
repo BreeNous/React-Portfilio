@@ -2,17 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* FONTS */
 
 .cutive-mono-regular {
     font-family: "Cutive Mono", monospace;
     font-weight: 400;
     font-style: normal;
-  }
-  
-
-::-webkit-scrollbar {
-    display: none;
 }
+
+.special-elite-regular {
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.homemade-apple-regular {
+    font-family: "Homemade Apple", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }  
+  
+/* BACKGROUND CLASSES */
 
 .bg-image {
     background-image: url('/assets/paper-bg.jpg');
@@ -20,10 +30,84 @@
     position: fixed;
 }
 
-.bg-bookmark {
+.bg-brown-texture {
     background-image: url('/assets/brown-texture.jpg');
     background-size: 700px;
 }
+
+.bg-front-end {
+    background-image: url('/assets/front-end.jpg');
+    background-size: cover;
+    
+}
+
+.bg-green-texture {
+    background-image: url('/assets/green-bg.jpg');
+    background-size: 700px;
+}
+
+.bg-back-end {
+    background-image: url('/assets/backend.jpg');
+    background-size: 310px;
+}
+
+.bg-white-texture {
+    background-image: url('/assets/white-texture.jpg');
+    background-size: 500px;
+}
+
+.bg-tools {
+    background-image: url('/assets/tools.jpg');
+    background-size: cover;
+}
+
+/* CONFIGURATION */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.Card:hover {
+    transform: scale(1.05);
+    transition: all .2s ease-in-out;
+}
+
+.Card:hover .Video {
+    filter: none;
+    transition: all .2s ease-in-out;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-link.active {
+    color: white;
+    
+}
+
+.nav-link.active > div {
+    height: 100%;
+}
+
+.nav-link.active > div > p {
+    padding-left: 35px;
+}
+
+.front-end-highlight {
+    background-color: #a9bd6d75;
+}
+
+.back-end-highlight {
+    background-color: #a0cccd7e;
+}
+
+.tools-highlight {
+    background-color: #ffd47874;
+}
+
+/* CONTENT ADJUSTMENTS */
 
 .Header {
     position: sticky;
@@ -43,59 +127,10 @@
     text-align: center;
   }
 
-.Card:hover {
-    transform: scale(1.05);
-    transition: all .2s ease-in-out;
-}
-
-.Card:hover .Video {
-    filter: none;
-    transition: all .2s ease-in-out;
-}
-
 .Video {
     max-height: 75%;
     min-width: 100%;
     object-fit: cover;
-}
-
-.nav-link {
-    color: black;
-    text-decoration: none;
-}
-
-.nav-link.active {
-    color: white; /* Highlight color */
-    
-}
-
-.nav-link.active > div {
-    height: 100%;
-}
-
-.nav-link.active > div > p {
-    padding-left: 35px;
-}
-
-.bg-circle {
-    background-image: url('/assets/brown-texture.jpg');
-    background-size: 700px;
-}
-
-.bg-front-end {
-    background-image: url('/assets/front-end.jpg');
-    background-size: cover;
-    
-}
-
-.bg-green-texture {
-    background-image: url('/assets/green-bg.jpg');
-    background-size: 700px;
-}
-
-.bg-back-end {
-    background-image: url('/assets/backend.jpg');
-    background-size: 310px;
 }
 
 

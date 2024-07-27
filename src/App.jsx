@@ -6,8 +6,9 @@ import BookShadow from './components/BookShadow.jsx'
 function App() {
 
   return(
-    <div className="Base flex flex-col bg-transparent">
+    <div className="Base flex flex-col h-full bg-transparent">
       <Header/>
+      <img src='/assets/bookmark.png' className='absolute left-[45.5rem] -top-1 drop-shadow-md'></img>
       <div className="Outlet">
         <Outlet/>
       </div>
