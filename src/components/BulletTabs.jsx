@@ -18,14 +18,14 @@ const BulletTabs = ({ onSelect }) => {
         onSelect(id);
     };
 
-    const textStyle = { color: 'white', cursor: 'default' }; // Define inline style
+    const textStyle = { color: 'white', cursor: 'default' };
 
     return (
         <div className='w-full flex justify-center font-bold'>
             {items.map(item => (
                 <div 
                     className='w-52 flex justify-center' 
-                    style={textStyle} // Apply inline style
+                    style={textStyle}
                     key={item.id} 
                     onClick={() => handleClick(item.id)}
                 >

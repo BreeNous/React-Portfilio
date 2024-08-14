@@ -2,17 +2,14 @@ function BookShadow() {
 
     return(
 
-        <div className="w-full h-full flex z-[-1] absolute bg-image">
+        <div className="w-full h-full flex absolute bg-image z-[-1]">
 
             {/* // LEFT PAGE OF BOOK */}
-            <div className="flex w-1/2 opacity-75">
-                <div className="bg-gradient-to-l from-amber-50 from-5% to-45% ... w-full"></div>
-            </div>
-
+                <div className="bg-gradient-to-l from-amber-50 from-5% to-45% ... opacity-60 relative w-1/2"></div>
+            
             {/* RIGHT PAGE OF BOOK */}
-            <div className="flex w-1/2 opacity-70">
-                <div className="bg-gradient-to-l from-amber-50 from-0% ... w-full"></div>
-            </div>
+                <div className="bg-gradient-to-l from-amber-50 from-0% ... opacity-60 relative w-1/2"></div>
+            
 
         </div>
     );
