@@ -123,12 +123,12 @@ function Home() {
                 {/* LEFT TAPE */}
                 <img className="flex absolute z-30 w-52 h-20 bottom-40 left-2 rotate-[93deg]" src="/assets/long-tape.png" />
                 {/* WHITE HELLO SQUARE */}
-                <div className="cutive-mono-regular -rotate-1 z-20 h-[23rem] w-[30rem] bottom-10 left-28 absolute bg-white-texture shadow-sm">
+                <div className="special-elite-regular -rotate-1 z-20 h-[23rem] w-[30rem] bottom-10 left-28 absolute bg-white-texture shadow-sm">
                     <p className='text-xl font-black relative top-20 left-16'>It's nice <br/>to meet you</p>
                 </div>
                 {/* GREEN INTRODUCTORY SQUARE */}
-                <div className="cutive-mono-regular z-30 flex items-center h-[7.5rem] w-[29rem] absolute bottom-20 right-28 bg-green-texture shadow-sm">
-                    <h2 className="text-start text-amber-50 text-2xl font-black px-5 py-5">I'm <span className='special-elite-regular'>Breeanna Nouskhajian</span>, <br/> a fullstack web developer</h2>
+                <div className="special-elite-regular z-30 flex items-center h-[7.5rem] w-[29rem] absolute bottom-20 right-28 bg-green-texture shadow-sm">
+                    <h2 className="text-start text-amber-50 text-xl font-black px-5 py-5">I'm <span className='special-elite-regular text-3xl'>Breeanna Nouskhajian</span>, <br/> a fullstack web developer</h2>
                 </div>
             </div>
 
@@ -137,7 +137,7 @@ function Home() {
             {/* RIGHT SIDE */}
             <div className="w-1/2 h-full flex flex-col cutive-mono-regular font-black z-10">
                 {/* NAV BAR */}
-                <div className="self-center items-center bg-green-texture mt-12 flex text-xl justify-center h-14 w-4/5 shadow-sm">
+                <div className="self-center items-center bg-green-texture mt-12 flex text-xl justify-center h-14 w-4/5 shadow-sm special-elite-regular">
                     <BulletTabs onSelect={setSelectedTab} />
                 </div>
                 {/* MAIN CONTENT BELOW NAV */}
@@ -148,10 +148,10 @@ function Home() {
                     </div>
                     {/* RIGHT SECTION */}
                     <div className='w-1/3 h-full flex flex-col pt-16'>
-                        <p className='special-elite-regular flex text-2xl font-black w-full h-10'>{tabContents[selectedTab]?.title} Languages:</p>
+                        <p className='special-elite-regular flex text-3xl font-black w-full h-10'>{tabContents[selectedTab]?.title} Languages:</p>
                         <p className='flex w-full h-14 '>__________________</p>
                         
-                            <ul className='flex flex-col font-black text-xl items-start'>
+                            <ul className='flex flex-col font-black text-xl items-start special-elite-regular'>
                                 {tabContents[selectedTab]?.listItems.map((item, index) => (
                                     <li className='pb-2' key={index}>
                                         <span className={getHighlightClass()}>{item}</span>
