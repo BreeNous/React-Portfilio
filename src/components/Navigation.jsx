@@ -28,7 +28,7 @@ function NavTabs() {
                     <li>
                         <Link to="/Portfolio" className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}>
                             <div className="bg-brown-texture shadow-md shadow-stone-500 w-10 h-5/6">
-                                <p className='rotate-90 pl-5 font-black'>Works</p>
+                                <p className='rotate-90 pl-5 font-black'>Portfolio</p>
                             </div>
                         </Link>
                     </li>
