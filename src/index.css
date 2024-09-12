@@ -82,17 +82,20 @@
     text-decoration: none;
 }
 
-.nav-link.active {
+.nav-link:hover {
     color: white;
-    
+    text-decoration: none;
 }
 
 .nav-link.active > div {
     height: 100%;
+    transition: .3s ease-in-out;
 }
 
 .nav-link.active > div > p {
-    padding-left: 35px;
+    padding-left: 39px;
+    transition: .3s ease-in-out;
+    color: white;
 }
 
 .front-end-highlight {
