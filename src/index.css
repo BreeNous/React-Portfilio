@@ -149,3 +149,109 @@
 }
 
 
+/* PORTFOLIO STYLES */
+
+.envelope {
+    position: relative;
+    cursor: pointer;
+}
+
+.inner-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect: Move inner card up 10px and rotate */
+.envelope:hover .inner-card {
+    transform: translateY(-20px) rotate(3.5deg) translateX(-5px);
+}
+
+.hover-disabled {
+    pointer-events: none;
+}
+
+.hover-disabled .inner-card {
+    transform: none;
+    transition: none;
+}
+
+.envelope.active {
+    z-index: 20;
+}
+
+.envelope.active .inner-card {
+    animation: click-animation 1.3s ease forwards;
+    position: fixed;
+    top: var(--start-top);    /* Dynamic start position */
+    right: var(--start-right); /* Dynamic start position */
+}
+
+/* INNER CARD OPENING ANIMATION */
+
+@keyframes click-animation {
+    0% {
+        transform: translateY(-20px) translateX(-5px) rotate(3.5deg) scale(1);
+    }
+
+    30% {
+        transform: translateY(-80%) translateX(-5px) rotate(-3.5deg);
+    }
+
+    31% {
+        top: var(--start-top);    
+        right: var(--start-right);
+    }
+    70% {
+        z-index: 40;
+    }
+
+    100% {
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%) scale(3.2) rotate(0deg);
+        z-index: 9999;
+        box-shadow: 0px 8px 15px 8px rgba(0, 0, 0, 0.25);
+    }
+}
+
+/* INNER CARD CLOSING ANIMATION */
+
+@keyframes close-animation {
+    0% {
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%) scale(3.2) rotate(0deg);
+        z-index: 9999;
+        box-shadow: 0px 8px 15px 8px rgba(0, 0, 0, 0.25);
+    }
+    
+    30% {
+        z-index: 40;
+    }
+
+    31% {
+        top: var(--start-top);    
+        right: var(--start-right);
+    }
+
+    70% {
+        transform: translateY(-80%) translateX(-5px) rotate(-3.5deg);
+    }
+
+    100% {
+        transform: translateY(0) translateX(0) rotate(0) scale(1);
+    }
+}
+
+.envelope.active .inner-card.closing {
+    animation: close-animation 1s ease forwards;
+}
+
+.close-button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Cutive Mono", monospace;
+}
+
+
