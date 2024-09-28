@@ -74,8 +74,7 @@ function Portfolio() {
                             {activeEnvelope === 0 && animationCompleted && (
                                     <button
                                         onClick={handleCloseClick}
-                                        className="close-button absolute bottom-2 right-2 bg-brown-texture w-16 h-8 rounded-sm shadow-md"
-                                    >
+                                        className="absolute top-2 left-2 bg-brown-texture w-8 h-3.5 rounded-sm shadow-md flex justify-center items-center pt-[2px] special-elite-regular text-[9px]">
                                         Back
                                     </button>
                                 )}
@@ -99,8 +98,7 @@ function Portfolio() {
                             {activeEnvelope === 1 && animationCompleted && (
                                     <button
                                         onClick={handleCloseClick}
-                                        className="close-button absolute bottom-2 right-2 bg-brown-texture w-16 h-8 rounded-sm shadow-md"
-                                    >
+                                        className="absolute top-2 left-2 bg-brown-texture w-8 h-3.5 rounded-sm shadow-md flex justify-center items-center pt-[2px] special-elite-regular text-[9px]">
                                         Back
                                     </button>
                                 )}
@@ -127,8 +125,7 @@ function Portfolio() {
                             {activeEnvelope === 2 && animationCompleted && (
                                     <button
                                         onClick={handleCloseClick}
-                                        className="close-button absolute bottom-2 right-2 bg-brown-texture w-16 h-8 rounded-sm shadow-md"
-                                    >
+                                        className="absolute top-2 left-2 bg-brown-texture w-8 h-3.5 rounded-sm shadow-md flex justify-center items-center pt-[2px] special-elite-regular text-[9px]">
                                         Back
                                     </button>
                                 )}
@@ -152,8 +149,7 @@ function Portfolio() {
                             {activeEnvelope === 3 && animationCompleted && (
                                     <button
                                         onClick={handleCloseClick}
-                                        className="close-button absolute bottom-2 right-2 bg-brown-texture w-16 h-8 rounded-sm shadow-md"
-                                    >
+                                        className="absolute top-2 left-2 bg-brown-texture w-8 h-3.5 rounded-sm shadow-md flex justify-center items-center pt-[2px] special-elite-regular text-[9px]">
                                         Back
                                     </button>
                                 )}

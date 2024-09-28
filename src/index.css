@@ -246,12 +246,12 @@
     animation: close-animation 1s ease forwards;
 }
 
-.close-button {
+/* .close-button {
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Cutive Mono", monospace;
-}
+} */
 
 
