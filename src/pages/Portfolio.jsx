@@ -71,7 +71,7 @@ function Portfolio() {
                         {/* inner card */}
                         <div className="flex justify-center relative bottom-4 h-full w-full">
                             <div className= {`inner-card fixed z-20 h-56 w-72 bg-green-texture rounded drop-shadow-md ${activeEnvelope === 0 && isClosing ? 'closing' : ''}`}>
-                            {activeEnvelope === 0 && animationCompleted && (
+                            {activeEnvelope === 0 && animationCompleted && !isClosing && (
                                     <button
                                         onClick={handleCloseClick}
                                         className="back absolute top-2 left-2 bg-brown-texture w-8 h-3.5 rounded-sm shadow-md flex justify-center items-center pt-[2px] special-elite-regular text-[9px]">
@@ -95,7 +95,7 @@ function Portfolio() {
                         {/* inner card */}
                         <div className="flex justify-center relative bottom-4 h-full w-full">
                             <div className={`inner-card fixed z-20 h-56 w-72 bg-green-texture rounded drop-shadow-md ${activeEnvelope === 1 && isClosing ? 'closing' : ''}`}>
-                            {activeEnvelope === 1 && animationCompleted && (
+                            {activeEnvelope === 1 && animationCompleted && !isClosing && (
                                     <button
                                         onClick={handleCloseClick}
                                         className="back absolute top-2 left-2 bg-brown-texture w-8 h-3.5 rounded-sm shadow-md flex justify-center items-center pt-[2px] special-elite-regular text-[9px]">
@@ -122,7 +122,7 @@ function Portfolio() {
                         {/* inner card */}
                         <div className="flex justify-center relative bottom-4 h-full w-full">
                             <div className={`inner-card fixed z-20 h-56 w-72 bg-green-texture rounded drop-shadow-md ${activeEnvelope === 2 && isClosing ? 'closing' : ''}`}>
-                            {activeEnvelope === 2 && animationCompleted && (
+                            {activeEnvelope === 2 && animationCompleted && !isClosing && (
                                     <button
                                         onClick={handleCloseClick}
                                         className="back absolute top-2 left-2 bg-brown-texture w-8 h-3.5 rounded-sm shadow-md flex justify-center items-center pt-[2px] special-elite-regular text-[9px]">
@@ -146,7 +146,7 @@ function Portfolio() {
                         {/* inner card */}
                         <div className="flex justify-center relative bottom-4 h-full w-full">
                             <div className={`inner-card fixed z-20 h-56 w-72 bg-green-texture rounded drop-shadow-md ${activeEnvelope === 3 && isClosing ? 'closing' : ''}`}>
-                            {activeEnvelope === 3 && animationCompleted && (
+                            {activeEnvelope === 3 && animationCompleted && !isClosing && (
                                     <button
                                         onClick={handleCloseClick}
                                         className="back absolute top-2 left-2 bg-brown-texture w-8 h-3.5 rounded-sm shadow-md flex justify-center items-center pt-[2px] special-elite-regular text-[9px]">
