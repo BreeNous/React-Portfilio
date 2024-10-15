@@ -244,14 +244,37 @@
 
 .envelope.active .inner-card.closing {
     animation: close-animation 1s ease forwards;
+    position: fixed;
 }
 
-/* .close-button {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Cutive Mono", monospace;
-} */
+.envelope.active .back {
+    animation: button-appear-animation 0.3s ease forwards;
+}
 
+@keyframes button-appear-animation {
+    0% {
+        opacity: 30%;
+        transform: translateY(-5px) scale(1.1);
+    }
 
+    100% {
+        opacity: 100%;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.envelope.active .back.closing {
+    animation: button-disappear-animation 1s ease forwards;
+}
+
+@keyframes button-disappear-animation {
+    0%{
+        opacity: 100%;
+        transform: translateY(0) scale(1);
+    }
+
+    100% {
+        opacity: 30%;
+        transform: translateY(-5px) scale(1.1);
+    }
+}
