@@ -201,7 +201,7 @@
         right: var(--start-right);
     }
     70% {
-        z-index: 40;
+        z-index: 60;
     }
 
     100% {
@@ -225,7 +225,7 @@
     }
     
     30% {
-        z-index: 40;
+        z-index: 60;
     }
 
     31% {
