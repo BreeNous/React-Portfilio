@@ -5,20 +5,27 @@ function Portfolio() {
     const [activeEnvelope, setActiveEnvelope] = useState(null);
     const [animationCompleted, setAnimationCompleted] = useState(false);
     const [isClosing, setIsClosing] = useState(false); // New state to track closing animation
+    const [positionSet, setPositionSet] = useState(false); // Track if position has been set
 
     const handleEnvelopeClick = (index, event) => {
         if (activeEnvelope !== null && activeEnvelope !== index) {
             return; // Ignore clicks on other envelopes if one is active
         }
+        
         const card = event.currentTarget.querySelector('.inner-card');
 
-        const rect = card.getBoundingClientRect();
-        const startTop = `${rect.top}px`;
-        const startRight = `${window.innerWidth - rect.right}px`; // Calculate distance from the right
+        if (!positionSet) {
+            // Set position variables only if they haven't been set yet
+            const rect = card.getBoundingClientRect();
+            const startTop = `${rect.top}px`;
+            const startRight = `${window.innerWidth - rect.right}px`;
 
-        // Apply the positions as CSS variables
-        card.style.setProperty('--start-top', startTop);
-        card.style.setProperty('--start-right', startRight);
+            // Apply the positions as CSS variables
+            card.style.setProperty('--start-top', startTop);
+            card.style.setProperty('--start-right', startRight);
+
+            setPositionSet(true); // Mark position as set
+        }
 
         setActiveEnvelope(index); // Set the active envelope index
 
@@ -51,6 +58,7 @@ function Portfolio() {
             setAnimationCompleted(false); // Reset animation state
             setIsClosing(false); // Reset closing state
             card.classList.remove('closing'); // Clean up the class after animation ends
+            setPositionSet(false); // Reset position state for future clicks
         }, { once: true }); // Listener will be removed after the closing animation ends
     };
 
@@ -61,8 +69,8 @@ function Portfolio() {
                 {/* whole envelope unit top position of left column */}
                 <div
                     className={`envelope ${activeEnvelope === 0 ? 'active' : ''} ${activeEnvelope !== null && activeEnvelope !== 0 ? 'hover-disabled' : ''} `}
-                    onClick={(e) => handleEnvelopeClick(0, e)}
-                >
+                    onClick={(e) => handleEnvelopeClick(0, e)}>
+
                     {/* inside / back of envelope */}
                     <div className="relative z-10 bg-stone-200 w-96 h-56 items-end shadow-inner">
                         <div className="absolute z-30 left-0 bg-white-texture w-10 h-56 rounded-tr-2xl"></div>
@@ -80,6 +88,12 @@ function Portfolio() {
                                 )}
                             </div>
                         </div>
+                        {/* NAME TAG AND TAPE */}
+                        <div>
+                            <div className='shadow-md absolute flex top-[5.5rem] left-[3.5rem] z-40 text-3xl bg-brown-texture h-[5rem] w-[17rem] text-center justify-center items-center'>Name Tag</div>
+                            <img src='./assets/small-tape.png' className='absolute z-50 top-20 left-[-4.5rem] w-36 rotate-[-87deg] drop-shadow-sm'></img>
+                            <img src='./assets/small-tape.png' className='absolute z-50 top-24 right-[-4.8rem] w-36 rotate-[-265deg] drop-shadow-sm'></img>
+                        </div>
                     </div>
                 </div>
 
@@ -89,12 +103,12 @@ function Portfolio() {
                     onClick={(e) => handleEnvelopeClick(1, e)}
                 >
                     <div className="relative z-10 bg-stone-200 w-96 h-56 items-end shadow-inner">
-                        <div className="absolute z-30 left-0 bg-white-texture w-10 h-56 rounded-tr-2xl"></div>
-                        <div className="absolute z-30 bottom-0 bg-white-texture w-full h-48"></div>
-                        <div className="absolute z-30 right-0 bg-white-texture w-10 h-56 rounded-tl-2xl"></div>
+                        <div className="absolute z-30 left-0 bg-green-texture w-10 h-56 rounded-tr-2xl"></div>
+                        <div className="absolute z-30 bottom-0 bg-green-texture w-full h-48"></div>
+                        <div className="absolute z-30 right-0 bg-green-texture w-10 h-56 rounded-tl-2xl"></div>
                         {/* inner card */}
                         <div className="flex justify-center relative bottom-4 h-full w-full">
-                            <div className={`inner-card fixed z-20 h-56 w-72 bg-green-texture rounded drop-shadow-md ${activeEnvelope === 1 && isClosing ? 'closing' : ''}`}>
+                            <div className={`inner-card fixed z-20 h-56 w-72 bg-white-texture rounded drop-shadow-md ${activeEnvelope === 1 && isClosing ? 'closing' : ''}`}>
                             {activeEnvelope === 1 && animationCompleted && !isClosing && (
                                     <button
                                         onClick={handleCloseClick}
@@ -104,6 +118,9 @@ function Portfolio() {
                                 )}
                             </div>
                         </div>
+                        <div className='absolute shadow-md flex top-[5.5rem] left-[3.5rem] z-40 text-3xl bg-brown-texture h-[5rem] w-[17rem] text-center justify-center items-center'>Name Tag</div>
+                        <img src='./assets/small-tape.png' className='absolute z-50 top-[12rem] left-[-3rem] w-36 rotate-[-160deg] drop-shadow-sm'></img>
+                        <img src='./assets/small-tape.png' className='absolute z-50 top-20 right-[-5rem] w-36 rotate-[-275deg] drop-shadow-sm'></img>
                     </div>
                 </div>
             </div>
@@ -131,6 +148,7 @@ function Portfolio() {
                                 )}
                             </div>
                         </div>
+                        <div className='absolute flex top-[5.5rem] left-[3.5rem] z-40 text-3xl bg-brown-texture h-[5rem] w-[17rem] text-center justify-center items-center'>Name Tag</div>
                     </div>
                 </div>
 
@@ -155,6 +173,7 @@ function Portfolio() {
                                 )}
                             </div>
                         </div>
+                        <div className='absolute flex top-[5.5rem] left-[3.5rem] z-40 text-3xl bg-brown-texture h-[5rem] w-[17rem] text-center justify-center items-center'>Name Tag</div>
                     </div>
                 </div>
             </div>
