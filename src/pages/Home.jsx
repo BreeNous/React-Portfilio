@@ -113,8 +113,8 @@ function Home() {
             {/* LEFT SIDE */}
             <div className="w-1/2 h-full relative">
                 {/* HEY BUBBLE */}
-                <img src='/assets/thought.png' className='z-40 w-[18rem] absolute left-28 top-10 rotate-[-15deg] drop-shadow-sm' />
-                <p className='homemade-apple-regular text-3xl font-black z-50 absolute left-[175px] top-[125px] rotate-[-15deg]'>Hey there!</p>
+                <img src='/assets/thought.png' className='z-40 w-[18rem] absolute left-28 top-[5rem] rotate-[-15deg] drop-shadow-sm' />
+                <p className='homemade-apple-regular text-[1.7rem] font-black z-50 absolute left-[11.3rem] top-[10.1rem] rotate-[-17deg]'>Hey there!</p>
                 
                 {/* TOP RIGHT TAPE */}
                 <img className="rotate-[12deg] absolute z-40 w-34 h-14 right-44 top-6 drop-shadow-sm" src="/assets/small-tape.png" />
@@ -124,15 +124,17 @@ function Home() {
                 <img className="flex absolute z-30 w-52 h-20 bottom-40 left-2 rotate-[93deg]" src="/assets/long-tape.png" />
                 {/* WHITE HELLO SQUARE */}
                 <div className="special-elite-regular -rotate-1 z-20 h-[23rem] w-[30rem] bottom-10 left-28 absolute bg-white-texture shadow-sm">
-                    <p className='text-xl font-black relative top-20 left-16'>It's nice <br/>to meet you</p>
+                    <p className='text-xl font-black relative top-[5.8rem] left-[5rem]'>It's nice <br/>to meet you, <br/>my name is</p>
                 </div>
+                {/* PICTURE NAME TAG */}
+                <p className='absolute z-40 text-xl homemade-apple-regular right-[8.8rem] font-black bottom-[15.4rem] rotate-[2deg]'>Breeanna Nouskhajian</p>
+
                 {/* GREEN INTRODUCTORY SQUARE */}
-                <div className="special-elite-regular z-30 flex items-center h-[7.5rem] w-[29rem] absolute bottom-20 right-28 bg-green-texture shadow-sm">
-                    <h2 className="text-start text-amber-50 text-xl font-black px-5 py-5">I'm <span className='special-elite-regular text-3xl'>Breeanna Nouskhajian</span>, <br/> a fullstack web developer</h2>
-                </div>
+                
+                <h2 className="z-30 flex justify-center items-center text-amber-50 font-black px-5 py-5 special-elite-regular text-3xl bg-green-texture shadow-sm h-[7.5rem] w-[29rem] absolute bottom-[5rem] right-28"> and i'm a full-stack web developer </h2>
+                
             </div>
 
-            <img src='/assets/pond-painting-small-cutout.png' className='h-[33rem] absolute -left-4 bottom-0'></img>
 
             {/* RIGHT SIDE */}
             <div className="w-1/2 h-full flex flex-col cutive-mono-regular font-black z-10">
@@ -163,7 +165,6 @@ function Home() {
                 </div>
             </div>
 
-            <img src='/assets/clouds-painting.png' className='h-[33rem] absolute right-0 top-0 drop-shadow-sm'></img>
 
         </div>
     );
