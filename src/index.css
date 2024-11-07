@@ -64,6 +64,20 @@
 
 /* CONFIGURATION */
 
+.arch-shadow::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3); /* Customize shadow as needed */
+    border-radius: inherit; /* Inherit the border-radius from the parent */
+    pointer-events: none; /* Allows interaction with content inside .bg-image */
+    z-index: 10; /* Ensure shadow overlays content */
+}
+
+
 ::-webkit-scrollbar {
     display: none;
 }

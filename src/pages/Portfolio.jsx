@@ -72,7 +72,7 @@ function Portfolio() {
                     onClick={(e) => handleEnvelopeClick(0, e)}>
 
                     {/* inside / back of envelope */}
-                    <div className="relative z-10 bg-lime-700 w-96 h-56 items-end shadow-inner">
+                    <div className="relative z-10 bg-[#5a7728] w-96 h-56 items-end shadow-inner">
                         <div className="absolute z-30 left-0 bg-green-texture w-10 h-56 rounded-tr-2xl"></div>
                         <div className="absolute z-30 bottom-0 bg-green-texture w-full h-48 front"></div>
                         <div className="absolute z-30 right-0 bg-green-texture w-10 h-56 rounded-tl-2xl"></div>
@@ -101,7 +101,7 @@ function Portfolio() {
                 <div
                     className={`envelope ${activeEnvelope === 1 ? 'active' : ''} ${activeEnvelope !== null && activeEnvelope !== 1 ? 'hover-disabled' : ''} `}
                     onClick={(e) => handleEnvelopeClick(1, e)}>
-                    <div className="relative z-10 bg-lime-700 w-96 h-56 items-end shadow-inner">
+                    <div className="relative z-10 bg-[#5a7728] w-96 h-56 items-end shadow-inner">
                         <div className="absolute z-30 left-0 bg-green-texture w-10 h-56 rounded-tr-2xl"></div>
                         <div className="absolute z-30 bottom-0 bg-green-texture w-full h-48"></div>
                         <div className="absolute z-30 right-0 bg-green-texture w-10 h-56 rounded-tl-2xl"></div>
@@ -134,7 +134,7 @@ function Portfolio() {
                     className={`envelope ${activeEnvelope === 2 ? 'active' : ''} ${activeEnvelope !== null && activeEnvelope !== 2 ? 'hover-disabled' : ''} `}
                     onClick={(e) => handleEnvelopeClick(2, e)}>
 
-                    <div className="relative z-10 bg-lime-700 w-96 h-56 items-end shadow-inner">
+                    <div className="relative z-10 bg-[#5a7728] w-96 h-56 items-end shadow-inner">
                         <div className="absolute z-30 left-0 bg-green-texture w-10 h-56 rounded-tr-2xl"></div>
                         <div className="absolute z-30 bottom-0 bg-green-texture w-full h-48"></div>
                         <div className="absolute z-30 right-0 bg-green-texture w-10 h-56 rounded-tl-2xl"></div>
@@ -165,7 +165,7 @@ function Portfolio() {
                 <div
                     className={`envelope ${activeEnvelope === 3 ? 'active' : ''} ${activeEnvelope !== null && activeEnvelope !== 3 ? 'hover-disabled' : ''} `}
                     onClick={(e) => handleEnvelopeClick(3, e)}>
-                    <div className="relative z-10 bg-lime-700 w-96 h-56 items-end shadow-inner">
+                    <div className="relative z-10 bg-[#5a7728] w-96 h-56 items-end shadow-inner">
                         <div className="absolute z-30 left-0 bg-green-texture w-10 h-56 rounded-tr-2xl"></div>
                         <div className="absolute z-30 bottom-0 bg-green-texture w-full h-48"></div>
                         <div className="absolute z-30 right-0 bg-green-texture w-10 h-56 rounded-tl-2xl"></div>
