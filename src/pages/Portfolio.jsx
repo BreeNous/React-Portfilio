@@ -68,7 +68,7 @@ function Portfolio() {
             <div className="flex flex-col h-full w-1/2 items-center justify-evenly relative">
                 {/* whole envelope unit top position of left column */}
                 <div
-                    className={`envelope ${activeEnvelope === 0 ? 'active' : ''} ${activeEnvelope !== null && activeEnvelope !== 0 ? 'hover-disabled' : ''} `}
+                    className={`envelope ${activeEnvelope === 0 ? 'active' : ''} ${activeEnvelope !== null && activeEnvelope !== 0 ? 'hover-disabled' : ''} shadow-md shadow-stone-500 `}
                     onClick={(e) => handleEnvelopeClick(0, e)}>
 
                     {/* inside / back of envelope */}
@@ -78,7 +78,7 @@ function Portfolio() {
                         <div className="absolute z-30 right-0 bg-green-texture w-10 h-56 rounded-tl-2xl"></div>
                         {/* inner card */}
                         <div className="flex justify-center relative bottom-4 h-full w-full">
-                            <div className= {`inner-card fixed z-20 h-56 w-72 bg-white-texture rounded drop-shadow-md ${activeEnvelope === 0 && isClosing ? 'closing' : ''}`}>
+                            <div className= {`inner-card fixed z-20 h-56 w-[21rem] bg-white-texture rounded drop-shadow-md ${activeEnvelope === 0 && isClosing ? 'closing' : ''}`}>
                             {activeEnvelope === 0 && animationCompleted && !isClosing && (
                                     <button
                                         onClick={handleCloseClick}
@@ -90,16 +90,20 @@ function Portfolio() {
                         </div>
                         {/* NAME TAG AND TAPE */}
                         <div>
-                            <div className='special-elite-regular shadow-md absolute flex top-[4.5rem] left-[3.5rem] z-40 text-3xl bg-brown-texture h-[7rem] w-[17rem] text-center justify-center items-center'>Name Tag</div>
-                            <img src='./assets/small-tape.png' className='absolute z-50 top-20 left-[-4.5rem] w-36 rotate-[-87deg] drop-shadow-sm'></img>
-                            <img src='./assets/small-tape.png' className='absolute z-50 top-24 right-[-4.8rem] w-36 rotate-[-265deg] drop-shadow-sm'></img>
+                            <div className='rounded-2xl special-elite-regular shadow-sm shadow-stone-600 absolute flex flex-col top-[4.5rem] left-[3.5rem] z-40 bg-brown-texture h-[7rem] w-[17rem] justify-center items-center'>
+                                <p className='text-2xl'>Vibrawood Gutairs</p>
+                                <hr className='border-black border-1 w-[14.5rem]'/>
+                                <p className='text-md pt-[.5rem]'>commercial website</p>
+                            </div>
+                            <img src='./assets/small-tape.png' className='absolute z-50 top-20 left-[-4.5rem] w-36 rotate-[-87deg] customShadow'></img>
+                            <img src='./assets/small-tape.png' className='absolute z-50 top-24 right-[-4.8rem] w-36 rotate-[-265deg] customShadow'></img>
                         </div>
                     </div>
                 </div>
 
                 {/* whole envelope unit bottom position of left column */}
                 <div
-                    className={`envelope ${activeEnvelope === 1 ? 'active' : ''} ${activeEnvelope !== null && activeEnvelope !== 1 ? 'hover-disabled' : ''} `}
+                    className={`envelope ${activeEnvelope === 1 ? 'active' : ''} ${activeEnvelope !== null && activeEnvelope !== 1 ? 'hover-disabled' : ''} shadow-md shadow-stone-500 `}
                     onClick={(e) => handleEnvelopeClick(1, e)}>
                     <div className="relative z-10 bg-[#5a7728] w-96 h-56 items-end shadow-inner">
                         <div className="absolute z-30 left-0 bg-green-texture w-10 h-56 rounded-tr-2xl"></div>
@@ -107,7 +111,7 @@ function Portfolio() {
                         <div className="absolute z-30 right-0 bg-green-texture w-10 h-56 rounded-tl-2xl"></div>
                         {/* inner card */}
                         <div className="flex justify-center relative bottom-4 h-full w-full">
-                            <div className={`inner-card fixed z-20 h-56 w-72 bg-white-texture rounded drop-shadow-md ${activeEnvelope === 1 && isClosing ? 'closing' : ''}`}>
+                            <div className={`inner-card fixed z-20 h-56 w-[21rem] bg-white-texture rounded drop-shadow-md ${activeEnvelope === 1 && isClosing ? 'closing' : ''}`}>
                             {activeEnvelope === 1 && animationCompleted && !isClosing && (
                                     <button
                                         onClick={handleCloseClick}
@@ -119,9 +123,13 @@ function Portfolio() {
                         </div>
                         {/* NAME TAG AND TAPE */}
                         <div>
-                            <div className='special-elite-regular absolute shadow-md flex top-[4.5rem] left-[3.5rem] z-40 text-3xl bg-brown-texture h-[7rem] w-[17rem] text-center justify-center items-center'>Name Tag</div>
-                            <img src='./assets/small-tape.png' className='absolute z-50 top-[12rem] left-[-3rem] w-36 rotate-[-160deg] drop-shadow-sm'></img>
-                            <img src='./assets/small-tape.png' className='absolute z-50 top-20 right-[-5rem] w-36 rotate-[-275deg] drop-shadow-sm'></img>
+                            <div className='rounded-2xl special-elite-regular shadow-sm shadow-stone-600 absolute flex flex-col top-[4.5rem] left-[3.5rem] z-40 bg-brown-texture h-[7rem] w-[17rem] justify-center items-center'>
+                                <p className='text-2xl'>Weather Dashboard</p>
+                                <hr className='border-black border-1 w-[14.5rem]'/>
+                                <p className='text-md pt-[.5rem]'>personal website</p>
+                            </div>
+                            <img src='./assets/small-tape.png' className='absolute z-50 top-[12rem] left-[-3rem] w-36 rotate-[-160deg] customShadow'></img>
+                            <img src='./assets/small-tape.png' className='absolute z-50 top-20 right-[-5rem] w-36 rotate-[-275deg] customShadow'></img>
                         </div>
                     </div>
                 </div>
@@ -131,7 +139,7 @@ function Portfolio() {
             <div className="flex flex-col h-full w-1/2 items-center justify-evenly relative">
                 {/* whole envelope unit top position of right column */}
                 <div
-                    className={`envelope ${activeEnvelope === 2 ? 'active' : ''} ${activeEnvelope !== null && activeEnvelope !== 2 ? 'hover-disabled' : ''} `}
+                    className={`envelope ${activeEnvelope === 2 ? 'active' : ''} ${activeEnvelope !== null && activeEnvelope !== 2 ? 'hover-disabled' : ''} shadow-md shadow-stone-500 `}
                     onClick={(e) => handleEnvelopeClick(2, e)}>
 
                     <div className="relative z-10 bg-[#5a7728] w-96 h-56 items-end shadow-inner">
@@ -140,7 +148,7 @@ function Portfolio() {
                         <div className="absolute z-30 right-0 bg-green-texture w-10 h-56 rounded-tl-2xl"></div>
                         {/* inner card */}
                         <div className="flex justify-center relative bottom-4 h-full w-full">
-                            <div className={`inner-card fixed z-20 h-56 w-72 bg-white-texture rounded drop-shadow-md ${activeEnvelope === 2 && isClosing ? 'closing' : ''}`}>
+                            <div className={`inner-card fixed z-20 h-56 w-[21rem] bg-white-texture rounded drop-shadow-md ${activeEnvelope === 2 && isClosing ? 'closing' : ''}`}>
                             {activeEnvelope === 2 && animationCompleted && !isClosing && (
                                     <button
                                         onClick={handleCloseClick}
@@ -153,9 +161,13 @@ function Portfolio() {
                     
                         {/* NAME TAG AND TAPE */}
                         <div>
-                            <div className='special-elite-regular absolute shadow-md flex top-[4.5rem] left-[3.5rem] z-40 text-3xl bg-brown-texture h-[7rem] w-[17rem] text-center justify-center items-center'>Name Tag</div>
-                            <img src='./assets/small-tape.png' className='absolute z-50 top-[1rem] left-[-4.5rem] w-36 rotate-[-90deg] drop-shadow-sm'></img>
-                            <img src='./assets/small-tape.png' className='absolute z-50 top-[10rem] right-[-4rem] w-36 rotate-[-60deg] drop-shadow-sm'></img>
+                            <div className='rounded-2xl special-elite-regular shadow-sm shadow-stone-600 absolute flex flex-col top-[4.5rem] left-[3.5rem] z-40 bg-brown-texture h-[7rem] w-[17rem] justify-center items-center'>
+                                <p className='text-2xl'>Social Network</p>
+                                <hr className='border-black border-1 w-[14.5rem]'/>
+                                <p className='text-md pt-[.5rem]'>social application</p>
+                            </div>
+                            <img src='./assets/small-tape.png' className='absolute z-50 top-[1rem] left-[-4.5rem] w-36 rotate-[-90deg] customShadow'></img>
+                            <img src='./assets/small-tape.png' className='absolute z-50 top-[10rem] right-[-4rem] w-36 rotate-[-60deg] customShadow'></img>
                         </div>
                     </div>
 
@@ -163,7 +175,7 @@ function Portfolio() {
 
                 {/* whole envelope unit bottom position of right column */}
                 <div
-                    className={`envelope ${activeEnvelope === 3 ? 'active' : ''} ${activeEnvelope !== null && activeEnvelope !== 3 ? 'hover-disabled' : ''} `}
+                    className={`envelope ${activeEnvelope === 3 ? 'active' : ''} ${activeEnvelope !== null && activeEnvelope !== 3 ? 'hover-disabled' : ''} shadow-md shadow-stone-500 `}
                     onClick={(e) => handleEnvelopeClick(3, e)}>
                     <div className="relative z-10 bg-[#5a7728] w-96 h-56 items-end shadow-inner">
                         <div className="absolute z-30 left-0 bg-green-texture w-10 h-56 rounded-tr-2xl"></div>
@@ -171,7 +183,7 @@ function Portfolio() {
                         <div className="absolute z-30 right-0 bg-green-texture w-10 h-56 rounded-tl-2xl"></div>
                         {/* inner card */}
                         <div className="flex justify-center relative bottom-4 h-full w-full">
-                            <div className={`inner-card fixed z-20 h-56 w-72 bg-white-texture rounded drop-shadow-md ${activeEnvelope === 3 && isClosing ? 'closing' : ''}`}>
+                            <div className={`inner-card fixed z-20 h-56 w-[21rem] bg-white-texture rounded drop-shadow-md ${activeEnvelope === 3 && isClosing ? 'closing' : ''}`}>
                             {activeEnvelope === 3 && animationCompleted && !isClosing && (
                                     <button
                                         onClick={handleCloseClick}
@@ -184,9 +196,13 @@ function Portfolio() {
 
                         {/* NAME TAG AND TAPE */}
                         <div>
-                            <div className='special-elite-regular shadow-md absolute flex top-[4.5rem] left-[3.5rem] z-40 text-3xl bg-brown-texture h-[7rem] w-[17rem] text-center justify-center items-center'>Name Tag</div>
-                            <img src='./assets/small-tape.png' className='absolute z-50 top-20 left-[-4.5rem] w-36 rotate-[-87deg] drop-shadow-sm'></img>
-                            <img src='./assets/small-tape.png' className='absolute z-50 top-24 right-[-4.8rem] w-36 rotate-[-265deg] drop-shadow-sm'></img>
+                            <div className='rounded-2xl special-elite-regular shadow-sm shadow-stone-600 absolute flex flex-col top-[4.5rem] left-[3.5rem] z-40 bg-brown-texture h-[7rem] w-[17rem] justify-center items-center'>
+                                <p className='text-2xl'>Employee Tracker</p>
+                                <hr className='border-black border-1 w-[14.5rem]'/>
+                                <p className='text-md pt-[.5rem]'>management application</p>
+                            </div>
+                            <img src='./assets/small-tape.png' className='absolute z-50 top-20 left-[-4.5rem] w-36 rotate-[-87deg] customShadow'></img>
+                            <img src='./assets/small-tape.png' className='absolute z-50 top-24 right-[-4.8rem] w-36 rotate-[-265deg] customShadow'></img>
                         </div> 
                         
                     </div>

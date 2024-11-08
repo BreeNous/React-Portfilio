@@ -114,7 +114,7 @@ function Home() {
             <div className="w-1/2 h-full relative">
                 {/* HEY BUBBLE */}
                 <img src='/assets/thought.png' className='z-40 w-[18rem] absolute left-28 top-[5rem] rotate-[-15deg] drop-shadow-sm' />
-                <p className='homemade-apple-regular text-[1.7rem] font-black z-50 absolute left-[11.3rem] top-[10.1rem] rotate-[-17deg]'>Hey there!</p>
+                <p className='special-elite-regular text-[1.7rem] font-black z-50 absolute left-[11.5rem] top-[10.1rem] rotate-[-18deg]'>Hey there!</p>
                 
                 {/* TOP RIGHT TAPE */}
                 <img className="rotate-[12deg] absolute z-40 w-34 h-14 right-44 top-6 drop-shadow-sm" src="/assets/small-tape.png" />
@@ -127,7 +127,7 @@ function Home() {
                     <p className='text-xl font-black relative top-[5.8rem] left-[5rem]'>It's nice <br/>to meet you, <br/>my name is</p>
                 </div>
                 {/* PICTURE NAME TAG */}
-                <p className='absolute z-40 text-xl homemade-apple-regular right-[8.8rem] font-black bottom-[15.4rem] rotate-[2deg]'>Breeanna Nouskhajian</p>
+                <p className='absolute z-40 text-3xl homemade-apple-regular right-[11.6rem] font-black bottom-[15.1rem] rotate-[2deg]'>Breeanna</p>
 
                 {/* GREEN INTRODUCTORY SQUARE */}
                 
