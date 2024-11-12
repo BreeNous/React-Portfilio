@@ -82,16 +82,6 @@
     display: none;
 }
 
-.Card:hover {
-    transform: scale(1.05);
-    transition: all .2s ease-in-out;
-}
-
-.Card:hover .Video {
-    filter: none;
-    transition: all .2s ease-in-out;
-}
-
 .nav-link {
     color: black;
     text-decoration: none;
@@ -144,11 +134,6 @@
     text-align: center;
   }
 
-.Video {
-    max-height: 75%;
-    min-width: 100%;
-    object-fit: cover;
-}
 
 /* CUSTOM CLASSES */
 
@@ -167,7 +152,6 @@
 /* PORTFOLIO STYLES */
 
 .envelope {
-    position: relative;
     cursor: pointer;
 }
 
@@ -189,8 +173,8 @@
     transition: none;
 }
 
-.envelope.active {
-    z-index: 20;
+.lower-z {
+    z-index: 1;
 }
 
 .envelope.active .inner-card {
@@ -200,6 +184,20 @@
     right: var(--start-right); /* Dynamic start position */
 }
 
+.blur-active {
+    backdrop-filter: blur(3px);
+    transition: backdrop-filter 1s ease; 
+    z-index: 60;
+}
+
+.refocus-active {
+    backdrop-filter: blur(0px);
+    transition: backdrop-filter 1s ease; 
+    z-index: 0;
+    transition: z-index 1s ease;
+}
+
+
 /* INNER CARD OPENING ANIMATION */
 
 @keyframes click-animation {
@@ -208,15 +206,17 @@
     }
 
     30% {
-        transform: translateY(-80%) translateX(-5px) rotate(-3.5deg);
+        transform: translateY(-85%) translateX(-5px) rotate(-3.5deg);
     }
 
     31% {
         top: var(--start-top);    
         right: var(--start-right);
     }
+
     70% {
-        z-index: 60;
+        z-index: 70;
+        
     }
 
     100% {
@@ -240,16 +240,16 @@
     }
     
     30% {
-        z-index: 60;
+        z-index: 70;
     }
 
-    31% {
+    38% {
         top: var(--start-top);    
         right: var(--start-right);
     }
 
     70% {
-        transform: translateY(-80%) translateX(-5px) rotate(-3.5deg);
+        transform: translateY(-85%) translateX(-5px) rotate(-3.5deg);
     }
 
     100% {
