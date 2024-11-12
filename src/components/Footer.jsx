@@ -3,7 +3,7 @@
 function Footer() {
 
     return(
-        <footer className="z-10 cutive-mono-regular Footer flex justify-between items-center px-10 mt-auto text-slate-950 fixed bottom-0">
+        <footer className="z-[5] cutive-mono-regular Footer flex justify-between items-center px-10 mt-auto text-slate-950 absolute bottom-0 left-0">
             
             <ul className="flex pb-3">
 
