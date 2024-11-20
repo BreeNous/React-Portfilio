@@ -71,8 +71,9 @@ function Portfolio() {
             {/* LEFT SIDE */}
             <div className="flex flex-col h-full w-1/2 items-center justify-evenly">
 
-                {/* ENVELOPE AT TOP OF LEFT COLOUMN */}
-                <div className={`h-56 w-96 envelope ${activeEnvelope === 0 ? 'active' : ''} ${activeEnvelope !== null && activeEnvelope !== 0 ? 'hover-disabled lower-z' : ''} shadow-md shadow-stone-500 relative `} onClick={(e) => handleEnvelopeClick(0, e)}>
+                {/* ENVELOPE AT TOP OF LEFT COLOUMN (VIBRAWOOD GUITARS)*/}
+                <div className={`h-56 w-96 envelope shadow-md shadow-stone-500 relative ${activeEnvelope === 0 ? 'active' : ''} 
+                ${activeEnvelope !== null && activeEnvelope !== 0 ? 'hover-disabled lower-z' : ''}`} onClick={(e) => handleEnvelopeClick(0, e)}>
 
                     {/* BACK OF ENVELOPE */}
                     <div className="relative z-10 bg-[#5a7728] w-full h-full items-end shadow-inner"></div>
@@ -88,14 +89,16 @@ function Portfolio() {
                     <div className='w-full h-full bottom-4 absolute flex justify-center'>
 
                         {/* INNER CARD */}
-                        <div className= {`inner-card h-56 w-[21rem] bg-white-texture rounded drop-shadow-md z-20 fixed overflow-scroll ${activeEnvelope === 0 && isClosing ? 'closing' : ''}`}>
+                        <div className= {`inner-card h-56 w-[21rem] bg-white-texture rounded drop-shadow-md z-20 fixed overflow-scroll 
+                        ${activeEnvelope === 0 && isClosing ? 'closing' : ''}`}>
                             
                             
                                 {/* CONDITIONAL BACK BUTTON */}
                                 {activeEnvelope === 0 && animationCompleted && !isClosing && (
                                     <button
                                         onClick={handleCloseClick}
-                                        className="back sticky top-[9px] left-[20.5px] z-20 bg-brown-texture w-auto h-auto rounded-sm shadow-md flex justify-center items-center pt-[2px] px-[4px] special-elite-regular text-[7.5px]">
+                                        className="back sticky top-[9px] left-[20.5px] z-20 bg-brown-texture w-auto h-auto rounded-sm shadow-md flex 
+                                        justify-center items-center pt-[2px] px-[4px] gaegu-regular text-[7.5px]">
                                         Back
                                     </button>
                                 )}
@@ -107,8 +110,8 @@ function Portfolio() {
                                 <div className='flex flex-col justify-between'>
                                     
                                     {/* PROJECT DESCRIPTION AND TITLE */}
-                                    <p className='bg-white w-[9rem] h-auto text-[6.5px] p-[10px]'>
-                                        <span className='text-[12px]'>Vibrawood Guitairs</span>
+                                    <p className='bg-white w-[9rem] h-auto text-[6.5px] p-[10px] gaegu-regular'>
+                                        <span className='text-[12px] font-black'>Vibrawood Guitairs</span>
                                         <br/><br/>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse tenetur beatae aliquid,
                                         obcaecati commodi facilis fuga in dolorum laborum cumque, ut provident, possimus dignissimos
@@ -141,10 +144,11 @@ function Portfolio() {
                    
                     {/* PROJECT NAME TAG */}
                     <div>
-                        <div className='rounded-2xl special-elite-regular shadow-sm shadow-stone-600 absolute flex flex-col top-[4.5rem] left-[3.5rem] z-30 bg-brown-texture h-[7rem] w-[17rem] justify-center items-center'>
+                        <div className='rounded-2xl gaegu-regular shadow-sm shadow-stone-600 absolute flex flex-col top-[4.5rem] left-[3.5rem] z-30 
+                        bg-brown-texture h-[7rem] w-[17rem] justify-center items-center'>
                             <p className='text-2xl'>Vibrawood Gutairs</p>
-                            <hr className='border-black border-1 w-[14.5rem]'/>
-                            <p className='text-md pt-[.5rem]'>commercial website</p>
+                            <hr className='border-black border-1 w-[14.5rem] my-[.3rem]'/>
+                            <p className='text-lg'>commercial website</p>
                         </div>
                     </div>
 
@@ -154,8 +158,9 @@ function Portfolio() {
                     
                 </div>
 
-                {/* ENVELOPE AT BOTTOM OF LEFT COLOUMN */}
-                <div className={`h-56 w-96 envelope ${activeEnvelope === 1 ? 'active' : ''} ${activeEnvelope !== null && activeEnvelope !== 1 ? 'hover-disabled lower-z' : ''} shadow-md shadow-stone-500 relative`} onClick={(e) => handleEnvelopeClick(1, e)}>
+                {/* ENVELOPE AT BOTTOM OF LEFT COLOUMN (WEATHER DASHBOARD) */}
+                <div className={`h-56 w-96 envelope shadow-md shadow-stone-500 relative ${activeEnvelope === 1 ? 'active' : ''} 
+                ${activeEnvelope !== null && activeEnvelope !== 1 ? 'hover-disabled lower-z' : ''} `} onClick={(e) => handleEnvelopeClick(1, e)}>
                     
                     {/* BACK OF ENVELOPE */}
                     <div className="relative z-10 bg-[#5a7728] w-full h-full items-end shadow-inner"></div>
@@ -169,11 +174,13 @@ function Portfolio() {
 
                     {/* INNER CARD ENVELOPE BOUNDARY */}
                     <div className="w-full h-full bottom-4 absolute flex justify-center">
-                        <div className={`inner-card h-56 w-[21rem] bg-white-texture rounded drop-shadow-md z-20 fixed overflow-scroll ${activeEnvelope === 1 && isClosing ? 'closing' : ''}`}>
+                        <div className={`inner-card h-56 w-[21rem] bg-white-texture rounded drop-shadow-md z-20 fixed overflow-scroll 
+                        ${activeEnvelope === 1 && isClosing ? 'closing' : ''}`}>
                             
                             {/* CONDITIONAL BACK BUTTON */}
                             {activeEnvelope === 1 && animationCompleted && !isClosing && (
-                                <button onClick={handleCloseClick} className="back sticky top-[9px] left-[20.5px] z-20 bg-brown-texture w-auto h-auto rounded-sm shadow-md flex justify-center items-center pt-[2px] px-[4px] special-elite-regular text-[7.5px]">
+                                <button onClick={handleCloseClick} className="back sticky top-[9px] left-[20.5px] z-20 bg-brown-texture w-auto h-auto rounded-sm 
+                                shadow-md flex justify-center items-center pt-[2px] px-[4px] gaegu-regular text-[7.5px]">
                                     Back
                                 </button>
                             )}
@@ -185,8 +192,8 @@ function Portfolio() {
                                 <div className="flex flex-col justify-between">
 
                                     {/* PROJECT DESCRIPTION AND TITLE */}
-                                    <p className="bg-white w-[9rem] h-auto text-[6.5px] p-[10px]">
-                                        <span className="text-[12px]">Weather Dashboard</span>
+                                    <p className="bg-white w-[9rem] h-auto text-[6.5px] p-[10px] gaegu-regular">
+                                        <span className="text-[12px] font-black">Weather Dashboard</span>
                                         <br /><br />
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse tenetur beatae aliquid,
                                         obcaecati commodi facilis fuga in dolorum laborum cumque, ut provident, possimus dignissimos
@@ -216,10 +223,11 @@ function Portfolio() {
                     </div>
 
                     {/* PROJECT NAME TAG */}
-                    <div className="rounded-2xl special-elite-regular shadow-sm shadow-stone-600 absolute flex flex-col top-[4.5rem] left-[3.5rem] z-30 bg-brown-texture h-[7rem] w-[17rem] justify-center items-center">
+                    <div className="rounded-2xl gaegu-regular shadow-sm shadow-stone-600 absolute flex flex-col top-[4.5rem] left-[3.5rem] z-30 bg-brown-texture 
+                    h-[7rem] w-[17rem] justify-center items-center">
                         <p className="text-2xl">Weather Dashboard</p>
-                        <hr className="border-black border-1 w-[14.5rem]" />
-                        <p className="text-md pt-[.5rem]">personal website</p>
+                        <hr className="border-black border-1 w-[14.5rem] my-[.3rem]" />
+                        <p className="text-lg">personal website</p>
                     </div>
 
                     {/* TAPE */}
@@ -232,8 +240,9 @@ function Portfolio() {
             {/* RIGHT SIDE */}
             <div className="flex flex-col h-full w-1/2 items-center justify-evenly relative">
 
-                {/* ENVELOPE AT TOP OF RIGHT COLUMN (Social Network) */}
-                <div className={`h-56 w-96 envelope ${activeEnvelope === 2 ? 'active' : ''} ${activeEnvelope !== null && activeEnvelope !== 2 ? 'hover-disabled lower-z' : ''} shadow-md shadow-stone-500 relative`} onClick={(e) => handleEnvelopeClick(2, e)}>
+                {/* ENVELOPE AT TOP OF RIGHT COLUMN (SOCIAL NETWORK) */}
+                <div className={`h-56 w-96 envelope shadow-md shadow-stone-500 relative ${activeEnvelope === 2 ? 'active' : ''} 
+                ${activeEnvelope !== null && activeEnvelope !== 2 ? 'hover-disabled lower-z' : ''} `} onClick={(e) => handleEnvelopeClick(2, e)}>
 
                     {/* BACK OF ENVELOPE */}
                     <div className="relative z-10 bg-[#5a7728] w-full h-full items-end shadow-inner"></div>
@@ -247,11 +256,13 @@ function Portfolio() {
 
                     {/* INNER CARD ENVELOPE BOUNDARY */}
                     <div className="w-full h-full bottom-4 absolute flex justify-center">
-                        <div className={`inner-card h-56 w-[21rem] bg-white-texture rounded drop-shadow-md z-20 fixed overflow-scroll ${activeEnvelope === 2 && isClosing ? 'closing' : ''}`}>
+                        <div className={`inner-card h-56 w-[21rem] bg-white-texture rounded drop-shadow-md z-20 fixed overflow-scroll 
+                        ${activeEnvelope === 2 && isClosing ? 'closing' : ''}`}>
                             
                             {/* CONDITIONAL BACK BUTTON */}
                             {activeEnvelope === 2 && animationCompleted && !isClosing && (
-                                <button onClick={handleCloseClick} className="back sticky top-[9px] left-[20.5px] z-20 bg-brown-texture w-auto h-auto rounded-sm shadow-md flex justify-center items-center pt-[2px] px-[4px] special-elite-regular text-[7.5px]">
+                                <button onClick={handleCloseClick} className="back sticky top-[9px] left-[20.5px] z-20 bg-brown-texture w-auto h-auto rounded-sm 
+                                shadow-md flex justify-center items-center pt-[2px] px-[4px] gaegu-regular text-[7.5px]">
                                     Back
                                 </button>
                             )}
@@ -263,8 +274,8 @@ function Portfolio() {
                                 <div className="flex flex-col justify-between">
                                     
                                     {/* PROJECT DESCRIPTION AND TITLE */}
-                                    <p className="bg-white w-[9rem] h-auto text-[6.5px] p-[10px]">
-                                        <span className="text-[12px]">Social Network</span>
+                                    <p className="bg-white w-[9rem] h-auto text-[6.5px] p-[10px] gaegu-regular">
+                                        <span className="text-[12px] font-black">Social Network</span>
                                         <br /><br />
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse tenetur beatae aliquid,
                                         obcaecati commodi facilis fuga in dolorum laborum cumque, ut provident, possimus dignissimos
@@ -295,10 +306,11 @@ function Portfolio() {
                     </div>
 
                     {/* PROJECT NAME TAG */}
-                    <div className="rounded-2xl special-elite-regular shadow-sm shadow-stone-600 absolute flex flex-col top-[4.5rem] left-[3.5rem] z-30 bg-brown-texture h-[7rem] w-[17rem] justify-center items-center">
+                    <div className="rounded-2xl gaegu-regular shadow-sm shadow-stone-600 absolute flex flex-col top-[4.5rem] left-[3.5rem] z-30 bg-brown-texture 
+                    h-[7rem] w-[17rem] justify-center items-center">
                         <p className="text-2xl">Social Network</p>
-                        <hr className="border-black border-1 w-[14.5rem]" />
-                        <p className="text-md pt-[.5rem]">social application</p>
+                        <hr className="border-black border-1 w-[14.5rem] my-[.3rem]" />
+                        <p className="text-lg">social application</p>
                     </div>
 
                     {/* TAPE */}
@@ -307,8 +319,9 @@ function Portfolio() {
 
                 </div>
 
-                {/* ENVELOPE AT BOTTOM OF RIGHT COLUMN (Employee Tracker) */}
-                <div className={`h-56 w-96 envelope ${activeEnvelope === 3 ? 'active' : ''} ${activeEnvelope !== null && activeEnvelope !== 3 ? 'hover-disabled lower-z' : ''} shadow-md shadow-stone-500 relative`} onClick={(e) => handleEnvelopeClick(3, e)}>
+                {/* ENVELOPE AT BOTTOM OF RIGHT COLUMN (EMPLOYEE TRACKER) */}
+                <div className={`h-56 w-96 envelope shadow-md shadow-stone-500 relative ${activeEnvelope === 3 ? 'active' : ''} 
+                ${activeEnvelope !== null && activeEnvelope !== 3 ? 'hover-disabled lower-z' : ''} `} onClick={(e) => handleEnvelopeClick(3, e)}>
 
                     {/* BACK OF ENVELOPE */}
                     <div className="relative z-10 bg-[#5a7728] w-full h-full items-end shadow-inner"></div>
@@ -322,11 +335,13 @@ function Portfolio() {
 
                     {/* INNER CARD ENVELOPE BOUNDARY */}
                     <div className="w-full h-full bottom-4 absolute flex justify-center">
-                        <div className={`inner-card h-56 w-[21rem] bg-white-texture rounded drop-shadow-md z-20 fixed overflow-scroll ${activeEnvelope === 3 && isClosing ? 'closing' : ''}`}>
+                        <div className={`inner-card h-56 w-[21rem] bg-white-texture rounded drop-shadow-md z-20 fixed overflow-scroll 
+                        ${activeEnvelope === 3 && isClosing ? 'closing' : ''}`}>
                             
                             {/* CONDITIONAL BACK BUTTON */}
                             {activeEnvelope === 3 && animationCompleted && !isClosing && (
-                                <button onClick={handleCloseClick} className="back sticky top-[9px] left-[20.5px] z-20 bg-brown-texture w-auto h-auto rounded-sm shadow-md flex justify-center items-center pt-[2px] px-[4px] special-elite-regular text-[7.5px]">
+                                <button onClick={handleCloseClick} className="back sticky top-[9px] left-[20.5px] z-20 bg-brown-texture w-auto h-auto rounded-sm 
+                                shadow-md flex justify-center items-center pt-[2px] px-[4px] gaegu-regular text-[7.5px]">
                                     Back
                                 </button>
                             )}
@@ -338,8 +353,8 @@ function Portfolio() {
                                 <div className="flex flex-col justify-between">
                                     
                                     {/* PROJECT DESCRIPTION AND TITLE */}
-                                    <p className="bg-white w-[9rem] h-auto text-[6.5px] p-[10px]">
-                                        <span className="text-[12px]">Employee Tracker</span>
+                                    <p className="bg-white w-[9rem] h-auto text-[6.5px] p-[10px] gaegu-regular">
+                                        <span className="text-[12px] font-black">Employee Tracker</span>
                                         <br /><br />
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse tenetur beatae aliquid,
                                         obcaecati commodi facilis fuga in dolorum laborum cumque, ut provident, possimus dignissimos
@@ -370,10 +385,11 @@ function Portfolio() {
                     </div>
 
                     {/* PROJECT NAME TAG */}
-                    <div className="rounded-2xl special-elite-regular shadow-sm shadow-stone-600 absolute flex flex-col top-[4.5rem] left-[3.5rem] z-30 bg-brown-texture h-[7rem] w-[17rem] justify-center items-center">
+                    <div className="rounded-2xl gaegu-regular shadow-sm shadow-stone-600 absolute flex flex-col top-[4.5rem] left-[3.5rem] z-30 bg-brown-texture 
+                    h-[7rem] w-[17rem] justify-center items-center">
                         <p className="text-2xl">Employee Tracker</p>
-                        <hr className="border-black border-1 w-[14.5rem]" />
-                        <p className="text-md pt-[.5rem]">management application</p>
+                        <hr className="border-black border-1 w-[14.5rem] my-[.3rem]" />
+                        <p className="text-lg">management application</p>
                     </div>
 
                     {/* TAPE */}

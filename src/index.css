@@ -4,23 +4,12 @@
 
 /* FONTS */
 
-.cutive-mono-regular {
-    font-family: "Cutive Mono", monospace;
+  .gaegu-regular {
+    font-family: "Gaegu", sans-serif;
     font-weight: 400;
     font-style: normal;
-}
-
-.special-elite-regular {
-    font-family: "Special Elite", system-ui;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.homemade-apple-regular {
-    font-family: "Homemade Apple", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }  
+  }
+  
   
 /* BACKGROUND CLASSES */
 
@@ -101,18 +90,6 @@
     padding-left: 39px;
     transition: .3s ease-in-out;
     color: white;
-}
-
-.front-end-highlight {
-    background-color: #a9bd6d75;
-}
-
-.back-end-highlight {
-    background-color: #a0cccd7e;
-}
-
-.tools-highlight {
-    background-color: #ffd47874;
 }
 
 /* CONTENT ADJUSTMENTS */
@@ -292,4 +269,49 @@
         opacity: 30%;
         transform: translateY(-5px) scale(1.1);
     }
+}
+
+/* HOME PAGE STYLING */
+
+/* Common style for all spans */
+.highlight {
+    display: inline-block;
+    position: relative;
+    color: black; /* Text color */
+    background: none; /* No highlight initially */
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Horizontal sweep animation */
+@keyframes horizontal-sweep {
+    from {
+        background-size: 0% 100%; /* Start with no highlight */
+    }
+    to {
+        background-size: 100% 100%; /* Expand highlight across the text */
+    }
+}
+
+.highlight-active {
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 0% 100%; /* Start with no highlight */
+    animation: horizontal-sweep 0.6s ease forwards; /* Apply the sweep animation */
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 4px; /* Optional rounded edges for the highlight */
+}
+
+/* Specific highlight colors */
+.front-end-highlight {
+    background-image: linear-gradient(to right, #a9bd6d75, #a9bd6d75);
+}
+
+.back-end-highlight {
+    background-image: linear-gradient(to right, #fbfaf784, #fbfaf784);
+}
+
+.tools-highlight {
+    background-image: linear-gradient(to right, #ba985174, #ba985174);
 }

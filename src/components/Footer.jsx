@@ -3,7 +3,7 @@
 function Footer() {
 
     return(
-        <footer className="z-[5] cutive-mono-regular Footer flex justify-between items-center px-10 mt-auto text-slate-950 absolute bottom-0 left-0">
+        <footer className="z-[5] gaegu-regular Footer flex justify-between items-center px-10 mt-auto text-slate-950 absolute bottom-0 left-0">
             
             <ul className="flex pb-3">
 
@@ -46,7 +46,7 @@ function Footer() {
             </ul>
 
             <img src='assets/ripped-paper-white-2.png' className="fixed z-20 -bottom-12 -right-32 w-[33rem] h-48 rotate-[-5deg] drop-shadow-sm"></img>
-            <p className="z-30 font-black fixed right-10">&copy; {new Date().getFullYear()} Breeanna's Portfolio</p>
+            <p className="z-30 text-lg font-black fixed right-[4rem] ">&copy; {new Date().getFullYear()} Breeanna's Portfolio</p>
             
         </footer>
     );

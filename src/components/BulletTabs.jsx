@@ -22,17 +22,17 @@ const BulletTabs = ({ onSelect }) => {
 
     // Ensure consistent height with line-height and flex properties
     const textStyle = { 
-        color: 'white', 
+        color: 'black', 
         cursor: 'default',
         lineHeight: '2rem', // Consistent line height
-        transition: 'font-size 0.2s ease-in-out' // Smooth transition for size change
+        transition: 'font-size 0.2s ease' // Smooth transition for size change
     };
 
     return (
         <div className='w-full flex justify-center font-bold'>
             {items.map(item => (
                 <div 
-                    className={`w-52 flex justify-center items-center ${hoveredId === item.id ? 'text-2xl' : 'text-xl'}`} 
+                    className={`w-52 flex justify-center items-center ${hoveredId === item.id ? 'text-[27px]' : 'text-2xl'}`} 
                     style={textStyle}
                     key={item.id} 
                     onClick={() => handleClick(item.id)}
