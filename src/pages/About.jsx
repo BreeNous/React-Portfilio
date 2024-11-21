@@ -31,25 +31,25 @@ function About() {
                 <div className="absolute w-[6rem] h-[21rem] left-[6rem] top-[13rem] shadow-sm rounded-md -rotate-1 flex flex-col items-center justify-between">
 
                     <div className="bg-brown-texture w-[4.5rem] h-[4.5rem] rounded-3xl flex justify-center items-center shadow-sm shadow-stone-500">
-                        <img src="/assets/after-effects.png" className="w-10"></img>
+                        <img src="/assets/Ae.png" className="w-[3rem]"></img>
                     </div>
 
                     <div className="bg-brown-texture w-[4.5rem] h-[4.5rem] rounded-3xl flex justify-center items-center shadow-sm shadow-stone-500">
-                        <img src="/assets/illustrator.png" className="w-10"></img>
+                        <img src="/assets/Ai.png" className="w-[3rem]"></img>
                     </div>
 
                     <div className="bg-brown-texture w-[4.5rem] h-[4.5rem] rounded-3xl flex justify-center items-center shadow-sm shadow-stone-500">
-                        <img src="/assets/premire-pro.png" className="w-10"></img>
+                        <img src="/assets/Pr.png" className="w-[3rem]"></img>
                     </div>
 
                     <div className="bg-brown-texture w-[4.5rem] h-[4.5rem] rounded-3xl flex justify-center items-center shadow-sm shadow-stone-500">
-                        <img src="/assets/photoshop.png" className="w-10"></img>
+                        <img src="/assets/Ps.png" className="w-[3rem]"></img>
                     </div>
 
                 </div>
 
                 {/* BOOK STICKER */}
-                <img src="/assets/book.png" className="w-[10rem] absolute right-[8rem] bottom-[4rem] customShadow"></img>
+                <img src="/assets/brown-books.png" className="w-[10rem] absolute right-[8rem] bottom-[4rem] drop-shadow-md"></img>
 
             </div>
                 
@@ -73,17 +73,34 @@ function About() {
                         About me
                     </h1>
                     {/* BODY TEXT */}
-                    <p className="relative top-[5.5rem] left-[-5rem] font-black gaegu-regular rotate-1 w-[25rem] h-[22rem] bg-brown-texture p-7 rounded-md shadow-sm 
+                    <div className="relative top-[5rem] left-[-2.5rem] font-black gaegu-regular rotate-1 w-[23rem] h-[22.5rem] bg-brown-texture p-7 rounded-md shadow-sm 
                     shadow-stone-500 text-xl">
-                        aliquam architecto iusto nostrum blanditiis consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                        Culpa earum laborum unde nobis, incidunt molestias labore laboriosam nostrum voluptate vero, dolorem veniam perspiciatis 
-                        sapiente est pariatur. Cum corrupti quos earum?
-                    </p>
+
+                        <p className="h-[17.5rem] overflow-scroll">
+                            aliquam architecto iusto nostrum blanditiis consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Culpa earum laborum unde nobis, incidunt molestias labore laboriosam nostrum voluptate vero, dolorem veniam perspiciatis 
+                            sapiente est pariatur. Cum corrupti quos earum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aspernatur 
+                            rem laudantium expedita, distinctio dolorem veniam maxime cum enim ipsum consequuntur numquam nam odio non amet harum neque facere. 
+                            Explicabo!
+                        </p>
+
+                        <div className="absolute z-10 flex justify-center w-full left-0 bottom-[1.1rem]">
+                            
+                            <svg className="w-[1.2rem]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+
+                        </div>
+
+                    </div>
+                    
                 </div>
                 {/* UPPER SMALL TAPE */}
                 <img src="/assets/small-tape.png" className="customShadow absolute w-[8.7rem] z-10 left-[19rem] top-[2.5rem]"></img>
                 {/* LOWER RIGHT SMALL TAPE */}
-                <img src="/assets/small-tape.png" className="customShadow absolute w-[8.7rem] z-10 right-[10rem] bottom-[13.5rem] rotate-[95deg]"></img>
+                <img src="/assets/small-tape.png" className="customShadow absolute w-[8.7rem] z-10 right-[7rem] bottom-[6.5rem] rotate-[95deg]"></img>
+                {/* BIG QUESTION MARK */}
+                <img src="/assets/white-question.png" className="absolute w-[6.5rem] drop-shadow-md z-10 right-[9.5rem] top-[17rem] rotate-[10deg]"></img>
+                {/* SMALL QUESTION MARK */}
+                <img src="/assets/white-question.png" className="absolute w-[5rem] drop-shadow-md z-10 left-[12rem] top-[6.5rem] rotate-[-20deg]"></img>
                 
 
             </div>
