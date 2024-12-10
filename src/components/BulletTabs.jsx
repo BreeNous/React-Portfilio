@@ -23,7 +23,7 @@ const BulletTabs = ({ onSelect }) => {
     // Ensure consistent height with line-height and flex properties
     const textStyle = { 
         color: 'black', 
-        cursor: 'default',
+        cursor: 'pointer',
         lineHeight: '2rem', // Consistent line height
         transition: 'font-size 0.2s ease' // Smooth transition for size change
     };
