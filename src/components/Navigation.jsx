@@ -8,7 +8,7 @@ function NavTabs() {
       
 
 
-                <ul className="nav nav-tabs flex w-1/4 h-full justify-between">
+                <ul className="nav nav-tabs flex w-[17rem] h-full justify-between">
 
                     <li>
                         <Link to="/" className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>
@@ -32,14 +32,6 @@ function NavTabs() {
                         <Link to="/Portfolio" className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}>
                             <div className="bg-brown-texture shadow-md shadow-stone-500 w-10 h-5/6">
                                 <p className='rotate-90 pl-5 font-black'>Portfolio</p>
-                            </div>
-                        </Link>
-                    </li>
-
-                    <li>
-                        <Link to="/Contact" className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}>
-                            <div className="bg-brown-texture shadow-md shadow-stone-500 w-10 h-5/6">
-                                <p className='rotate-90 pl-5 font-black'>Contact</p>
                             </div>
                         </Link>
                     </li>

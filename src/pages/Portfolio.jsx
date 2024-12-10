@@ -109,7 +109,7 @@ function Portfolio() {
                                 {/* LEFT COLOUMN */}
                                     
                                 {/* PROJECT DESCRIPTION AND TITLE */}
-                                <p className='bg-brown-texture w-[9rem] h-[22rem] text-[6.5px] p-[10px] gaegu-regular rounded-md'>
+                                <p className='bg-brown-texture w-[9rem] h-[22rem] text-[6.5px] p-[10px] gaegu-regular rounded-md shadow-sm shadow-[rgba(0,0,0,0.35)]'>
                                     <span className='text-[12px] font-black'>Vibrawood Guitairs</span>
                                     <br/>
                                     Visit the <a href='https://github.com/Wartech93/Vibrawood_Guitars'><span className='underline hover:text-white'>repository</span>
