@@ -227,19 +227,19 @@ function Portfolio() {
 
                                     {/* PHOTO PLACEHOLDERS */}
                                     <div className='w-[9rem] h-[5rem] rounded-sm flex justify-center items-center overflow-hidden drop-shadow-sm'>
-                                        <img src='./assets/vwg01.png' className='object-cover h-full w-full'></img>
+                                        <img src='./assets/wd01.png' className='object-cover h-full w-full'></img>
                                     </div>
 
                                     <div className='w-[9rem] h-[5rem] rounded-sm flex justify-center items-center overflow-hidden drop-shadow-sm'>
-                                        <img src='./assets/vwg01.png' className='object-cover h-full w-full'></img>
+                                        <img src='./assets/wd02.png' className='object-cover h-full w-full'></img>
                                     </div>
 
                                     <div className='w-[9rem] h-[5rem] rounded-sm flex justify-center items-center overflow-hidden drop-shadow-sm'>
-                                        <img src='./assets/vwg01.png' className='object-cover h-full w-full'></img>
+                                        <img src='./assets/wd03.png' className='object-cover h-full w-full'></img>
                                     </div>
 
                                     <div className='w-[9rem] h-[5rem] rounded-sm flex justify-center items-center overflow-hidden drop-shadow-sm'>
-                                        <img src='./assets/vwg01.png' className='object-cover h-full w-full'></img>
+                                        <img src='./assets/wd04.png' className='object-cover h-full w-full'></img>
                                     </div>
 
                                 </div>
@@ -270,7 +270,7 @@ function Portfolio() {
             {/* RIGHT SIDE */}
             <div className="flex flex-col h-full w-1/2 items-center justify-evenly relative">
 
-                {/* ENVELOPE AT TOP OF RIGHT COLUMN (SOCIAL NETWORK) */}
+                {/* ENVELOPE AT TOP OF RIGHT COLUMN (JEANS) */}
                 <div className={`h-56 w-96 envelope relative ${activeEnvelope === 2 ? 'active' : ''} 
                 ${activeEnvelope !== null && activeEnvelope !== 2 ? 'hover-disabled lower-z' : ''} `} onClick={(e) => handleEnvelopeClick(2, e)}>
 
@@ -324,19 +324,19 @@ function Portfolio() {
 
                                     {/* PHOTO PLACEHOLDERS */}
                                     <div className='w-[9rem] h-[5rem] rounded-sm flex justify-center items-center overflow-hidden drop-shadow-sm'>
-                                        <img src='./assets/vwg01.png' className='object-cover h-full w-full'></img>
+                                        <img src='./assets/jeans1.png' className='object-cover h-full w-full'></img>
                                     </div>
 
                                     <div className='w-[9rem] h-[5rem] rounded-sm flex justify-center items-center overflow-hidden drop-shadow-sm'>
-                                        <img src='./assets/vwg01.png' className='object-cover h-full w-full'></img>
+                                        <img src='./assets/jeans2.png' className='object-cover h-full w-full'></img>
                                     </div>
 
                                     <div className='w-[9rem] h-[5rem] rounded-sm flex justify-center items-center overflow-hidden drop-shadow-sm'>
-                                        <img src='./assets/vwg01.png' className='object-cover h-full w-full'></img>
+                                        <img src='./assets/jeans3.png' className='object-cover h-full w-full'></img>
                                     </div>
 
                                     <div className='w-[9rem] h-[5rem] rounded-sm flex justify-center items-center overflow-hidden drop-shadow-sm'>
-                                        <img src='./assets/vwg01.png' className='object-cover h-full w-full'></img>
+                                        <img src='./assets/jeans4.png' className='object-cover h-full w-full'></img>
                                     </div>
 
                                 </div>
@@ -364,7 +364,7 @@ function Portfolio() {
 
                 </div>
 
-                {/* ENVELOPE AT BOTTOM OF RIGHT COLUMN (EMPLOYEE TRACKER) */}
+                {/* ENVELOPE AT BOTTOM OF RIGHT COLUMN (BUCKET) */}
                 <div className={`h-56 w-96 envelope relative ${activeEnvelope === 3 ? 'active' : ''} 
                 ${activeEnvelope !== null && activeEnvelope !== 3 ? 'hover-disabled lower-z' : ''} `} onClick={(e) => handleEnvelopeClick(3, e)}>
 
@@ -398,9 +398,9 @@ function Portfolio() {
                                     
                                 {/* PROJECT DESCRIPTION AND TITLE */}
                                 <p className='bg-brown-texture w-[9rem] h-[22rem] text-[6.5px] p-[10px] gaegu-regular rounded-md'>
-                                    <span className='text-[12px] font-black'>Employee Tracker</span>
+                                    <span className='text-[12px] font-black'>Bucket</span>
                                     <br/>
-                                    Visit the <a href='https://github.com/BreeNous/Employee-Tracker'><span className='underline hover:text-white'>repository</span>
+                                    Visit the <a href='https://github.com/BreeNous/Bucket'><span className='underline hover:text-white'>repository</span>
                                     </a> for more!
                                     <br/><br/>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse tenetur beatae aliquid,
@@ -442,9 +442,9 @@ function Portfolio() {
                     {/* PROJECT NAME TAG */}
                     <div className="rounded-2xl gaegu-regular shadow-sm shadow-stone-600 absolute flex flex-col top-[4.5rem] left-[3.5rem] z-30 bg-white-texture 
                     h-[7rem] w-[17rem] justify-center items-center">
-                        <p className="text-2xl">Employee Tracker</p>
+                        <p className="text-2xl">Bucket</p>
                         <hr className="border-black border-1 w-[14.5rem] my-[.3rem]" />
-                        <p className="text-lg">management application</p>
+                        <p className="text-lg">personal application</p>
                     </div>
 
                     {/* TAPE */}
