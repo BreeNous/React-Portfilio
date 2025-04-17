@@ -418,19 +418,19 @@ function Portfolio() {
 
                                     {/* PHOTO PLACEHOLDERS */}
                                     <div className='w-[9rem] h-[5rem] rounded-sm flex justify-center items-center overflow-hidden drop-shadow-sm'>
-                                        <img src='./assets/vwg01.png' className='object-cover h-full w-full'></img>
+                                        <img src='./assets/b1.png' className='object-cover h-full w-full'></img>
                                     </div>
 
                                     <div className='w-[9rem] h-[5rem] rounded-sm flex justify-center items-center overflow-hidden drop-shadow-sm'>
-                                        <img src='./assets/vwg01.png' className='object-cover h-full w-full'></img>
+                                        <img src='./assets/b2.png' className='object-cover h-full w-full'></img>
                                     </div>
 
                                     <div className='w-[9rem] h-[5rem] rounded-sm flex justify-center items-center overflow-hidden drop-shadow-sm'>
-                                        <img src='./assets/vwg01.png' className='object-cover h-full w-full'></img>
+                                        <img src='./assets/b3.png' className='object-cover h-full w-full'></img>
                                     </div>
 
                                     <div className='w-[9rem] h-[5rem] rounded-sm flex justify-center items-center overflow-hidden drop-shadow-sm'>
-                                        <img src='./assets/vwg01.png' className='object-cover h-full w-full'></img>
+                                        <img src='./assets/b4.png' className='object-cover h-full w-full'></img>
                                     </div>
 
                                 </div>
