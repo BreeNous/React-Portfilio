@@ -12,7 +12,7 @@ function NavTabs() {
 
   return (
     <ul className="
-      // GENERAL nav flex justify-evenly
+      // ALL nav flex justify-evenly
       // SMALLSCREENS w-5/6 float-right h-24
       // MEDIUMSCREENS md:w-2/3 md:float-right md:h-28
       // LARGESCREENS lg:w-1/2 lg:float-right lg:h-full
@@ -21,13 +21,13 @@ function NavTabs() {
         <li key={path}>
           <Link to={path} className={currentPage === path ? 'nav-link active' : 'nav-link'}>
             <div className="
-              // GENERAL bg-brown-texture shadow-md shadow-stone-500 
+              // ALL bg-brown-texture shadow-md shadow-stone-500 
               // SMALLSCREENS w-7 h-20
               // MEDIUMSCREENS md:w-9 md:h-24
               // LARGESCREENS lg:w-10 lg:h-28
             ">
               <p className='
-                // GENERAL rotate-90 font-black
+                // ALL rotate-90 font-black
                 // SMALLSCREENS text-base pl-3
                 // MEDIUMSCREENS md:text-lg md:pl-4
                 // LARGESCREENS lg:text-xl lg:pl-5

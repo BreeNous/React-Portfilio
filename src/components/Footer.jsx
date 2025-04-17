@@ -3,12 +3,15 @@
 function Footer() {
 
     return (
-        <footer className="gaegu-regular flex flex-wrap md:flex-nowrap lg:flex-nowrap justify-between items-center px-6 py-2 md:py-4 lg:py-4 mt-auto w-full text-slate-950 absolute h-24 lg:h-32 md:h-32 overflow-clip bottom-0 z-10">
-
-
+        <footer className="
+        // ALL gaegu-regular flex justify-between items-center px-6 mt-auto w-full text-slate-950 absolute overflow-clip bottom-0 z-10
+        // SMALLSCREENS flex-wrap py-2 h-24
+        // MEDIUMSCREENS md:flex-nowrap md:py-4 md:h-32
+        // LARGESCREENS lg:flex-nowrap lg:py-4 lg:h-32">
 
             <ul className="
-            // SMALLSCREENS/GENERAL flex w-full ms-0 justify-center
+            // ALL flex justify-center
+            // SMALLSCREENS w-full ms-0
             // MEDIUMSCREENS md:w-1/2 md:justify-normal md:ms-5
             // LARGESCREENS lg:w-1/2 lg:justify-normal lg:ms-5">
 
@@ -51,12 +54,20 @@ function Footer() {
             </ul>
 
             <div className="
-            // SM SCREENS/ GENERAL flex w-full align-middle justify-center
+            // SM SCREENS/ ALL flex w-full align-middle justify-center z-20
             // MD SCREENS md:w-1/2 md:pr-8 md:justify-end md:h-full md:items-end md:pb-6
             // LG SCREENS lg:w-1/2 lg:pr-14 lg:justify-end">
                 
                 <p className="md:text-md lg:text-lg font-black">&copy; {new Date().getFullYear()} Breeanna's Portfolio</p>
             </div>
+
+            <img src='assets/ripped-paper-white-2.png' 
+                className="
+                // ALL absolute -bottom-10 rotate-[-10deg] drop-shadow-sm
+                // SMALLSCREENS hidden
+                // MEDIUMSCREENS md:-right-20 md:w-[27rem] md:block
+                // LARGESCREENS lg:-right-20 lg:-bottom-14 lg:w-[30rem] lg:block">
+            </img>
 
         </footer>
     );

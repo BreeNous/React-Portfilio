@@ -120,37 +120,77 @@ function Home() {
     const renderContent = () => tabContents[selectedTab]?.mainContent;
 
     return (
-        <div className="flex flex-col h-full w-full md:flex-col lg:flex-row">
-            {/* LEFT SIDE */}
-            {/* <div className="w-full md:w-full lg:w-1/2 h-1/2 md:h-1/2 lg:h-full relative"> */}
-                {/* HEY SQUARE */}
-                {/* <p className='flex justify-center items-center gaegu-regular h-[7rem] w-[15rem] text-3xl z-30 rounded-md shadow-md font-black absolute
-                left-[8rem] top-[6rem] bg-brown-texture'>
-                    Hey there!
-                </p> */}
-                
-                {/* TOP RIGHT TAPE */}
-                {/* <img className="rotate-[12deg] absolute z-40 w-34 h-[3.3rem] right-44 top-6 drop-shadow-sm" src="/assets/small-tape.png" /> */}
-                {/* PICTURE OF ME */}
-                {/* <img className="flex z-30 absolute w-[25rem] rotate-2 right-14 top-8 drop-shadow-md" src="/assets/polaroid.png" /> */}
-                {/* LEFT TAPE */}
-                {/* <img className="flex absolute z-30 w-52 h-20 bottom-40 left-2 rotate-[93deg] drop-shadow-sm" src="/assets/long-tape.png" /> */}
-                {/* WHITE HELLO SQUARE */}
-                {/* <div className="gaegu-regular -rotate-1 z-20 h-[23rem] w-[30rem] bottom-10 left-28 absolute bg-white-texture shadow-md rounded-md">
-                    <p className='text-2xl font-black relative top-[3rem] left-[4.5rem]'>It's nice to <br/> meet you, <br/>my name is <br/> Breeanna.</p>
-                </div> */}
+        <div className="
+        // ALL flex h-full w-full z-10
+        // SMALLSCREENS flex-col
+        // MEDIUMSCREENS md:flex-col
+        // LARGESCREENS lg:flex-row">
 
-                {/* GREEN INTRODUCTORY SQUARE */}
-                
-                {/* <h2 className="z-30 flex justify-center items-center text-black font-black px-5 py-5 gaegu-regular text-3xl rounded-md
-                bg-green-texture shadow-md h-[7rem] w-[29rem] absolute bottom-[5rem] left-[10.4rem]"> 
+            {/* LEFT SIDE */}
+            <div className="
+            // ALL relative top-0 left-0
+            // SMALLSCREENS w-full h-1/2
+            // MEDIUMSCREENS md:w-full md:h-1/2
+            // LARGESCREENS lg:w-1/2 lg:h-full">
+
+                {/* HEY SQUARE */}
+                <p className="
+                // ALL flex justify-center items-center gaegu-regular z-30 rounded-md shadow-md font-black absolute bg-brown-texture
+                // SMALLSCREENS top- left- h- w- text-
+                // MEDIUMSCREENS md:top- md:left- md:h- md:w- md:text-
+                // LARGESCREENS lg:top-56 lg:left-28 lg:h-28 lg:w-60 lg:text-3xl">
+                    Hey there!
+                </p>
+
+                {/* TOP RIGHT TAPE */}
+                <img src="/assets/small-tape.png" className="
+                // ALL rotate-[12deg] absolute z-40 drop-shadow-sm
+                // SMALLSCREENS w- h- right- top-
+                // MEDIUMSCREENS md:w- md:h- md:right- md:top-
+                // LARGESCREENS lg:w-34 lg:h-[3.3rem] lg:right-52 lg:top-36"/>
+
+                {/* PICTURE OF ME */}
+                <img src="/assets/polaroid.png" className="
+                // ALL flex z-30 absolute rotate-2 drop-shadow-md
+                // SMALLSCREENS w-  right- top-
+                // MEDIUMSCREENS md:w- md:right- md:top-
+                // LARGESCREENS lg:w-[25rem] lg:right-20 lg:top-36"/>
+
+                {/* LEFT TAPE */}
+                <img src="/assets/long-tape.png" className="
+                // ALL flex absolute z-30 rotate-[93deg] drop-shadow-sm
+                // SMALLSCREENS w-52 h-20 bottom-0 left-2
+                // MEDIUMSCREENS md:w-52 md:h-20 md:bottom-0 md:left-2
+                // LARGESCREENS lg:w-52 lg:h-20 lg:bottom-60 lg:left-2"/>
+
+                {/* WHITE INTRODUCTORY SQUARE */}
+                <div className="
+                // ALL gaegu-regular -rotate-1 z-20 absolute bg-white-texture shadow-md rounded-md
+                // SMALLSCREENS h-[23rem] w-[30rem] bottom-10 left-28
+                // MEDIUMSCREENS md:h-[23rem] md:w-[30rem] md:bottom-10 md:left-28
+                // LARGESCREENS lg:h-[23rem] lg:w-[30rem] lg:bottom-32 lg:left-28">
+                    <p className='
+                    // ALL font-black relative
+                    // SMALLSCREENS text-2xl top-[3rem] left-[4.5rem]
+                    // MEDIUMSCREENS md:text-2xl md:top-[3rem] md:left-[4.5rem]
+                    // LARGESCREENS lg:text-2xl lg:top-[3rem] lg:left-[4rem]'>
+                        It's nice to <br/> meet you, <br/>my name is <br/> Breeanna.
+                    </p>
+                </div>
+
+                {/* GREEN DEV TITLE SQUARE */}
+                <h2 className="
+                // ALL z-30 flex justify-center items-center text-black font-black px-5 py-5 gaegu-regular text-3xl rounded-md bg-green-texture shadow-md absolute
+                // SMALLSCREENS h-[7rem] w-[29rem] bottom-[5rem] right-[10.4rem]
+                // MEDIUMSCREENS md:h-[7rem] md:w-[29rem] md:bottom-[5rem] md:right-[10.4rem]
+                // LARGESCREENS lg:h-[7rem] lg:w-[29rem] lg:bottom-44 lg:right-28"> 
                     I'm a <span className='mx-3 underline'>full-stack</span> web developer.
                 </h2>
                 
-            </div> */}
+            </div>
 
 
-            {/* RIGHT SIDE
+            {/* RIGHT SIDE */}
             <div className="w-full md:w-full lg:w-1/2 h-1/2 md:h-1/2 lg:h-full relative font-black z-10">
                 {/* NAV BAR */}
                 {/* <div className="self-center items-center bg-green-texture rounded-md mt-12 flex text-xl justify-center h-14 w-4/5 shadow-md gaegu-regular"> */}
@@ -181,7 +221,7 @@ function Home() {
                         </ul>
                     </div>
                 </div> */}
-            {/* </div> */}
+            </div>
 
 
         </div>
