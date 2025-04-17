@@ -92,19 +92,12 @@ html, body {
 }
 
 .nav-link.active > div > p {
-    padding-left: 39px;
+    padding-left: 28px;
     transition: .3s ease-in-out;
     color: white;
 }
 
 /* CONTENT ADJUSTMENTS */
-
-.Header {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    height: 15vh;
-}
 
 .Outlet {
     height: 75vh;

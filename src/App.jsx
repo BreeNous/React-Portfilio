@@ -27,14 +27,10 @@ function App() {
       <BookShadow />
       <img src='assets/ripped-paper-white-2.png' 
         className="
-        // GENERAL
-        absolute -bottom-10 rotate-[-10deg] drop-shadow-sm
-        // SMALLSCREENS
-        hidden
-        // MEDIUMSCREENS
-        md:-right-20 md:w-[27rem] md:block
-        // LARGESCREENS
-        lg:-right-20 lg:w-[30rem] lg:block">
+        // GENERAL absolute -bottom-10 rotate-[-10deg] drop-shadow-sm
+        // SMALLSCREENS hidden
+        // MEDIUMSCREENS md:-right-20 md:w-[27rem] md:block
+        // LARGESCREENS lg:-right-20 lg:-bottom-14 lg:w-[30rem] lg:block">
       </img>
     </div>
   );
