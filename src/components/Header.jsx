@@ -2,7 +2,7 @@ import NavTabs from './Navigation';
 
 function Header({ onTabChange }) {
   return (
-    <header className="absolute top-0 w-full gaegu-regular flex justify-between h-32 z-20 text-xl">
+    <header className="fixed top-0 w-full gaegu-regular flex justify-between h-32 z-20 text-xl">
 
       <div className='w-1/2 z-10 h-full'>
         <img src='/assets/paper-clip.png' alt="Paper Clip" className='

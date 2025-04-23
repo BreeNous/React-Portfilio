@@ -5,7 +5,7 @@ function Footer() {
     return (
         <footer className="
         // ALL_SCREENS: gaegu-regular flex justify-between items-center px-6 mt-auto w-full text-slate-950 absolute overflow-clip bottom-0 z-10
-        // SM_SCREENS: flex-wrap py-2 h-24
+        // SM_SCREENS: flex-wrap py-4 h-32
         // MD_SCREENS: md:flex-nowrap md:py-4 md:h-32
         // LG_SCREENS: lg:flex-nowrap lg:py-4 lg:h-28
         // XL_SCREENS: xl:flex-nowrap xl:py-4 xl:h-32">
@@ -20,7 +20,7 @@ function Footer() {
                 <li className="flex justify-center items-center">
                     <a href="https://github.com/BreeNous" className="
                     // ALL_SCREENS:  text-slate-950 hover:text-amber-50 bg-brown-texture rounded-full flex items-center justify-center shadow-sm shadow-stone-500
-                    // SM_SCREENS: w-10 h-10
+                    // SM_SCREENS: w-9 h-9
                     // MD_SCREENS: md:w-12 md:h-12
                     // LG_SCREENS: lg:w-10 lg:h-10
                     // XL_SCREENS: xl:w-12 xl:h-12">
@@ -35,7 +35,7 @@ function Footer() {
                 flex justify-center items-center">
                     <a href="https://www.linkedin.com/in/breeanna-nouskhajian-259658318/" className="
                     // ALL_SCREENS: text-slate-950 hover:text-amber-50 ms-5 bg-brown-texture rounded-full flex items-center justify-center shadow-sm shadow-stone-500
-                    // SM_SCREENS: w-10 h-10
+                    // SM_SCREENS: w-9 h-9
                     // MD_SCREENS: md:w-12 md:h-12
                     // LG_SCREENS: lg:w-10 lg:h-10
                     // XL_SCREENS: xl:w-12 xl:h-12">
@@ -49,7 +49,7 @@ function Footer() {
                 <li className="flex justify-center items-center">
                     <a href="https://discord.com/" className="
                     // ALL_SCREENS:  text-slate-950 hover:text-amber-50 ms-5 bg-brown-texture rounded-full flex items-center justify-center shadow-sm shadow-stone-500
-                    // SM_SCREENS: w-10 h-10
+                    // SM_SCREENS: w-9 h-9
                     // MD_SCREENS: md:w-12 md:h-12
                     // LG_SCREENS: lg:w-10 lg:h-10
                     // XL_SCREENS: xl:w-12 xl:h-12">
@@ -63,7 +63,7 @@ function Footer() {
                 <li className="flex justify-center items-center">
                     <a href="https://slack.com/" className="
                     // ALL_SCREENS: text-slate-950 hover:text-amber-50 ms-5 bg-brown-texture rounded-full flex items-center justify-center shadow-sm shadow-stone-500
-                    // SM_SCREENS: h-10 w-10
+                    // SM_SCREENS: w-9 h-9
                     // MD_SCREENS: md:w-12 md:h-12
                     // LG_SCREENS: lg:w-10 lg:h-10 
                     // XL_SCREENS: xl:w-12 xl:h-12">
@@ -78,10 +78,10 @@ function Footer() {
 
             <div className="
             // ALL_SCREENS: flex w-full align-middle justify-center z-20
-            // SM SCREENS:
-            // MD SCREENS: md:w-1/2 md:pr-8 md:justify-end md:h-full md:items-end md:pb-6
-            // LG SCREENS: lg:w-1/2 lg:pr-8 lg:justify-end mt-5
-            // XL_SCREENS: xl:w-1/2 xl:pr-14 xl:justify-end">
+            // SM SCREENS: mt-2
+            // MD SCREENS: md:w-1/2 md:pr-8 md:justify-end md:h-full md:items-end md:pb-6 md:mt-5
+            // LG SCREENS: lg:w-1/2 lg:pr-8 lg:justify-end lg:mt-5
+            // XL_SCREENS: xl:w-1/2 xl:pr-14 xl:justify-end xl:mt-5">
                 <p className="
                 // ALL_SCREENS: font-black
                 // SM_SCREENS: text-lg
