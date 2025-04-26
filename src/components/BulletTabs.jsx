@@ -32,7 +32,7 @@ const BulletTabs = ({ onSelect }) => {
         <div className='w-full flex justify-center font-bold'>
             {items.map(item => (
                 <div 
-                    className={`w-52 flex justify-center items-center ${hoveredId === item.id ? 'text-[27px]' : 'text-2xl'}`} 
+                    className={`w-52 flex justify-center items-center ${hoveredId === item.id ? 'text-sm' : 'text-base'}`} 
                     style={textStyle}
                     key={item.id} 
                     onClick={() => handleClick(item.id)}

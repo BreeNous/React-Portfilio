@@ -8,87 +8,37 @@ function Home() {
 
     const tabContents = {
         1: {
-            listItems: ['HTML5', 'React', 'CSS', 'JavaScript', 'jQuery', 'Bootstrap', 'Tailwind', 'Handlebars', 'Materialize'],
-            mainContent: (
-                <>
-                    {/* FRONT-END CONTENT */}
-
-                    {/* SMALL TAPE */}
-                    <img className='flex w-34 h-[3.3rem] z-50 -rotate-6 absolute top-10 left-[5.3rem] drop-shadow-sm' src='assets/small-tape.png' />
-                    {/* MAIN PICTURE */}
-                    <img src='/assets/front-end-drawing.png' className='flex w-[22rem] z-40 rounded-md absolute top-[1rem] left-[6rem] drop-shadow-md' />
-                    {/* ACCENT STICKER */}
-                    <img src='/assets/green-lightbulb.png' className='drop-shadow-md w-[7rem] z-50 -rotate-3 absolute right-[2rem] top-[14rem]'/>
-                    {/* TITLE CARD */}
-                    <div className='flex bg-white-texture w-64 h-44 z-30 -rotate-1 absolute right-12 bottom-20 rounded-md shadow-md justify-center items-center'>
-                        <h1 className='gaegu-regular text-3xl font-black'>Front-end</h1>
-                    </div>
-                    {/* ACCENT IMAGE */}
-                    <div className='flex w-50 h-36 z-20 rotate-2 absolute rounded-md overflow-hidden left-[6rem] bottom-[7.5rem] shadow-md'>
-                        <img src='/assets/frontend-code.jpg' />
-                    </div>
-                    {/* SMALL GREEN STICKER */}
-                    <div className='bg-green-texture drop-shadow-md rounded-full w-[4rem] h-[4rem] z-50 absolute bottom-[11.5rem] left-[10rem]'></div>
-                    {/* LONG TAPE */}
-                    <img className='flex w-52 h-20 z-50 rotate-[6deg] absolute bottom-9 right-16 drop-shadow-sm' src='assets/long-tape.png' />
-                </>
-            )
+          listItems: ['HTML5', 'React', 'CSS', 'JavaScript', 'jQuery', 'Bootstrap', 'Tailwind', 'Handlebars', 'Materialize'],
+          props: {
+            mainImage: '/assets/front-end-drawing.png',
+            mainImageAlt: 'Front-end drawing',
+            accentSticker: '/assets/green-lightbulb.png',
+            titleLabel: 'Front-end',
+            accentImg: '/assets/frontend-code.jpg',
+          },
         },
         2: {
-            listItems: ['Node.js', 'Express', 'MongoDB', 'SQL', 'GraphQL', 'Python', 'Django', 'Flask', 'Ruby on Rails'],
-            mainContent: (
-                <>
-                    {/* BACK-END CONTENT */}
-
-                    {/* SMALL TAPE */}
-                    <img className='flex w-34 h-[3.3rem] z-50 -rotate-6 absolute top-10 left-[5.3rem] drop-shadow-sm' src='assets/small-tape.png' />
-                    {/* MAIN PICTURE */}
-                    <img src='/assets/back-end-drawing.png' className='flex w-[22rem] z-40 rounded-md absolute top-[1rem] left-[6rem] drop-shadow-md' />
-                    {/* ACCENT STICKER */}
-                    <img src='/assets/green-files.png' className='drop-shadow-md w-[8rem] z-50 absolute right-[2.5rem] rotate-[-10deg] top-[15.4rem]'/>
-                    {/* TITLE CARD */}
-                    <div className='flex bg-white-texture w-64 h-44 z-30 -rotate-1 absolute right-12 bottom-20 rounded-md shadow-md justify-center items-center'>
-                        <h1 className='gaegu-regular text-3xl font-black'>Back-end</h1>
-                    </div>
-                    {/* ACCENT IMAGE */}
-                    <div className='flex w-50 h-36 z-20 rotate-2 absolute rounded-md overflow-hidden left-[6rem] bottom-[7.5rem] shadow-md'>
-                        <img src='/assets/backend-code.jpg' />
-                    </div>
-                    {/* SMALL GREEN STICKER */}
-                    <div className='bg-green-texture drop-shadow-md rounded-full w-[4rem] h-[4rem] z-50 absolute bottom-[11.5rem] left-[10rem]'></div>
-                    {/* LONG TAPE */}
-                    <img className='flex w-52 h-20 z-50 rotate-[6deg] absolute bottom-9 right-16 drop-shadow-sm' src='assets/long-tape.png' />
-                </>
-            )
+          listItems: ['Node.js', 'Express', 'MongoDB', 'SQL', 'GraphQL', 'Python', 'Django', 'Flask', 'Ruby on Rails'],
+          props: {
+            mainImage: '/assets/back-end-drawing.png',
+            mainImageAlt: 'Back-end drawing',
+            accentSticker: '/assets/green-files.png',
+            titleLabel: 'Back-end',
+            accentImg: '/assets/backend-code.jpg',
+          },
         },
         3: {
-            listItems: ['Git', 'Docker', 'Webpack', 'Babel', 'ESLint', 'Prettier', 'Jenkins', 'CircleCI', 'AWS'],
-            mainContent: (
-                <>
-                    {/* TOOLS/ETC CONTENT */}
-
-                    {/* SMALL TAPE */}
-                    <img className='flex w-34 h-[3.3rem] z-50 -rotate-6 absolute top-10 left-[5.3rem] drop-shadow-sm' src='assets/small-tape.png' />
-                    {/* MAIN PICTURE */}
-                    <img src='/assets/tools-drawing.png' className='flex w-[22rem] z-40 rounded-md absolute top-[1rem] left-[6rem] drop-shadow-md' />
-                    {/* ACCENT STICKER */}
-                    <img src='/assets/green-tool.png' className='drop-shadow-md w-[7rem] h-[10rem] z-50 absolute right-[1.5rem] rotate-[-20deg] top-[14rem]'/>
-                    {/* TITLE CARD */}
-                    <div className='flex bg-white-texture w-64 h-44 z-30 -rotate-1 absolute right-12 bottom-20 rounded-md shadow-md justify-center items-center'>
-                        <h1 className='gaegu-regular text-3xl font-black'>Tools / etc</h1>
-                    </div>
-                    {/* ACCENT IMAGE */}
-                    <div className='flex w-50 h-36 z-20 rotate-2 absolute rounded-md overflow-hidden left-[6rem] bottom-[7.5rem] shadow-md'>
-                        <img src='/assets/tools-code.jpg' />
-                    </div>
-                    {/* SMALL GREEN STICKER */}
-                    <div className='bg-green-texture drop-shadow-md rounded-full w-[4rem] h-[4rem] z-50 absolute bottom-[11.5rem] left-[10rem]'></div>
-                    {/* LONG TAPE */}
-                    <img className='flex w-52 h-20 z-50 rotate-[6deg] absolute bottom-9 right-16 drop-shadow-sm' src='assets/long-tape.png' />
-                </>
-            )
-        }
-    };
+          listItems: ['Git', 'Docker', 'Webpack', 'Babel', 'ESLint', 'Prettier', 'Jenkins', 'CircleCI', 'AWS'],
+          props: {
+            mainImage: '/assets/tools-drawing.png',
+            mainImageAlt: 'Tools drawing',
+            accentSticker: '/assets/green-tool.png',
+            titleLabel: 'Tools / etc',
+            accentImg: '/assets/tools-code.jpg',
+          },
+        },
+      };
+      
 
     // Animate items when the tab is changed
     useEffect(() => {
@@ -102,6 +52,42 @@ function Home() {
             });
         }
     }, [selectedTab]);
+
+    const renderTabLayout = ({ mainImage, mainImageAlt, accentSticker, titleLabel, accentImg }) => (
+        <>
+            {/* container to keep tape element visually stuck to top of image  */}
+            <div className='relative w-full flex justify-center'>
+
+                {/* MAIN PICTURE */}
+                <img src={mainImage} alt={mainImageAlt} className='w-[90%] absolute h-auto max-w-[19rem] z-40 rounded-md drop-shadow-md' />
+                {/* SMALL TAPE */}
+                <img src='assets/small-tape.png' className='absolute w-2/5 max-w-[7rem] h-auto -translate-x-3/4 -top-4 z-50 -rotate-6 drop-shadow-sm'/>
+                {/* GREEN STICKER */}
+                <div className='absolute w-[10vw] h-[10vw] rounded-full bg-green-texture z-50 left-0 drop-shadow-md'></div>
+
+            </div>
+      
+            {/* ACCENT STICKER */}
+            <img src={accentSticker} className='absolute z-50 drop-shadow-md w-2/5 bottom-1/4 max-w-[6rem] -right-2' />
+      
+            {/* container to keep tape element visually stuck to bottom of title card  */}
+            <div className='relative w-full h-full flex justify-center items-end'>
+                {/* TITLE CARD */}
+                <div className='absolute right-0 bottom-0 z-30 bg-white-texture shadow-md -rotate-1 w-5/6 max-w-[15rem] h-2/5 flex items-center justify-center rounded-md'>
+                    <h1 className='gaegu-regular text-base font-black'>{titleLabel}</h1>
+                </div>
+                {/* LONG TAPE */}
+                <img className='absolute z-50 translate-y-2/5 w-2/3 max-w-[11rem] rotate-[6deg] drop-shadow-sm' src='assets/long-tape.png' />
+            </div>
+      
+            {/* ACCENT IMAGE */}
+            <div className='absolute top-0 h-full w-full items-center flex'>
+                <img src={accentImg} className='w-5/6 h-1/3 object-cover absolute left-0 z-20 rotate-2 overflow-hidden rounded-md shadow-md' />
+            </div>    
+            
+        </>
+      );
+      
 
 
     const getHighlightClass = () => {
@@ -117,16 +103,14 @@ function Home() {
         }
     };
 
-    const renderContent = () => tabContents[selectedTab]?.mainContent;
-
     return (
         <div className="
         // ALL_SCREENS: flex h-full w-full
-        // XS_SCREENS: flex-col
-        // SM_SCREENS: sm:flex-col
-        // MD_SCREENS: md:flex-col
-        // LG_SCREENS: lg:flex-row
-        // XL_SCREENS: xl:flex-row ">
+        // XS_SCREENS: flex-col 
+        // SM_SCREENS: sm:flex-col sm:bg-red-300
+        // MD_SCREENS: md:flex-col md:bg-blue-300
+        // LG_SCREENS: lg:flex-row lg:bg-green-200
+        // XL_SCREENS: xl:flex-row xl:bg-yellow-200">
 
             {/* LEFT SIDE GRID */}
             <div className="
@@ -214,10 +198,47 @@ function Home() {
             
 
 
-            {/* RIGHT SIDE */}
-            <div className="w-full md:w-full lg:w-1/2 h-1/2 md:h-1/2 lg:h-full relative font-black z-10">
+            {/* RIGHT SIDE GRID */}
+            <div className="
+            // ALL_SCREENS: relative transition-all right-0 top-0 duration-300 ease-in-out grid grid-cols-12 grid-rows-12
+            // XS_SCREENS: w-full max-h-[85vh] min-h-[85vh]
+            // LG_SCREENS: lg:w-1/2 lg:h-full
+            // XL_SCREENS: xl:w-1/2 xl:h-full">
+
+                {/* NAV BAR CONTAINER */}
+                <div className='relative self-center items-center bg-green-texture rounded-md flex justify-center h-4/5 w-full shadow-md gaegu-regular text-base
+                col-start-2 col-end-12 row-start-1 top-3'>
+                    <BulletTabs onSelect={setSelectedTab} />
+                </div>
+
+                {/* STATE SPECIFIC CONTENT CONTAINER */}
+                <div className='bg-white col-start-2 col-end-8 row-start-3 row-end-10 relative top-5'>
+                    {renderTabLayout(tabContents[selectedTab].props)}
+                </div>
+
+
+                {/* LANGUAGES LIST CONTAINER */}
+                <div className='bg-amber-50 col-start-8 col-end-12 row-start-3 row-end-10 relative top-5'>
+
+                    {/* <ul className="flex flex-col font-black text-2xl items-start gaegu-regular absolute bottom-[8.5rem]">
+                        {tabContents[selectedTab]?.listItems.map((item, index) => (
+
+                            <li key={index} className='pb-2 relative'>
+
+                                <span className={`highlight ${animatedItems.includes(index) ? `highlight-active ${getHighlightClass()}` : ''}`}>
+                                    {item}
+                                </span>
+
+                            </li>
+                        ))}
+
+                    </ul> */}
+
+                </div>
+
+
                 {/* NAV BAR */}
-                {/* <div className="self-center items-center bg-green-texture rounded-md mt-12 flex text-xl justify-center h-14 w-4/5 shadow-md gaegu-regular"> */}
+                {/* <div className="self-center items-center bg-green-texture rounded-md mt-12 flex text-xl justify-center h-full w-full shadow-md gaegu-regular"> */}
                     {/* <BulletTabs onSelect={setSelectedTab} /> */}
                 {/* </div> */}
                 {/* MAIN CONTENT BELOW NAV */}
