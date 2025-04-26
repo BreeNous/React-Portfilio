@@ -126,188 +126,92 @@ function Home() {
         // SM_SCREENS: sm:flex-col
         // MD_SCREENS: md:flex-col
         // LG_SCREENS: lg:flex-row
-        // XL_SCREENS: xl:flex-row">
+        // XL_SCREENS: xl:flex-row ">
 
-            {/* LEFT SIDE */}
+            {/* LEFT SIDE GRID */}
             <div className="
-            // ALL_SCREENS: relative transition-all left-0 top-0 duration-300 ease-in-out
+            // ALL_SCREENS: relative transition-all left-0 top-0 duration-300 ease-in-out grid grid-cols-12 grid-rows-12
             // XS_SCREENS: w-full min-h-screen max-h-screen
-            // SM_SCREENS: sm:w-full sm:min-h-screen sm:max-h-screen
-            // MD_SCREENS: md:w-full md:min-h-screen md:max-h-screen
             // LG_SCREENS: lg:w-1/2 lg:h-full
             // XL_SCREENS: xl:w-1/2 xl:h-full">
 
-                <div class="
-                // ALL_SCREENS: grid w-full min-h-screen max-h-screen
-                // XS_SCREENS: grid-cols-2 grid-rows-4
-                // SM_SCREENS: sm:bg-slate-500 sm:grid-cols-2 sm:grid-rows-3
-                // MD_SCREENS:
-                // LG_SCREENS: lg:
-                // XL_SCREENS: xl:
-                 ">
+                {/* HEY SQUARE CONTAINER */}
+                <div className='flex items-center gaegu-regular rounded-md shadow-md font-black relative bg-brown-texture z-20 w-full h-full text-xl justify-center pb-1 
+                row-start-3 row-end-4 col-start-3 col-end-8
+                sm:row-start-4 sm:row-end-5 sm:justify-normal sm:top-3
+                md:row-end-6 md:col-end-9 md:h-2/3 md:col-start-4 md:text-2xl md:right-5
+                lg:col-start-3 lg:col-end-8 lg:row-end-5 lg:h-full lg:right-3
+                xl:col-start-3'>
+                      
+                    <p className='w-3/4 flex justify-center
+                    md:w-4/5
+                    lg:pl-[1.5vw] lg:w-3/4'>
+                        Hey there!
+                    </p>  
+                       
+                </div>
+                
+                {/* PIC OF ME CONTAINER */}
+                <div className='z-20 flex justify-end h-full w-full relative items-start rotate-1 
+                row-start-4 row-end-8 col-start-4 col-end-11 
+                sm:row-start-3 sm:row-end-8 sm:col-start-6 sm:top-4
+                md:row-end-8 md:top-7
+                lg:col-start-5 lg:col-end-11 lg:h-5/6 lg:left-5
+                xl:col-start-6 xl:col-end-11 xl:row-end-9'>
 
-                    {/* HEY SQUARE CONTAINER */}
-                    <div class=" 
-                    // ALL_SCREENS: bg-amber-50 relative
-                    // XS_SCREENS: col-start-1 col-end-3
-                    // SM_SCREENS: sm:col-start-1 sm:col-end-2
-                    // MD_SCREENS: md:
-                    // LG_SCREENS: lg:
-                    // XL_SCREENS: xl:">
-                        {/* HEY SQUARE */}
-                        <div class="
-                        // ALL_SCREENS:
-                        // XS_SCREENS:
-                        // SM_SCREENS: sm:
-                        // MD_SCREENS: md:
-                        // LG_SCREENS: lg:
-                        // XL_SCREENS: xl:
-                        absolute w-full h-full z-10 bg-yellow-800"></div>
-                    </div>
+                    {/* container to keep tape element visually stuck to top of image */}
+                    <div className='h-full relative '>
 
-                    {/* PIC OF ME CONTAINER */}
-                    <div class="
-                    // ALL_SCREENS: relative flex items-center justify-center
-                    // XS_SCREENS: col-start-1 col-end-3 row-start-2 row-end-4
-                    // SM_SCREENS: sm:col-start-2 sm:col-end-3 sm:row-start-1 sm:row-end-3
-                    // MD_SCREENS: md:
-                    // LG_SCREENS: lg:
-                    // XL_SCREENS: xl:">
                         {/* PIC OF ME */}
-                        <img src="/assets/polaroid.png" alt="polaroid" className='
-                        // ALL_SCREENS:
-                        // XS_SCREENS:
-                        // SM_SCREENS: sm:
-                        // MD_SCREENS: md:
-                        // LG_SCREENS: lg:
-                        // XL_SCREENS: xl:
-                        z-20 absolute h-auto max-h-[90%] max-w-auto top-[] 
-                        ' />
-                        
-                    </div>
+                        <img src='/assets/polaroid.png' alt='polaroid' className='max-h-full w-auto object-contain drop-shadow-lg'></img> 
 
-                    {/* WHITE SQUARE CONTAINER */}
-                    <div class="
-                    // ALL_SCREENS: bg-amber-50 relative
-                    // XS_SCREENS: col-start-1 col-end-2 row-start-2 row-end-4
-                    // SM_SCREENS: sm:col-start-1 sm:col-end-2 sm:row-start-2 sm:row-end-4
-                    // MD_SCREENS: md:
-                    // LG_SCREENS: lg:
-                    // XL_SCREENS: xl:">
-                        {/* WHITE SQUARE */}
-                        <div class="
-                        // ALL_SCREENS:
-                        // XS_SCREENS:
-                        // SM_SCREENS: sm:
-                        // MD_SCREENS: md:
-                        // LG_SCREENS: lg:
-                        // XL_SCREENS: xl:
-                        absolute h-full w-full z-10  bg-slate-300"></div>
-                    </div>
+                        {/* SMALL TAPE DECORATION */}
+                        <img src="/assets/small-tape.png" alt="Tape" className="
+                        absolute -top-[7%] left-1/2 -translate-x-1/2 w-2/5 rotate-[8deg] z-30 drop-shadow-sm
+                        "/>
 
-                    {/* FULL STACK SQUARE CONTAINER */}
-                    <div class="
-                    // ALL_SCREENS: bg-amber-50 relative 
-                    // XS_SCREENS: col-start-2 col-end-3 row-start-4 row-end-5
-                    // SM_SCREENS: sm:col-start-2 sm:col-end-3 sm:row-start-3 sm:row-end-4
-                    // MD_SCREENS: md:
-                    // LG_SCREENS: lg:
-                    // XL_SCREENS: xl:">
-                        {/* FULL STACK SQUARE */}
-                        <div class="
-                        // ALL_SCREENS:
-                        // XS_SCREENS:
-                        // SM_SCREENS: sm:
-                        // MD_SCREENS: md:
-                        // LG_SCREENS: lg:
-                        // XL_SCREENS: xl:
-                        absolute top-0 left-0 w-full bottom-4 h-full z-20  bg-green-800"></div>
                     </div>
-
-                    
                 </div>
 
-
-                {/* HEY SQUARE */}
-                {/* <p className="
-                // ALL_SCREENS:_SCREENS: flex items-center gaegu-regular rounded-md shadow-md font-black absolute bg-brown-texture z-30
-                // SM_SCREENS: w-[60vw] h-[10%] text-[5vw] top-[18.5vh] right-[27vw] justify-center pb-1
-                // MD_SCREENS: md:w-[45vw] md:h-[10%] md:text-[4vw] md:top-[22vh] md:right-[40vw] md:justify-normal md:pl-20 md:pb-0
-                // LG_SCREENS: lg:w-[20vw] lg:h-[8%] lg:text-[1.8vw] lg:top-[29vh] lg:right-[23vw] lg:pl-11 lg:justify-normal
-                // XL_SCREENS: xl:w-[25vw] xl:h-[8%] xl:text-[1.8vw] xl:top-[28%] xl:right-[34%] xl:pl-16 xl:justify-normal ">
-                    Hey there!
-                </p> */}
-                
-                {/* PIC OF ME */}
-                {/* <div style={{ backgroundImage: "url('/assets/polaroid.png')" }} className="
-                // ALL_SCREENS: absolute aspect-[3/4] bg-cover bg-center bg-no-repeat z-30 rotate-2 drop-shadow-md
-                // SM_SCREENS: h-[37%] max-h-[37vh] bottom-[37%] right-[15%]
-                // MD_SCREENS: md:h-[45%] md:max-h-[45vh] md:bottom-[33%] md:right-[15%]
-                // LG_SCREENS: lg:w-[40%] lg:bottom-[39%] lg:right-[18%] lg:max-h-[19.5rem] lg:h-auto
-                // XL_SCREENS: xl:w-[33%] xl:min-w-[14rem] xl:bottom-[39%] xl:right-[17%] xl:max-w-[15rem] xl:h-auto">
-
-                    {/* SMALL TAPE DECORATION */}
-                    {/* <img src="/assets/small-tape.png" alt="Tape" className="
-                    // ALL_SCREENS: drop-shadow-sm absolute -translate-x-1/2 z-10 
-                    // SM_SCREENS: w-[22vw] right-[-30%] rotate-[50deg] top-3
-                    // MD_SCREENS: md:w-[14vw] md:right-[5%] md:rotate-[8deg] md:-top-2
-                    // LG_SCREENS: lg:w-[7.5vw] lg:left-1/2 lg:rotate-[8deg] lg:-top-2
-                    // XL_SCREENS: xl:w-[7.5vw] xl:left-1/2 xl:rotate-[8deg] xl:-top-2"/>
-
-                </div> */}
-
-                {/* WHITE INTRODUCTORY SQUARE CONTAINER */}
-                {/* <div className="
-                // ALL_SCREENS: gaegu-regular -rotate-1 z-20 relative bg-white-texture shadow-md rounded-md flex
-                // SM_SCREENS: w-[60vw] h-[35vh] top-[40vh] left-[13vw]
-                // MD_SCREENS: md:w-[60vw] md:h-[35vh] md:top-[37vh] md:left-[13vw]
-                // LG_SCREENS: lg:w-[30vw] lg:h-[40vh] lg:top-[40vh] lg:left-[7vw]
-                // XL_SCREENS: xl:w-[30vw] xl:h-[40vh]] xl:top-[40vh] xl:left-[8vw]">
+                {/* WHITE INTO SQUARE CONTAINER CONTAINER */}
+                <div className='gaegu-regular -rotate-1 z-10 relative bg-white-texture shadow-md rounded-md flex h-full self-start
+                row-start-7 row-end-11 col-start-3 col-end-9 
+                sm:row-start-6 sm:col-end-8
+                md:w-5/6
+                lg:col-start-3 lg:col-end-9 lg:w-full lg:right-3
+                '>
 
                     {/* LEFT TAPE */}
-                    {/* <img src="/assets/long-tape.png" className="
-                    // ALL_SCREENS: absolute z-30 rotate-[97deg] drop-shadow-sm
-                    // SM_SCREENS: w-[58%] bottom-[8.5rem] -left-[29%]
-                    // MD_SCREENS: md:w-[40%] md:bottom-[5.5rem] md:-left-[20%]
-                    // LG_SCREENS: lg:w-[40%] lg:bottom-[6.5rem] lg:-left-[20%]
-                    // XL_SCREENS: xl:w-[40%] xl:bottom-[6.5rem] xl:-left-[20%]"/> */}
+                    <img src="/assets/long-tape.png" className="
+                    // ALL_SCREENS: absolute z-30 rotate-[97deg] drop-shadow-sm w-3/4 max-w-[140px] bottom-[6rem] -translate-x-1/2"/>
 
                     {/* GREETING TEXT */}
-                    {/* <div className='w-full h-full flex justify-center items-center'>
-                        <p className='
-                        // ALL_SCREENS: font-black absolute text-center flex
-                       
-                        // MD_SCREENS: md:text-[3vh] md:top-auto md:left-auto md:w-[45%] md:h-auto
-                        // LG_SCREENS: lg:text-[1.5vw] lg:top-[2.2rem] lg:ml-0 lg:right-auto lg:left-[4vw] lg:w-[27%] lg:h-[40%] lg:block
-                        // XL_SCREENS: xl:text-[1.4vw] xl:top-[6vh] xl:left-[4vw] xl:right-auto xl:w-[35%] xl:h-[35%] xl:block'>
-                            It's nice to meet you, my name is <br className='hidden'/> Breeanna.
-                        </p>
-                    </div> */}
+                    <p className='text-[clamp(.8rem,3.7vw,1rem)] font-black text-center flex leading-relaxed w-full h-1/3 px-10 self-center items-start 
+                     sm:h-1/2 sm:text-lg sm:ml-[5vw] sm:w-full sm:pr-[40%] sm:pl-0 sm:items-center sm:self-start
+                     md: md:px-14 md:mx-0  md:w-full
+                     lg:pl-8 lg:pr-28 lg:text-base
+                     xl:w-2/5 xl:px-0 xl:ml-[3.5vw] xl:text-lg xl:mt-3'>
+                        It's nice to meet you, my name is Breeanna.
+                    </p>
+                        
+                </div>
 
-                    {/* // SM_SCREENS: text-[3.5vw] bottom-[10%] left-[12vw] w-[60%] h-[20%] */}
-
-                    {/* GREEN DEV TITLE SQUARE */}
-                    {/* <div className='
-                        // ALL_SCREENS: z-20 rounded-md bg-green-texture shadow-md absolute rotate-1
-                        // SM_SCREENS: w-[63vw] h-[30%] top-[33vh] -right-[17%]
-                        // MD_SCREENS: 
-                        // LG_SCREENS: lg:w-[31vw] lg:h-[32%] lg:top-[23vh] lg:-right-[16%]
-                        // XL_SCREENS: xl:w-[101%] xl:h-[32%]] xl:top-[57%] xl:-right-[13%]'>
-                        <p className='
-                            // ALL_SCREENS: text-black font-black gaegu-regular flex justify-center items-center h-full
-                            // SM_SCREENS: text-[4vw]
-                            // MD_SCREENS:
-                            // LG_SCREENS: lg:text-[1.8vw]
-                            // XL_SCREENS: xl:text-[1.8vw]'>
-                            I'm a <span className='mx-[3%] underline'>full-stack</span> web developer.
-                        </p>
-                    </div>
-
-                </div> */}
-
-                
+                {/* FULL STACK GREEN SQUARE CONTAINER */}
+                <div className='bg-green-texture z-30 rounded-md shadow-md rotate-1 flex items-center text-center px-5 text-black font-black gaegu-regular text-[clamp(.8rem,3.7vw,1.1rem)]
+                relative -top-4
+                row-start-10 row-end-11 col-start-4 col-end-11
+                sm:row-start-8 sm:row-end-10 sm:col-start-4 sm:top-4 sm:h-3/4 sm:self-end sm:text-xl
+                md:col-end-10
+                lg:col-start-4 lg:col-end-12 lg:right-4 lg:h-4/5 
+                xl:col-start-4 xl:w-[95%] xl:top-8 xl:text-2xl'>
+                    
+                    <p className='w-full'>I'm a <span className='mx-[1%] underline'>full-stack</span> web developer.</p>
+                        
+                </div>
                 
             </div>
+
+            
 
 
             {/* RIGHT SIDE */}
