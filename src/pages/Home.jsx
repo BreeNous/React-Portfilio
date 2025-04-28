@@ -55,35 +55,48 @@ function Home() {
 
     const renderTabLayout = ({ mainImage, mainImageAlt, accentSticker, titleLabel, accentImg }) => (
         <>
-            {/* container to keep tape element visually stuck to top of image  */}
-            <div className='relative w-full flex justify-center'>
 
-                {/* MAIN PICTURE */}
-                <img src={mainImage} alt={mainImageAlt} className='w-[90%] absolute h-auto max-w-[19rem] z-40 rounded-md drop-shadow-md' />
-                {/* SMALL TAPE */}
-                <img src='assets/small-tape.png' className='absolute w-2/5 max-w-[7rem] h-auto -translate-x-3/4 -top-4 z-50 -rotate-6 drop-shadow-sm'/>
-                {/* GREEN STICKER */}
-                <div className='absolute w-[10vw] h-[10vw] rounded-full bg-green-texture z-50 left-0 drop-shadow-md'></div>
+            <div className='h-full w-full grid grid-col-5 grid-rows-5'>
 
-            </div>
-      
-            {/* ACCENT STICKER */}
-            <img src={accentSticker} className='absolute z-50 drop-shadow-md w-2/5 bottom-1/4 max-w-[6rem] -right-2' />
-      
-            {/* container to keep tape element visually stuck to bottom of title card  */}
-            <div className='relative w-full h-full flex justify-center items-end'>
-                {/* TITLE CARD */}
-                <div className='absolute right-0 bottom-0 z-30 bg-white-texture shadow-md -rotate-1 w-5/6 max-w-[15rem] h-2/5 flex items-center justify-center rounded-md'>
-                    <h1 className='gaegu-regular text-base font-black'>{titleLabel}</h1>
+                {/* container to keep tape element visually stuck to top of image  */}
+                <div className='relative col-start-1 col-end-6 row-start-1 row-end-4 z-20 flex justify-center'>
+
+                    {/* MAIN PICTURE */}
+                    <img src={mainImage} alt={mainImageAlt} className='h-auto absolute w-[90%] max-w-[19rem]  rounded-md drop-shadow-md' />
+
+                    
+                    {/* SMALL TAPE */}
+                    <img src='assets/small-tape.png' className='absolute w-1/2 max-w-[7rem] -top-5 -left-[2%] z-50 -rotate-6 drop-shadow-sm'/>
+                
+
+                
+                    {/* GREEN STICKER */}
+                    <div className='absolute top-[32vw] left-2 w-[10vw] h-[10vw] max-w-[3rem] max-h-[3rem] rounded-full bg-green-texture z-50 drop-shadow-md'></div>
+
                 </div>
-                {/* LONG TAPE */}
-                <img className='absolute z-50 translate-y-2/5 w-2/3 max-w-[11rem] rotate-[6deg] drop-shadow-sm' src='assets/long-tape.png' />
-            </div>
-      
-            {/* ACCENT IMAGE */}
-            <div className='absolute top-0 h-full w-full items-center flex'>
-                <img src={accentImg} className='w-5/6 h-1/3 object-cover absolute left-0 z-20 rotate-2 overflow-hidden rounded-md shadow-md' />
-            </div>    
+
+                {/* ACCENT IMAGE */}
+                <div className='relative col-start-1 col-end-5 row-start-2 row-end-5 flex flex-col justify-center z-10'>
+                    <img src={accentImg} className='w-full h-[40vw] object-cover absolute rotate-2 overflow-hidden rounded-md shadow-md' />
+                </div> 
+        
+                {/* container to keep tape element visually stuck to bottom of title card  */}
+                <div className='relative col-start-2 col-end-6 row-start-4 row-end-6 z-30 flex justify-end'>
+
+                    {/* ACCENT STICKER */}
+                    <img src={accentSticker} className='absolute z-50 drop-shadow-md min-w-[4rem] w-2/5 bottom-[80%] max-w-[6rem] -right-2' />
+
+                    {/* TITLE CARD */}
+                    <div className='absolute bg-white-texture shadow-md -rotate-1 w-full h-full z-40 max-w-[15rem] flex items-center justify-center rounded-md'>
+                        <h1 className='gaegu-regular text-base font-black'>{titleLabel}</h1>
+                    </div>
+                    {/* LONG TAPE */}
+                    <img className='absolute z-50 -bottom-[6vw] right-[5%] w-5/6 max-w-[11rem] rotate-[6deg] drop-shadow-sm' src='assets/long-tape.png' />
+                </div>
+        
+                  
+
+            </div> 
             
         </>
       );
@@ -212,18 +225,18 @@ function Home() {
                 </div>
 
                 {/* STATE SPECIFIC CONTENT CONTAINER */}
-                <div className='bg-white col-start-2 col-end-8 row-start-3 row-end-10 relative top-5'>
+                <div className='col-start-2 col-end-8 row-start-3 row-end-10 relative top-5'>
                     {renderTabLayout(tabContents[selectedTab].props)}
                 </div>
 
 
                 {/* LANGUAGES LIST CONTAINER */}
-                <div className='bg-amber-50 col-start-8 col-end-12 row-start-3 row-end-10 relative top-5'>
+                <div className='flex justify-center items-center relative col-start-8 col-end-12 row-start-3 row-end-10 top-5'>
 
-                    {/* <ul className="flex flex-col font-black text-2xl items-start gaegu-regular absolute bottom-[8.5rem]">
+                    <ul className="flex flex-col font-black text-base justify-center gaegu-regular absolute pt-4">
                         {tabContents[selectedTab]?.listItems.map((item, index) => (
 
-                            <li key={index} className='pb-2 relative'>
+                            <li key={index} className='pb-4 relative'>
 
                                 <span className={`highlight ${animatedItems.includes(index) ? `highlight-active ${getHighlightClass()}` : ''}`}>
                                     {item}
@@ -232,7 +245,7 @@ function Home() {
                             </li>
                         ))}
 
-                    </ul> */}
+                    </ul>
 
                 </div>
 
