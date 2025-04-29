@@ -58,40 +58,52 @@ function Home() {
 
             <div className='h-full w-full grid grid-col-5 grid-rows-5'>
 
-                {/* container to keep tape element visually stuck to top of image  */}
+                {/* container for pos decorated main pic  */}
                 <div className='relative col-start-1 col-end-6 row-start-1 row-end-4 z-20 flex justify-center'>
 
-                    {/* MAIN PICTURE */}
-                    <img src={mainImage} alt={mainImageAlt} className='h-auto absolute w-[90%] max-w-[19rem]  rounded-md drop-shadow-md' />
-
-                    
-                    {/* SMALL TAPE */}
-                    <img src='assets/small-tape.png' className='absolute w-1/2 max-w-[7rem] -top-5 -left-[2%] z-50 -rotate-6 drop-shadow-sm'/>
-                
-
-                
-                    {/* GREEN STICKER */}
-                    <div className='absolute top-[32vw] left-2 w-[10vw] h-[10vw] max-w-[3rem] max-h-[3rem] rounded-full bg-green-texture z-50 drop-shadow-md'></div>
+                    {/* DECORATED MAIN PICTURE CONTAINER */}
+                    <div className='max-h-fit min-h-fit absolute w-[90%] max-w-[16rem]'>
+                        {/* SMALL TAPE */}
+                        <img src='assets/small-tape.png' className='absolute w-2/5 max-w-[7rem] -top-3 -left-2 z-50 -rotate-6 drop-shadow-sm'/>
+                        {/* MAIN PICTURE */}
+                        <img src={mainImage} alt={mainImageAlt} className='relative w-full h-auto rounded-md drop-shadow-md' />
+                        {/* GREEN STICKER */}
+                        <div className='absolute -bottom-5 -left-1 w-[10vw] h-[10vw] max-w-[3rem] max-h-[3rem] rounded-full bg-green-texture z-50 drop-shadow-md'></div>
+                    </div>
 
                 </div>
 
                 {/* ACCENT IMAGE */}
-                <div className='relative col-start-1 col-end-5 row-start-2 row-end-5 flex flex-col justify-center z-10'>
-                    <img src={accentImg} className='w-full h-[40vw] object-cover absolute rotate-2 overflow-hidden rounded-md shadow-md' />
+                <div className='relative col-start-1 col-end-5 row-start-2 row-end-5 z-10'>
+                    <img src={accentImg} className='w-full max-w-[17rem] h-[40vw] max-h-[11rem] object-cover absolute rotate-2 top-[12vw] overflow-hidden rounded-md shadow-md
+                    sm:top-20 sm:left-[3%]
+                    lg:left-0' />
                 </div> 
         
                 {/* container to keep tape element visually stuck to bottom of title card  */}
                 <div className='relative col-start-2 col-end-6 row-start-4 row-end-6 z-30 flex justify-end'>
 
                     {/* ACCENT STICKER */}
-                    <img src={accentSticker} className='absolute z-50 drop-shadow-md min-w-[4rem] w-2/5 bottom-[80%] max-w-[6rem] -right-2' />
+                    <img src={accentSticker} className='absolute z-50 drop-shadow-md min-w-[4rem] w-2/5 bottom-[80%] max-w-[6rem] -right-2
+                    md:right-[10%]
+                    lg:-right-2
+                    xl:right-0' />
 
-                    {/* TITLE CARD */}
-                    <div className='absolute bg-white-texture shadow-md -rotate-1 w-full h-full z-40 max-w-[15rem] flex items-center justify-center rounded-md'>
-                        <h1 className='gaegu-regular text-base font-black'>{titleLabel}</h1>
+                    <div className='absolute max-h-fit min-h-fit h-full w-full flex justify-end'>
+                        {/* TITLE CARD */}
+                        <div className='relative bg-white-texture shadow-md -rotate-1 w-full h-full z-40 max-w-[15rem] flex items-center justify-center rounded-md
+                        sm:right-[3%]
+                        lg:right-0'>
+                            <h1 className='gaegu-regular text-base font-black
+                            sm:text-lg
+                            md:text-2xl'>
+                                {titleLabel}
+                            </h1>
+                        </div>
+                        {/* LONG TAPE */}
+                        <img className='absolute z-50 top-[11rem] -translate-y-1/2 right-[6%] w-3/4 max-w-[11rem] rotate-[6deg] drop-shadow-sm' src='assets/long-tape.png' />
                     </div>
-                    {/* LONG TAPE */}
-                    <img className='absolute z-50 -bottom-[6vw] right-[5%] w-5/6 max-w-[11rem] rotate-[6deg] drop-shadow-sm' src='assets/long-tape.png' />
+                    
                 </div>
         
                   
@@ -212,75 +224,54 @@ function Home() {
 
 
             {/* RIGHT SIDE GRID */}
-            <div className="
-            // ALL_SCREENS: relative transition-all right-0 top-0 duration-300 ease-in-out grid grid-cols-12 grid-rows-12
-            // XS_SCREENS: w-full max-h-[85vh] min-h-[85vh]
-            // LG_SCREENS: lg:w-1/2 lg:h-full
-            // XL_SCREENS: xl:w-1/2 xl:h-full">
+            <div className="relative transition-all right-0 top-0 duration-300 ease-in-out grid grid-cols-12 grid-rows-12
+            w-full max-h-[85vh] min-h-[85vh]
+            lg:w-1/2 lg:min-h-screen
+            xl:w-1/2 xl:h-full">
 
                 {/* NAV BAR CONTAINER */}
-                <div className='relative self-center items-center bg-green-texture rounded-md flex justify-center h-4/5 w-full shadow-md gaegu-regular text-base
-                col-start-2 col-end-12 row-start-1 top-3'>
+                <div className='relative self-center items-center bg-green-texture rounded-md flex justify-center h-4/5 w-full shadow-md gaegu-regular
+                col-start-2 col-end-12 row-start-1 top-3
+                lg:row-start-3'>
                     <BulletTabs onSelect={setSelectedTab} />
                 </div>
 
                 {/* STATE SPECIFIC CONTENT CONTAINER */}
-                <div className='col-start-2 col-end-8 row-start-3 row-end-10 relative top-5'>
+                <div className='col-start-2 col-end-8 row-start-3 row-end-10 relative top-5
+                lg:row-start-5 lg:row-end-11 lg:-top-4'>
                     {renderTabLayout(tabContents[selectedTab].props)}
                 </div>
 
 
                 {/* LANGUAGES LIST CONTAINER */}
-                <div className='flex justify-center items-center relative col-start-8 col-end-12 row-start-3 row-end-10 top-5'>
+                <div className='flex flex-col items-center relative col-start-8 col-end-12 row-start-3 row-end-10 top-5
+                lg:row-start-5 lg:row-end-11 lg:-top-4'>
 
-                    <ul className="flex flex-col font-black text-base justify-center gaegu-regular absolute pt-4">
-                        {tabContents[selectedTab]?.listItems.map((item, index) => (
+                    <div className='flex justify-center items-center gaegu-regular text-sm underline underline-offset-8 h-1/6
+                    sm:text-base md:text-lg lg:text-xl'>
+                        <p>My knowledge</p>
+                    </div>
+                    
+                   <div className='flex justify-center items-center flex-grow w-full'>
+                        <ul className="flex flex-col font-black h-full text-sm justify-evenly gaegu-regular
+                        sm:text-base md:text-lg">
+                            {tabContents[selectedTab]?.listItems.map((item, index) => (
 
-                            <li key={index} className='pb-4 relative'>
+                                <li key={index} className='pb-2 relative'>
 
-                                <span className={`highlight ${animatedItems.includes(index) ? `highlight-active ${getHighlightClass()}` : ''}`}>
-                                    {item}
-                                </span>
+                                    <span className={`highlight ${animatedItems.includes(index) ? `highlight-active ${getHighlightClass()}` : ''}`}>
+                                        {item}
+                                    </span>
 
-                            </li>
-                        ))}
+                                </li>
+                            ))}
 
-                    </ul>
+                        </ul>
+                    </div>
 
                 </div>
 
-
-                {/* NAV BAR */}
-                {/* <div className="self-center items-center bg-green-texture rounded-md mt-12 flex text-xl justify-center h-full w-full shadow-md gaegu-regular"> */}
-                    {/* <BulletTabs onSelect={setSelectedTab} /> */}
-                {/* </div> */}
-                {/* MAIN CONTENT BELOW NAV */}
-                {/* <div className="w-full h-full flex"> */}
-                    {/* LEFT SECTION */}
-                    {/* <div className="w-2/3 h-full relative">{renderContent()}</div> */}
-                    {/* RIGHT SECTION */}
-                    {/* <div className="w-1/3 h-full flex flex-col pt-16"> */}
-                        
-                        
-
-                        {/* <ul className="flex flex-col font-black text-2xl items-start gaegu-regular absolute bottom-[8.5rem]">
-                            {tabContents[selectedTab]?.listItems.map((item, index) => (
-                                <li
-                                    key={index}
-                                    className='pb-2 relative'
-                                >
-                                    <span
-                                        className={`highlight ${animatedItems.includes(index) ? `highlight-active ${getHighlightClass()}` : ''}`}
-                                    >
-                                        {item}
-                                    </span>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                </div> */}
             </div>
-
 
         </div>
     );
