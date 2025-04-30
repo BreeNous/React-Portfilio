@@ -17,7 +17,7 @@ function App() {
       <img
         src="/assets/bookmark.png"
         className="
-        // ALL_SCREENS: absolute top-0 left-[50%] h-1/2 drop-shadow-lg shadow-black z-[1] hidden
+        // ALL_SCREENS: absolute -top-3 left-[50%] h-1/2 drop-shadow-lg shadow-black z-[9999] hidden
         // SM_SCREENS:
         // MD_SCREENS: md:hidden
         // LG_SCREENS: lg:block

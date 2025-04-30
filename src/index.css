@@ -42,6 +42,12 @@ html, body {
     background-size: cover;
 }
 
+.bg-tan-texture {
+    background-image: url('/assets/paper-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .bg-back-end {
     background-image: url('/assets/backend.jpg');
     background-size: 310px;

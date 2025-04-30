@@ -91,7 +91,7 @@ function Home() {
 
                     <div className='absolute max-h-fit min-h-fit h-full w-full flex justify-end'>
                         {/* TITLE CARD */}
-                        <div className='relative bg-white-texture shadow-md -rotate-1 w-full h-full z-40 max-w-[15rem] flex items-center justify-center rounded-md
+                        <div className='relative bg-white-texture shadow-md -rotate-1 h-full z-40 w-full max-w-[15rem] flex items-center justify-center rounded-md
                         sm:right-[3%]
                         lg:right-0'>
                             <h1 className='gaegu-regular text-base font-black
@@ -99,9 +99,12 @@ function Home() {
                             md:text-2xl'>
                                 {titleLabel}
                             </h1>
+                        
+                            {/* LONG TAPE */}
+                            <img src='assets/long-tape.png' className='absolute z-50 -bottom-[5vw] right-3 w-3/4 max-w-[11rem] rotate-[6deg] drop-shadow-sm
+                            sm:-bottom-8'  />
                         </div>
-                        {/* LONG TAPE */}
-                        <img className='absolute z-50 top-[11rem] -translate-y-1/2 right-[6%] w-3/4 max-w-[11rem] rotate-[6deg] drop-shadow-sm' src='assets/long-tape.png' />
+                        
                     </div>
                     
                 </div>
@@ -132,10 +135,10 @@ function Home() {
         <div className="
         // ALL_SCREENS: flex h-full w-full
         // XS_SCREENS: flex-col 
-        // SM_SCREENS: sm:flex-col sm:bg-red-300
-        // MD_SCREENS: md:flex-col md:bg-blue-300
-        // LG_SCREENS: lg:flex-row lg:bg-green-200
-        // XL_SCREENS: xl:flex-row xl:bg-yellow-200">
+        // SM_SCREENS: sm:flex-col
+        // MD_SCREENS: md:flex-col
+        // LG_SCREENS: lg:flex-row
+        // XL_SCREENS: xl:flex-row">
 
             {/* LEFT SIDE GRID */}
             <div className="
