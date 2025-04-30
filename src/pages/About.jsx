@@ -151,8 +151,7 @@ function About() {
                     lg:top-2
                     xl:text-2xl xl:right-6">
 
-                        <h1 className="absolute top-5 w-full h-full bg-brown-texture flex justify-center items-center rounded-md z-10 -rotate-1 shadow-sm shadow-stone-400 gaegu-regular text-black
-                        ">
+                        <h1 className="absolute top-5 w-full h-full bg-brown-texture flex justify-center items-center rounded-md z-10 -rotate-1 shadow-sm shadow-stone-400 gaegu-regular text-black">
                             About me
                         </h1>
 
@@ -185,60 +184,11 @@ function About() {
                             <img src="/assets/white-question.png" className="absolute -bottom-8 -right-14 w-20 drop-shadow-md z-10 rotate-[10deg]"></img>
                             
                         </div>
-                        
-
+                    
                     </div>
-
-            {/* GREEN HOLLOW ARCH */}
-                {/* <div className="fixed bg-green-texture right-0 top-0 w-1/2 h-full"> */}
-                    
-                    {/* SHADOW FOR GREEN PART OF ARCH */}
-                    {/* <div className="fixed right-0 top-0 w-1/2 h-full bg-gradient-to-r from-black from-8% via-transparent via-15% to-amber-50 to-90% opacity-20"></div> */}
-
-                {/* </div> */}
-
-                {/* HOLLOW PART CONTENT OF ARCH */}
-                {/* <div className="shadow-inner bg-image w-[23rem] h-[33.2rem] absolute right-[11.5rem] top-[12rem] rounded-t-full shadow-stone-500"> */}
-                    {/* ABOUT ME TITLE */}
-                    {/* <h1 className="flex items-center justify-center pt-1 relative top-[3.5rem] left-[5rem] font-black gaegu-regular text-3xl bg-brown-texture 
-                    rounded-md h-[3.7rem] w-[13rem] rotate-[-2deg] z-[2] shadow-sm shadow-stone-400">
-                        About me
-                    </h1> */}
-                    {/* BODY TEXT */}
-                    {/* <div className="relative top-[5rem] left-[-2.5rem] font-black gaegu-regular rotate-1 w-[23rem] h-[22.5rem] bg-brown-texture p-7 rounded-md shadow-sm 
-                    shadow-stone-500 text-xl">
-
-                        <p className="h-[17.5rem] overflow-scroll">
-                            aliquam architecto iusto nostrum blanditiis consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                            Culpa earum laborum unde nobis, incidunt molestias labore laboriosam nostrum voluptate vero, dolorem veniam perspiciatis 
-                            sapiente est pariatur. Cum corrupti quos earum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aspernatur 
-                            rem laudantium expedita, distinctio dolorem veniam maxime cum enim ipsum consequuntur numquam nam odio non amet harum neque facere. 
-                            Explicabo!
-                        </p>
-
-                        <div className="absolute z-10 flex justify-center w-full left-0 bottom-[1.1rem]">
-                            
-                            <svg className="w-[1.2rem]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
-
-                        </div>
-
-                    </div> */}
-                    
-                {/* </div> */}
-                {/* UPPER SMALL TAPE */}
-                {/* <img src="/assets/small-tape.png" className="customShadow absolute w-[8.7rem] z-10 left-[19rem] top-[2.5rem]"></img> */}
-                {/* LOWER RIGHT SMALL TAPE */}
-                {/* <img src="/assets/small-tape.png" className="customShadow absolute w-[8.7rem] z-10 right-[7rem] bottom-[6.5rem] rotate-[95deg]"></img> */}
-                {/* BIG QUESTION MARK */}
-                {/* <img src="/assets/white-question.png" className="absolute w-[6.5rem] drop-shadow-md z-10 right-[9.5rem] top-[17rem] rotate-[10deg]"></img> */}
-                {/* SMALL QUESTION MARK */}
-                {/* <img src="/assets/white-question.png" className="absolute w-[5rem] drop-shadow-md z-10 left-[12rem] top-[6.5rem] rotate-[-20deg]"></img> */}
-                
 
             </div>
 
-            
-        
         </div>
     );
 
