@@ -27,7 +27,8 @@ html, body {
 
 .bg-brown-texture {
     background-image: url('/assets/brown-texture.jpg');
-    background-size: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .bg-front-end {
@@ -55,7 +56,8 @@ html, body {
 
 .bg-white-texture {
     background-image: url('/assets/white-texture.jpg');
-    background-size: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .bg-tools {
@@ -132,11 +134,15 @@ html, body {
 
 .inner-card {
     transition: transform 0.3s ease-in-out;
+    
 }
 
 /* Hover effect: Move inner card up 10px and rotate */
 .envelope:hover .inner-card {
-    transform: translateY(-20px) rotate(3.5deg) translateX(-5px);
+    transform: 
+        translateY(-20px) 
+        rotate(3.5deg) 
+        translateX(-5px);
 }
 
 .hover-disabled {
@@ -152,12 +158,91 @@ html, body {
     z-index: 1;
 }
 
+/* XS/SMALL SCREENS CARD ANIMATION */
 .envelope.active .inner-card {
-    animation: click-animation 1.3s ease forwards;
-    position: fixed;
-    top: var(--start-top);    /* Dynamic start position */
-    right: var(--start-right); /* Dynamic start position */
+    animation: click-animation-xs-sm 1.3s forwards;
 }
+@keyframes click-animation-xs-sm {
+    0% {
+        position: fixed;
+        top: var(--start-top);
+        left: var(--start-left);
+        width: var(--start-width);
+        height: var(--start-height);
+        z-index: 20;
+    }
+    50% {
+        transform: translateY(-85%) translateX(-5px) rotate(-3.5deg);
+        width: var(--start-width);
+        height: var(--start-height);
+        top: var(--start-top);
+        left: var(--start-left);
+        z-index: 20;
+    }
+    51% {
+        z-index: 70;
+        width: var(--start-width);
+        height: var(--start-height);
+        top: var(--start-top);
+        left: var(--start-left);
+    }
+    100% {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(0deg);
+        width: 100vw;
+        height: 100vh;
+        z-index: 70;
+        box-shadow: 0px 8px 15px 8px rgba(0, 0, 0, 0.25);
+    }
+    
+}
+
+/* MD-XL SCREENS CARD ANIMATION */
+@media screen and (min-width: 768px) {
+    .envelope.active .inner-card {
+        animation: click-animation-md-xl 1.3s forwards;
+    }
+}
+@keyframes click-animation-md-xl {
+    0% {
+        position: fixed;
+        top: var(--start-top);
+        left: var(--start-left);
+        width: var(--start-width);
+        height: var(--start-height);
+        z-index: 20;
+    }
+    50% {
+        transform: translateY(-85%) translateX(-5px) rotate(-3.5deg);
+        width: var(--start-width);
+        height: var(--start-height);
+        top: var(--start-top);
+        left: var(--start-left);
+        z-index: 20;
+    }
+    51% {
+        z-index: 70;
+        width: var(--start-width);
+        height: var(--start-height);
+        top: var(--start-top);
+        left: var(--start-left);
+    }
+    100% {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(0deg);
+        width: 90vw;
+        height: 90vh;
+        z-index: 70;
+        box-shadow: 0px 8px 15px 8px rgba(0, 0, 0, 0.25);
+    }
+    
+}
+
+
 
 .blur-active {
     backdrop-filter: blur(3px);
@@ -173,62 +258,60 @@ html, body {
 }
 
 
-/* INNER CARD OPENING ANIMATION */
-
-@keyframes click-animation {
-    0% {
-        transform: translateY(-20px) translateX(-5px) rotate(3.5deg) scale(1);
-    }
-
-    30% {
-        transform: translateY(-85%) translateX(-5px) rotate(-3.5deg);
-    }
-
-    31% {
-        top: var(--start-top);    
-        right: var(--start-right);
-    }
-
-    70% {
-        z-index: 70;
-        
-    }
-
-    100% {
-        top: 50%;
-        right: 50%;
-        transform: translate(50%, -50%) scale(3.2) rotate(0deg);
-        z-index: 9999;
-        box-shadow: 0px 8px 15px 8px rgba(0, 0, 0, 0.25);
-    }
-}
-
 /* INNER CARD CLOSING ANIMATION */
 
 @keyframes close-animation {
     0% {
+        position: fixed;
         top: 50%;
-        right: 50%;
-        transform: translate(50%, -50%) scale(3.2) rotate(0deg);
-        z-index: 9999;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(0deg);
+        width: 80vw;
+        height: 80vh;
+        z-index: 70;
         box-shadow: 0px 8px 15px 8px rgba(0, 0, 0, 0.25);
     }
-    
-    30% {
+    50% {
         z-index: 70;
+        width: var(--start-width);
+        height: var(--start-height);
+        top: var(--start-top);
+        left: var(--start-left);
     }
-
-    38% {
-        top: var(--start-top);    
-        right: var(--start-right);
-    }
-
-    70% {
+    51% {
         transform: translateY(-85%) translateX(-5px) rotate(-3.5deg);
+        width: var(--start-width);
+        height: var(--start-height);
+        top: var(--start-top);
+        left: var(--start-left);
+        z-index: 20;
     }
-
     100% {
-        transform: translateY(0) translateX(0) rotate(0) scale(1);
+        position: fixed;
+        top: var(--start-top);
+        left: var(--start-left);
+        width: var(--start-width);
+        height: var(--start-height);
+        z-index: 20;
+    }
+}
+
+.reveal-content {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.envelope.active .inner-card .reveal-content {
+    animation: reveal-animation 0.5s ease forwards;
+    pointer-events: auto;
+}
+
+@keyframes reveal-animation {
+    0% {
+        opacity: 30%;
+    }
+    100% {
+        opacity: 100%;
     }
 }
 
