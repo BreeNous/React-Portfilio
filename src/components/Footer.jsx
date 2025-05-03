@@ -76,14 +76,11 @@ function Footer() {
             <div className="
             // ALL_SCREENS: flex w-full align-middle justify-center z-20
             // SM SCREENS: mt-2
-            // MD SCREENS: md:w-1/2 md:pr-8 md:justify-end md:h-full md:items-end md:pb-6 md:mt-5
-            // LG SCREENS: lg:w-1/2 lg:pr-8 lg:justify-end lg:mt-5
+            // MD SCREENS: md:w-1/2 md:pr-8 md:justify-end md:h-full md:items-end md:pb-4 md:mt-5
             ">
                 <p className="
-                // ALL_SCREENS: font-black
-                // SM_SCREENS: text-lg
-                // MD_SCREENS: md:text-md
-                // LG_SCREENS: lg:text-md
+                // ALL_SCREENS: font-black text-sm
+                // LG_SCREENS: lg:text-base
                 ">
                     &copy; {new Date().getFullYear()} Breeanna's Portfolio
                 </p>
@@ -93,8 +90,9 @@ function Footer() {
                 className="
                 // ALL_SCREENS: absolute -bottom-10 rotate-[-10deg] drop-shadow-sm
                 // SM_SCREENS: hidden
-                // MD_SCREENS: md:-right-20 md:-bottom-14 md:w-[27rem] md:block
-                // LG_SCREENS: lg:-right-20 lg:-bottom-14 lg:w-[27rem] lg:block
+                // MD_SCREENS: md:-right-40 md:-bottom-24 md:w-[30rem] md:block
+                // LG_SCREENS: lg:-right-32 lg:-bottom-24 lg:w-[30rem]
+
                 ">
             </img>
 
