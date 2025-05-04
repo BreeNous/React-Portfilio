@@ -5,37 +5,31 @@ import BookShadow from './components/BookShadow.jsx';
 
 function App() {
   return (
-    <div className="relative min-h-screen flex flex-col overflow-hidden">
-      <Header />
+    <div className="relative min-h-screen max-h-screen flex flex-col z-0">
+      
+      {/* Always at the top */}
+      <Header/>
+
+      {/* Background behind everything */}
+      <BookShadow />
 
       {/* bookmark */}
       <img
         src="/assets/bookmark.png"
         className="
-        // SMALLSCREENS/GENERAL absolute top-0 left-[50%] h-1/2 drop-shadow-lg shadow-black z-[1] hidden
-        // MEDIUMSCREENS md:hidden
-        // LARGESCREENS lg:block"
+        // ALL_SCREENS: absolute -top-3 left-[50%] h-1/2 drop-shadow-lg shadow-black z-10 hidden
+        // SM_SCREENS:
+        // MD_SCREENS: md:hidden
+        // LG_SCREENS: lg:block
+        // XL_SCREENS: "
         alt="Bookmark"
       />
-
-      {/* Main content area between header/footer */}
-      <div className="flex-grow min-h-[75vh] relative">
-        <Outlet />
-      </div>
+      
+      <Outlet/>
+      
 
       <Footer />
-      <BookShadow />
-      <img src='assets/ripped-paper-white-2.png' 
-        className="
-        // GENERAL
-        absolute -bottom-10 rotate-[-10deg] drop-shadow-sm
-        // SMALLSCREENS
-        hidden
-        // MEDIUMSCREENS
-        md:-right-20 md:w-[27rem] md:block
-        // LARGESCREENS
-        lg:-right-20 lg:w-[30rem] lg:block">
-      </img>
+      
     </div>
   );
 }

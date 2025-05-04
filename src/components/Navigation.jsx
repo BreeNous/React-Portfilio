@@ -1,55 +1,50 @@
-
 import { Link, useLocation } from 'react-router-dom';
 
 function NavTabs() {
-    const currentPage = useLocation().pathname;
+  const currentPage = useLocation().pathname;
 
-    return (
-      
+  const tabs = [
+    { name: 'Home', path: '/' },
+    { name: 'About', path: '/About' },
+    { name: 'Portfolio', path: '/Portfolio' },
+    { name: 'Resume', path: '/Resume' },
+  ];
 
-
-                <ul className="nav nav-tabs flex w-[17rem] h-full justify-between">
-
-                    <li>
-                        <Link to="/" className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>
-                            
-                            <div className="bg-brown-texture shadow-md shadow-stone-500 w-10 h-5/6">
-                                <p className='child-text rotate-90 pl-5 font-black'>Home</p>
-                            </div>
-                            
-                        </Link>
-                    </li>
-
-                    <li>
-                        <Link to="/About" className={currentPage === '/About' ? 'nav-link active' : 'nav-link'}>
-                            <div className="bg-brown-texture shadow-md shadow-stone-500 w-10 h-5/6">
-                                <p className='rotate-90 pl-5 font-black'>About</p>
-                            </div>
-                        </Link>
-                    </li>
-
-                    <li>
-                        <Link to="/Portfolio" className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}>
-                            <div className="bg-brown-texture shadow-md shadow-stone-500 w-10 h-5/6">
-                                <p className='rotate-90 pl-5 font-black'>Portfolio</p>
-                            </div>
-                        </Link>
-                    </li>
-
-                    <li>
-                        <Link to="/Resume" className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}>
-                            <div  className="bg-brown-texture shadow-md shadow-stone-500 w-10 h-5/6">
-                                <p className='rotate-90 pl-5 font-black'>Resume</p>
-                            </div>
-                        </Link>
-                    </li>
-
-                </ul>
-
-
-    );
+  return (
+    <ul className="
+      // ALL_SCREENS: nav flex justify-evenly
+      // XS_SCREENS: w-5/6 float-right h-20
+      // SM_SCREENS: sm:w-5/6 sm:float-right sm:h-24
+      // MD_SCREENS: md:w-2/3 md:float-right md:h-28
+      // LG_SCREENS: lg:w-1/2 lg:float-right lg:h-28
+      // XL_SCREENS: xl:w-1/2 xl:float-right xl:h-full">
+      {tabs.map(({ name, path }) => (
+        <li key={path}>
+          <Link to={path} className={currentPage === path ? 'nav-link active' : 'nav-link'}>
+            <div className="
+              // ALL_SCREENS: bg-brown-texture shadow-md shadow-stone-500 
+              // XS_SCREENS: w-6 h-16
+              // SM_SCREENS: sm:w-7 sm:h-20
+              // MD_SCREENS: md:w-9 md:h-24
+              // LG_SCREENS: lg:w-9 lg:h-24
+              // XL_SCREENS: xl:w-10 xl:h-28">
+              <p className='
+                // ALL_SCREENS: rotate-90 font-black
+                // XS_SCREENS: text-sm pl-2
+                // SM_SCREENS: sm:text-base sm:pl-3
+                // MD_SCREENS: md:text-lg md:pl-4
+                // LG_SCREENS: lg:text-lg lg:pl-5
+                // XL_SCREENS: xl:text-xl xl:pl-5'>
+                {name}
+              </p>
+            </div>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
 }
 
 export default NavTabs;
-    
+
 
