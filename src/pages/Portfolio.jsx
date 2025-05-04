@@ -92,7 +92,7 @@ function Portfolio() {
                         {/* BROWN BG CARD DECORATION */}
                         <div className='absolute bg-brown-texture shadow-md w-full h-full left-5 top-5'></div>
                     
-                        <div className={`bg-[#5a7728] w-full h-full shadow-inner envelope relative ${activeEnvelope === 0 ? 'active' : ''} 
+                        <div className={`bg-[#5a7728] w-full h-full shadow-inner z-[100] envelope relative ${activeEnvelope === 0 ? 'active' : ''} 
                         ${activeEnvelope !== null && activeEnvelope !== 0 ? 'hover-disabled lower-z' : ''}`} onClick={(e) => handleEnvelopeClick(0, e)}>
                         
                             {/* FRONT OF ENVELOPE */}
@@ -213,7 +213,7 @@ function Portfolio() {
 
                                                 <div className='flex flex-col justify-between'>
 
-                                                    {/* PHOTO PLACEHOLDERS */}
+                                                    {/* PROJECT PHOTOS */}
                                                     <div className='w-auto min-h-fit pb-5 flex justify-center items-center overflow-hidden'>
                                                         <img src='./assets/vwg01.png' className='object-cover h-auto w-full rounded-md drop-shadow-md'></img>
                                                     </div>
@@ -264,7 +264,7 @@ function Portfolio() {
                         <div className='absolute bg-brown-texture w-full h-full right-5 top-5'></div>
 
                         {/* ENVELOPE */}
-                        <div className={`bg-[#5a7728] w-full h-full shadow-inner envelope relative ${activeEnvelope === 1 ? 'active' : ''} 
+                        <div className={`bg-[#5a7728] w-full h-full shadow-inner envelope z-[100] relative ${activeEnvelope === 1 ? 'active' : ''} 
                         ${activeEnvelope !== null && activeEnvelope !== 1 ? 'hover-disabled lower-z' : ''}`} onClick={(e) => handleEnvelopeClick(1, e)}>
                         
                             {/* FRONT OF ENVELOPE */}
@@ -385,7 +385,7 @@ function Portfolio() {
 
                                                 <div className='flex flex-col justify-between'>
 
-                                                    {/* PHOTO PLACEHOLDERS */}
+                                                    {/* PROJECT PHOTOS */}
                                                     <div className='w-auto min-h-fit pb-5 flex justify-center items-center overflow-hidden'>
                                                         <img src='./assets/wd01.png' className='object-cover h-auto w-full rounded-md drop-shadow-md'></img>
                                                     </div>
@@ -446,7 +446,7 @@ function Portfolio() {
                         <div className='absolute bg-brown-texture w-full h-full left-5 top-5'></div>
 
                         {/* ENVELOPE */}
-                        <div className={`bg-[#5a7728] w-full h-full shadow-inner envelope relative ${activeEnvelope === 2 ? 'active' : ''} 
+                        <div className={`bg-[#5a7728] w-full h-full shadow-inner z-[100] envelope relative ${activeEnvelope === 2 ? 'active' : ''} 
                         ${activeEnvelope !== null && activeEnvelope !== 2 ? 'hover-disabled lower-z' : ''}`} onClick={(e) => handleEnvelopeClick(2, e)}>
                         
                             {/* FRONT OF ENVELOPE */}
@@ -473,7 +473,7 @@ function Portfolio() {
                                     {/* TAPE DECOR */}
                                     <img src='./assets/small-tape.png' className='absolute z-30 top-10 right-0 translate-x-1/2 h-1/4 rotate-[-265deg] customShadow'></img>
 
-                                    {/* GUTAIR DECOR */}
+                                    {/* WRENCH DECOR */}
                                     <img src="./assets/wrench.png" className='h-3/4 absolute z-30 top-10 -left-7 rotate-[-5deg] drop-shadow-md'></img>
 
                                 </div>
@@ -567,7 +567,7 @@ function Portfolio() {
 
                                                 <div className='flex flex-col justify-between'>
 
-                                                    {/* PHOTO PLACEHOLDERS */}
+                                                    {/* PROJECT PHOTOS */}
                                                     <div className='w-auto min-h-fit pb-5 flex justify-center items-center overflow-hidden'>
                                                         <img src='./assets/jeans1.png' className='object-cover h-auto w-full rounded-md drop-shadow-md'></img>
                                                     </div>
@@ -617,7 +617,8 @@ function Portfolio() {
                         {/* BROWN BG CARD DECORATION */}
                         <div className='absolute bg-brown-texture w-full h-full right-5 top-5'></div>
 
-                        <div className={`bg-[#5a7728] w-full h-full shadow-inner envelope relative ${activeEnvelope === 3 ? 'active' : ''} 
+                        {/* ENVELOPE */}
+                        <div className={`bg-[#5a7728] w-full h-full shadow-inner z-[100] envelope relative ${activeEnvelope === 3 ? 'active' : ''} 
                                 ${activeEnvelope !== null && activeEnvelope !== 3 ? 'hover-disabled lower-z' : ''}`} onClick={(e) => handleEnvelopeClick(3, e)}>
                             
                                 {/* FRONT OF ENVELOPE */}
@@ -644,8 +645,8 @@ function Portfolio() {
                                         {/* TAPE DECOR */}
                                         <img src='./assets/small-tape.png' className='absolute z-30 top-10 left-0 -translate-x-1/2 h-1/4 rotate-[-265deg] customShadow'></img>
 
-                                        {/* WEATHER DECOR */}
-                                        <img src="./assets/dollar.png" className='h-3/5 absolute z-30 top-20 -right-7 rotate-[5deg] drop-shadow-md'></img>
+                                        {/* LIST DECOR */}
+                                        <img src="./assets/list.png" className='h-3/5 absolute z-30 top-20 -right-7 rotate-[5deg] drop-shadow-md'></img>
 
                                     </div>
 
@@ -738,7 +739,7 @@ function Portfolio() {
 
                                                     <div className='flex flex-col justify-between'>
 
-                                                        {/* PHOTO PLACEHOLDERS */}
+                                                        {/* PROJECT PHOTOS */}
                                                         <div className='w-auto min-h-fit pb-5 flex justify-center items-center overflow-hidden'>
                                                             <img src='./assets/b1.png' className='object-cover h-auto w-full rounded-md drop-shadow-md'></img>
                                                         </div>

@@ -7,10 +7,10 @@ function Resume() {;
         <div className=" flex-1 relative overflow-y-auto
         // ALL_SCREENS: flex h-full w-full
         // XS_SCREENS: flex-col 
-        // SM_SCREENS: sm:flex-col sm:bg-pink-100
-        // MD_SCREENS: md:flex-row md:bg-blue-100
-        // LG_SCREENS: lg:flex-row lg:bg-green-100
-        // XL_SCREENS: xl:flex-row xl:bg-yellow-100">
+        // SM_SCREENS: sm:flex-col
+        // MD_SCREENS: md:flex-row
+        // LG_SCREENS: lg:flex-row
+        // XL_SCREENS: xl:flex-row">
             
 
             {/* LEFT SIDE */}
@@ -19,11 +19,11 @@ function Resume() {;
             xl:w-1/2 xl:h-full">
 
                 {/* FULL-STACK RESUME */}
-                <a href="./assets/breeanna-dev-resume.png" target="_blank" 
+                <a href="./assets/BreeannaNouskhajianFullStackResume.pdf" target="_blank" 
                 className='relative h-auto max-w-[27rem] w-5/6 rounded-md shadow-md resume-hover
                 '>
 
-                    <img src="./assets/breeanna-dev-resume.png" 
+                    <img src="./assets/BreeannaNouskhajianFullStackResume.png" 
                     className='w-full h-full'/>
 
                 </a>
@@ -71,7 +71,7 @@ function Resume() {;
                         lg:text-xl'>
                             <svg className='w-[1rem]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
                             <div className='pl-[1rem] hover:underline'>
-                                <ButtonMailto label={'bnous.m@gmail.com'} mailto="mailto:bnous.m@gmail.com"></ButtonMailto>
+                                <ButtonMailto label={'bree.nous@gmail.com'} mailto="mailto:bree.nous@gmail.com"></ButtonMailto>
                             </div>
                         </div>
 
