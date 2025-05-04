@@ -166,33 +166,39 @@ function Portfolio() {
                                                 sm:px-10 sm:pb-10
                                                 lg:pt-14 lg:pr-5 lg:pb-5'>
 
-                                                    <p className='w-full p-4 h-auto text-base gaegu-regular bg-brown-texture rounded-md shadow-sm shadow-[rgba(0,0,0,0.35)]
+                                                    <div className='w-full p-4 h-auto text-base gaegu-regular bg-brown-texture rounded-md shadow-sm shadow-[rgba(0,0,0,0.35)] space-y-4
                                                     sm:text-lg
                                                     md:p-5 md:w-full md:min-h-fit
-                                                    xl:text-xl'>
+                                                    xl:text-xl xl:p-6'>
 
-                                                        <span className='text-lg font-black
+                                                        <p className='text-lg font-black
                                                         sm:text-xl
                                                         lg:text-2xl'>
                                                             Vibrawood Guitairs
-                                                        </span>
+                                                        </p>
 
-                                                        <br/>
-                                                        Visit the <a href='https://github.com/Wartech93/Vibrawood_Guitars'><span className='underline hover:text-white'>repository</span>
-                                                        </a> for more!
-                                                        <br/><br/>
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse tenetur beatae aliquid,
-                                                        obcaecati commodi facilis fuga in dolorum laborum cumque, ut provident, possimus dignissimos
-                                                        molestias sed. Natus, itaque corporis? 
-                                                        <br/> <br/>
-                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur voluptatibus vitae quasi
-                                                        dolores totam molestiae obcaecati sint! Harum, ad. Expedita in deleniti quae provident,
-                                                        odio ad perspiciatis tempora officia! Distinctio!
-                                                        <br/> <br/>
-                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur voluptatibus vitae quasi
-                                                        dolores totam molestiae obcaecati sint! Harum, ad. Expedita in deleniti quae provident,
-                                                        odio ad perspiciatis tempora officia! Distinctio!
-                                                    </p>
+                                                        <p>
+                                                            Visit the <a href='https://github.com/Wartech93/Vibrawood_Guitars'><span className='underline hover:text-white'>repository</span></a> for more.
+                                                        </p>
+
+                                                        <p>
+                                                            Vibrawood Guitars is a fully functional e-commerce website built for a local guitar shop owner to sell custom instruments online. 
+                                                            Collaborating with a small team, I focused on the front end using React, Tailwind CSS, and Flowbite, connecting dynamic front-end 
+                                                            components to data provided by the Node.js/Express/MongoDB back end. The site allows users to browse by instrument category, create 
+                                                            an account, add items to their cart, and securely purchase through Stripe integration — all within a responsive and intuitive interface.
+                                                        </p>
+
+                                                        <p>
+                                                            I led the front-end logic, including routing, UI functionality, and rendering product data from the backend. I also proposed and 
+                                                            implemented key features like category filtering on the homepage and a media page to promote the business with live Instagram 
+                                                            integration and an embedded Google Maps location. While I didn't build the backend itself, I helped integrate the external APIs 
+                                                            and ensured the front-end experience communicated seamlessly with our server-side setup. Built in just one week with daily Agile 
+                                                            sprints, this project pushed me to think quickly, adapt often, and deliver a polished, production-ready user experience.
+                                                        </p>
+
+                                                        
+                                                        
+                                                    </div>
                                                 </div>
 
                                                 <div className=' shadow-[rgba(0,0,0,0.35)] w-full p-5 pb-0
@@ -338,10 +344,10 @@ function Portfolio() {
                                                 sm:px-10 sm:pb-10
                                                 lg:pt-14 lg:pr-5 lg:pb-5'>
 
-                                                    <p className='w-full p-4 h-auto text-base gaegu-regular bg-brown-texture rounded-md shadow-sm shadow-[rgba(0,0,0,0.35)]
+                                                    <div className='w-full p-4 h-auto text-base gaegu-regular bg-brown-texture rounded-md shadow-sm shadow-[rgba(0,0,0,0.35)] space-y-4
                                                     sm:text-lg
                                                     md:p-5 md:w-full md:min-h-fit
-                                                    xl:text-xl'>
+                                                    xl:text-xl xl:p-6'>
 
                                                         <span className='text-lg font-black
                                                         sm:text-xl
@@ -349,22 +355,27 @@ function Portfolio() {
                                                             Weather Dashboard
                                                         </span>
 
-                                                        <br/>
-                                                        Visit the <a href='https://github.com/BreeNous/Weather-Dashboard'><span className='underline hover:text-white'>repository</span>
-                                                        </a> for more!
-                                                        <br/><br/>
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse tenetur beatae aliquid,
-                                                        obcaecati commodi facilis fuga in dolorum laborum cumque, ut provident, possimus dignissimos
-                                                        molestias sed. Natus, itaque corporis? 
-                                                        <br/> <br/>
-                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur voluptatibus vitae quasi
-                                                        dolores totam molestiae obcaecati sint! Harum, ad. Expedita in deleniti quae provident,
-                                                        odio ad perspiciatis tempora officia! Distinctio!
-                                                        <br/> <br/>
-                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur voluptatibus vitae quasi
-                                                        dolores totam molestiae obcaecati sint! Harum, ad. Expedita in deleniti quae provident,
-                                                        odio ad perspiciatis tempora officia! Distinctio!
-                                                    </p>
+                                                        <p>
+                                                            Visit the <a href='https://github.com/BreeNous/Weather-Dashboard'><span className='underline hover:text-white'>repository</span></a> for more!
+                                                        </p>
+
+                                                        <p>
+                                                            Weather Dashboard is a dynamic front-end application that lets users search for the current and 5-day
+                                                             forecast of any city using the OpenWeather API. Built with vanilla JavaScript, HTML, and CSS, the app 
+                                                             features a responsive layout, persistent local storage, and live weather data fetched via RESTful API calls. 
+                                                             Users can view real-time temperature, wind speed, humidity, and weather icons for any searched city, which is 
+                                                             then added to a search history for quick future access.
+                                                        </p>
+                                                        
+                                                        <p>
+                                                            I focused on implementing clean, modular JavaScript to handle API requests, parse and display data, and manage user 
+                                                            interactions. I also built a system that persists search history across sessions using localStorage, allowing the user 
+                                                            experience to feel consistent and intuitive. This project deepened my skills in working with external APIs, handling 
+                                                            asynchronous requests, and building polished, interactive UI components without relying on frameworks.
+                                                        </p>
+                                                        
+                                                    </div>
+
                                                 </div>
 
                                                 <div className=' shadow-[rgba(0,0,0,0.35)] w-full p-5 pb-0
@@ -520,33 +531,40 @@ function Portfolio() {
                                                 sm:px-10 sm:pb-10
                                                 lg:pt-14 lg:pr-5 lg:pb-5'>
 
-                                                    <p className='w-full p-4 h-auto text-base gaegu-regular bg-brown-texture rounded-md shadow-sm shadow-[rgba(0,0,0,0.35)]
+                                                    <div className='w-full p-4 h-auto text-base gaegu-regular bg-brown-texture rounded-md shadow-sm shadow-[rgba(0,0,0,0.35)] space-y-4
                                                     sm:text-lg
                                                     md:p-5 md:w-full md:min-h-fit
-                                                    xl:text-xl'>
+                                                    xl:text-xl xl:p-6'>
 
-                                                        <span className='text-lg font-black
+                                                        <p className='text-lg font-black
                                                         sm:text-xl
                                                         lg:text-2xl'>
                                                             Jeans
-                                                        </span>
+                                                        </p>
 
-                                                        <br/>
-                                                        Visit the <a href='https://github.com/frenzie24/jeans'><span className='underline hover:text-white'>repository</span>
-                                                        </a> for more!
-                                                        <br/><br/>
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse tenetur beatae aliquid,
-                                                        obcaecati commodi facilis fuga in dolorum laborum cumque, ut provident, possimus dignissimos
-                                                        molestias sed. Natus, itaque corporis? 
-                                                        <br/> <br/>
-                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur voluptatibus vitae quasi
-                                                        dolores totam molestiae obcaecati sint! Harum, ad. Expedita in deleniti quae provident,
-                                                        odio ad perspiciatis tempora officia! Distinctio!
-                                                        <br/> <br/>
-                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur voluptatibus vitae quasi
-                                                        dolores totam molestiae obcaecati sint! Harum, ad. Expedita in deleniti quae provident,
-                                                        odio ad perspiciatis tempora officia! Distinctio!
-                                                    </p>
+                                                        <p>
+                                                            Visit the <a href='https://github.com/frenzie24/jeans'><span className='underline hover:text-white'>repository</span></a> for more!
+                                                        </p>
+
+                                                        <p>
+                                                            This app was built to support developers who may not have a design background by helping them find visually 
+                                                            cohesive assets — specifically color palettes and royalty-free images — to use in web projects. Working as part of a team, 
+                                                            we created an interactive front-end tool that allows users to search a color (via text or color picker) and instantly 
+                                                            receive eight curated color themes powered by The Color API. On the same interface, users can search for high-quality images 
+                                                            related to their project using the Pixabay API. Results can be copied and reused easily, making asset gathering fast and 
+                                                            user-friendly.
+                                                        </p>
+
+                                                        <p>
+                                                            My focus on this project was building front-end features and wiring together the UI logic with our API responses. 
+                                                            I helped integrate the color and image APIs into functional, dynamic sections, ensuring smooth rendering and 
+                                                            interactive behavior. I also worked on refining the user experience with modal-based instructions and structured 
+                                                            layout using Tailwind CSS. The concept was driven by the idea that a unified color scheme and strong visual 
+                                                            elements are essential — and often overlooked — parts of clean design. We built this tool to help bridge that gap.
+                                                        </p>
+                                                        
+                                                        
+                                                    </div>
                                                 </div>
 
                                                 <div className=' shadow-[rgba(0,0,0,0.35)] w-full p-5 pb-0
@@ -692,33 +710,38 @@ function Portfolio() {
                                                     sm:px-10 sm:pb-10
                                                     lg:pt-14 lg:pr-5 lg:pb-5'>
 
-                                                        <p className='w-full p-4 h-auto text-base gaegu-regular bg-brown-texture rounded-md shadow-sm shadow-[rgba(0,0,0,0.35)]
+                                                        <div className='w-full p-4 h-auto text-base gaegu-regular bg-brown-texture rounded-md shadow-sm shadow-[rgba(0,0,0,0.35)] space-y-4
                                                         sm:text-lg
                                                         md:p-5 md:w-full md:min-h-fit
-                                                        xl:text-xl'>
+                                                        xl:text-xl xl:p-6'>
 
-                                                            <span className='text-lg font-black
+                                                            <p className='text-lg font-black
                                                             sm:text-xl
                                                             lg:text-2xl'>
                                                                 Bucket
-                                                            </span>
+                                                            </p>
 
-                                                            <br/>
-                                                            Visit the <a href='https://github.com/BreeNous/Bucket'><span className='underline hover:text-white'>repository</span>
-                                                            </a> for more!
-                                                            <br/><br/>
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse tenetur beatae aliquid,
-                                                            obcaecati commodi facilis fuga in dolorum laborum cumque, ut provident, possimus dignissimos
-                                                            molestias sed. Natus, itaque corporis? 
-                                                            <br/> <br/>
-                                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur voluptatibus vitae quasi
-                                                            dolores totam molestiae obcaecati sint! Harum, ad. Expedita in deleniti quae provident,
-                                                            odio ad perspiciatis tempora officia! Distinctio!
-                                                            <br/> <br/>
-                                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur voluptatibus vitae quasi
-                                                            dolores totam molestiae obcaecati sint! Harum, ad. Expedita in deleniti quae provident,
-                                                            odio ad perspiciatis tempora officia! Distinctio!
-                                                        </p>
+                                                            <p>
+                                                                Visit the <a href='https://github.com/BreeNous/Bucket'><span className='underline hover:text-white'>repository</span></a> for more!
+                                                            </p>
+
+                                                            <p>
+                                                                Bucket is a virtual bucket list app built to inspire people to follow through on the goals that matter to them. I wanted it to feel
+                                                                 more motivating than a list on paper — something interactive, personal, and always in your pocket. Users can create meaningful goals, 
+                                                                 edit or complete them, and even upload images to capture their progress. It's a small push toward accountability — a way to remind 
+                                                                 yourself to actually do the things you said you would. From password reset emails to image uploads, every feature was designed with 
+                                                                 real-life use and privacy in mind.
+                                                            </p>
+
+                                                            <p>
+                                                                Although I initially worked with a team to create Bucket1.0, I ended up soloing the project and fully refactored it — redesigning the data models, rewriting the API with 
+                                                                GraphQL and Express, and rebuilding the front end to improve usability and structure. The app uses the MERN stack with JWT authentication, 
+                                                                secure sessions, Multer for image uploads, and a protected file system to ensure user privacy. This build gave me hands-on experience with 
+                                                                building real-world features from scratch, handling migrations, and structuring back-end logic for scalability and maintainability. While Buckets front 
+                                                                end may not be perfect, throughout this project I learned how intense but utterly facinating the back-end world was and fell in love with it.
+                                                            </p>
+                                                            
+                                                        </div>
                                                     </div>
 
                                                     <div className=' shadow-[rgba(0,0,0,0.35)] w-full p-5 pb-0
@@ -778,7 +801,7 @@ function Portfolio() {
                 </div>
 
             {/* SCREEN BLUR OVERLAY */}
-            {/* <div className={`w-screen h-screen absolute top-0 left-0 ${isBlurred ? 'blur-active' : ''} ${reFocus ? 'reFocus-active' : ''}`}></div> */}
+            <div className={`w-screen h-screen absolute top-0 left-0 ${isBlurred ? 'blur-active' : ''} ${reFocus ? 'reFocus-active' : ''}`}></div>
             
         </div>
     );

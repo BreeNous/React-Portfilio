@@ -6,7 +6,7 @@ const BulletTabs = ({ onSelect }) => {
     const [items, setItems] = useState([
         { id: 1, text: '• Front-end •' },
         { id: 2, text: 'Back-end' },
-        { id: 3, text: 'Tools/etc' }
+        { id: 3, text: 'Tools & Tech' }
     ]);
 
     const handleClick = (id) => {

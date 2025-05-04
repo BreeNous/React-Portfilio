@@ -18,7 +18,7 @@ function Home() {
           },
         },
         2: {
-          listItems: ['Node.js', 'Express', 'MongoDB', 'SQL', 'GraphQL', 'Python', 'Django', 'Flask', 'Ruby on Rails'],
+          listItems: ['Node.js', 'Express', 'MongoDB', 'SQL', 'GraphQL'],
           props: {
             mainImage: '/assets/back-end-drawing.png',
             mainImageAlt: 'Back-end drawing',
@@ -28,12 +28,12 @@ function Home() {
           },
         },
         3: {
-          listItems: ['Git', 'Docker', 'Webpack', 'Babel', 'ESLint', 'Prettier', 'Jenkins', 'CircleCI', 'AWS'],
+          listItems: ['Git', 'Docker', 'Webpack', 'Babel', 'ESLint', 'Prettier'],
           props: {
             mainImage: '/assets/tools-drawing.png',
             mainImageAlt: 'Tools drawing',
             accentSticker: '/assets/green-tool.png',
-            titleLabel: 'Tools / etc',
+            titleLabel: 'Tools & Tech',
             accentImg: '/assets/tools-code.jpg',
           },
         },
