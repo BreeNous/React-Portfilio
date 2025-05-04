@@ -63,16 +63,38 @@ function About() {
                 md:col-end-11
                 lg:col-end-12">
 
-                    <div className="gaegu-regular font-black text-sm bg-white-texture shadow-md rounded-md -rotate-1 w-full h-[95%] flex justify-center p-[7vw] relative bottom-5
+                    <div className="bg-white-texture shadow-md rounded-md -rotate-1 w-full h-[95%] relative bottom-5 flex flex-col justify-center p-[7vw] gaegu-regular font-black text-sm
                     sm:w-[90%] sm:text-base sm:h-full sm:bottom-auto sm:p-5
                     md:w-full md:text-lg md:px-8
                     lg:w-[95%] lg:text-base
                     xl:text-lg">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, tempora neque minima deleniti nisi temporibus
-                        maiores natus odio laborum, qui ipsum aliquid corporis delectus, porro reiciendis architecto modi cupiditate? Ex!
+
+                        <div className="overflow-scroll space-y-8">
+
+                            <p>
+                            With a foundation in visual design, I began my creative journey studying graphic and motion design, gaining hands-on 
+                            experience with Adobe Illustrator, Photoshop, After Effects, and Premiere Pro. This visual background enhances my approach 
+                            to front-end and UI work. I later transitioned into software development and completed a full-stack web development certification 
+                            through the University of Central Florida. 
+                            </p>
+                            
+                            <p>
+                            Throughout the program, I worked in an Agile environment using Git, Kanban boards, daily standups, 
+                            and sprint-based workflows to build collaborative projects. This experience helped me develop strong teamwork, planning, and version control 
+                            habits while learning full-stack web development and gaining proficiency in modern front-end and back-end technologies. 
+                            Since then, I've continued to refine my development skills, combining my eye for design with technical knowledge to build clean, responsive, 
+                            and user-centered web applications.
+                            </p>
+
+                        </div>
+
+                        <div className="flex justify-center">
+                            <svg className="w-4 pt-3 self-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                        </div>
 
                         {/* BOOK STICKER */}
-                        <img src="/assets/brown-books.png" className="w-1/2 max-w-[8rem] absolute -bottom-8 right-3 drop-shadow-md"></img>
+                        <img src="/assets/brown-books.png" className="w-1/2 max-w-[7rem] absolute -bottom-24 right-20 drop-shadow-md"></img>
+
                     </div>
 
                 </div>
@@ -163,18 +185,46 @@ function About() {
                     lg:justify-normal
                     xl:col-end-9">
 
-                        <div className="gaegu-regular font-black text-base bg-brown-texture shadow-md rounded-md rotate-1 w-full h-[95%] flex flex-col justify-between p-[7vw] pb-0 relative bottom-5
+                        <div className="gaegu-regular font-black text-base bg-brown-texture shadow-md rounded-md rotate-1 w-full h-[95%] flex flex-col justify-between p-[7vw] relative bottom-5
                         sm:p-[5vw] sm:pb-2 sm:text-lg
                         md:text-xl md:w-[95%] md:right-0
-                        lg:text-lg lg:p-8 lg:pb-2 lg:w-full
-                        xl:text-xl">
-                            <p className="overflow-scroll">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, tempora neque minima deleniti nisi temporibus
-                            maiores natus odio laborum, qui ipsum aliquid corporis delectus, porro reiciendis architecto modi cupiditate? Ex!
-                            </p>
+                        lg:text-lg lg:p-6 lg:w-full">
 
-                            <svg className="w-4 py-3 self-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
-                        
+                            <div className="overflow-scroll space-y-8">
+
+                                <p>
+                                I'm a passionate, self-driven, and perpetually fascinated developer with a background in graphic design, motion design, 
+                                and full-stack web development. I specialize in full-stack JavaScript development using the MERN stack, with experience 
+                                integrating GraphQL, Docker, and modern build tools like Webpack and Babel, along with CSS frameworks such as Tailwind, 
+                                Materialize, and Bootstrap. I'm also experienced in building APIs with Node.js and Express, working with both MongoDB and SQL 
+                                databases, and implementing secure, scalable server-side logic.
+                                </p>
+                                
+                                <p>
+                                I enjoy building creative multi- and single-page layouts, user-focused apps, interactive websites, 
+                                and any project that challenges me to think outside the box. I strive to find new ways of conveying real-world feeling and 
+                                intention into the digital space of front-end development. 
+                                </p>
+
+                                <p>
+                                While I have a strong eye for visual design and user experience, I also have a deep love for the logic, structure, and 
+                                problem-solving that goes into back-end development. I enjoy designing scalable databases and data models, building organized 
+                                and secure APIs, implementing authentication flows, and digging into the meticulous work of debugging. 
+                                I embrace the challenges and unknowns that back-end development and maintenance often present.
+                                </p>
+
+                                <p>
+                                With a strong appreciation for both form and function, I aim to mingle design sensitivity with logic practicality, ensuring 
+                                seamless integration in every project I work on. I take pride in writing clean, maintainable, and visually digestible code. I'm 
+                                always eager to learn new technologies, solve new problems, and collaborate with teams or peers.
+                                </p>
+
+                            </div>    
+
+                            <div className="w-full flex justify-center">
+                                <svg className="w-4 pt-3 self-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                            </div>
+
                             {/* SMALL QUESTION MARK */}
                             <img src="/assets/white-question.png" className="absolute w-14 -top-16 left-[5vw] drop-shadow-md z-10 rotate-[-20deg]
                             md:left-[9vw]

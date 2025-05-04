@@ -778,7 +778,7 @@ function Portfolio() {
                 </div>
 
             {/* SCREEN BLUR OVERLAY */}
-            {/* <div className={`w-screen h-screen absolute top-0 left-0 ${isBlurred ? 'blur-active' : ''} ${reFocus ? 'reFocus-active' : ''}`}></div> */}
+            <div className={`w-screen h-screen absolute top-0 left-0 ${isBlurred ? 'blur-active' : ''} ${reFocus ? 'reFocus-active' : ''}`}></div>
             
         </div>
     );
