@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import ButtonMailto from '../components/ButtonMailTo.jsx';
 import { bgGreen, bgBrown, bgWhite } from '../components/Backgrounds';
 import resume from '../assets/BreeannaNouskhajianFullStackResume.png';
+import smallTape from '../assets/small-tape.webp';
+import longTape from '../assets/long-tape.webp';
 
 function Resume() {;
 
@@ -88,11 +90,11 @@ function Resume() {;
                         </div>
 
                         {/* SMALL TAPE DECOR */}
-                        <img src="./assets/small-tape.webp" alt="" aria-hidden="true"
+                        <img src={smallTape} alt="" aria-hidden="true"
                         className="z-20 absolute w-1/4 -translate-x-1/2 rotate-90 left-0 bottom-14 drop-shadow-sm"></img>
 
                         {/* LONG TAPE DECOR */}
-                        <img src="./assets/long-tape.webp" alt="" aria-hidden="true"
+                        <img src={longTape} alt="" aria-hidden="true"
                         className="z-20 absolute w-2/5 rotate-[100deg] translate-x-1/2 right-0 bottom-32 drop-shadow-sm"></img>
 
                     </div>
