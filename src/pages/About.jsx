@@ -1,3 +1,15 @@
+import Ae from '../../src/assets/Ae.webp';
+import Ai from '../../src/assets/Ai.webp';
+import Pr from '../../src/assets/Pr.webp';
+import Ps from '../../src/assets/Ps.webp';
+
+import longTape from '../../src/assets/long-tape.webp';
+import smallTape from '../../src/assets/small-tape.webp';
+import books from '../../src/assets/brown-books.webp';
+import question from '../../src/assets/white-question.webp';
+
+
+import { bgGreen, bgBrown, bgWhite, bgTan } from '../components/Backgrounds';
 
 function About() {
 
@@ -25,18 +37,20 @@ function About() {
                 lg:row-start-4 lg:bottom-3">
                         
                             {/* ARCH SHAPE */}
-                            <div className="relative bg-green-texture rounded-t-full w-full h-full customShadow
+                            <div style={bgGreen} className="relative rounded-t-full w-full h-full customShadow
                             md:h-[95%] md:w-[90%]
                             lg:w-full lg:h-full">
 
                                 {/* TOP TAPE */}
-                                <img src="/assets/small-tape.png" className="absolute w-1/2 max-w-[7rem] rotate-[60deg] right-0 translate-x-1/4 top-[8vw] z-10 customShadow
+                                <img src={smallTape} alt="" aria-hidden="true"
+                                className="absolute w-1/2 max-w-[7rem] rotate-[60deg] right-0 translate-x-1/4 top-[8vw] z-10 customShadow
                                 md:right-4 md:top-[6vw]
                                 lg:top-[4vw] lg:right-0
                                 xl:top-[3vw] xl:right-2"></img>
 
                                 {/* BOTTOM TAPE */}
-                                <img src="/assets/long-tape.png" className="absolute w-2/3 max-w-[11rem] rotate-[10deg] -left-6 bottom-0 translate-y-1/2 z-10 customShadow"></img>
+                                <img src={longTape} alt="" aria-hidden="true"
+                                className="absolute w-2/3 max-w-[11rem] rotate-[10deg] -left-6 bottom-0 translate-y-1/2 z-10 customShadow"></img>
 
                             </div>
                         
@@ -47,7 +61,7 @@ function About() {
                 md:col-start-3 md:col-end-8
                 lg:col-start-2">
 
-                    <h1 className="absolute top-5 w-full h-full bg-white-texture text-lg flex justify-center items-center rounded-md z-10 rotate-1 shadow-sm shadow-stone-400 gaegu-regular text-black
+                    <h1 style={bgWhite} className="absolute top-5 w-full h-full text-lg flex justify-center items-center rounded-md z-10 rotate-1 shadow-sm shadow-stone-400 gaegu-regular text-black
                     sm:w-[90%] sm:right-0 sm:text-xl
                     md:w-full md:left-0 md:right-auto
                     lg:w-[90%] lg:right-0 lg:left-auto lg:top-8
@@ -63,7 +77,7 @@ function About() {
                 md:col-end-11
                 lg:col-end-12">
 
-                    <div className="bg-white-texture shadow-md rounded-md -rotate-1 w-full h-[95%] relative bottom-5 flex flex-col justify-center p-[7vw] gaegu-regular font-black text-sm
+                    <div style={bgWhite} className="shadow-md rounded-md -rotate-1 w-full h-[95%] relative bottom-5 flex flex-col justify-center p-[7vw] gaegu-regular font-black text-sm
                     sm:w-[90%] sm:text-base sm:h-full sm:bottom-auto sm:p-5
                     md:w-full md:text-lg md:px-8
                     lg:w-[95%] lg:text-base
@@ -93,7 +107,8 @@ function About() {
                         </div>
 
                         {/* BOOK STICKER */}
-                        <img src="/assets/brown-books.png" className="w-1/2 max-w-[7rem] absolute -bottom-24 right-20 drop-shadow-md"></img>
+                        <img src={books} alt="decorative stack of books drawing"
+                        className="w-1/2 max-w-[7rem] absolute -bottom-24 right-20 drop-shadow-md"></img>
 
                     </div>
 
@@ -107,20 +122,24 @@ function About() {
                     <div className="w-full h-full flex flex-col justify-between
                     sm:items-center">
 
-                        <div className="bg-brown-texture w-12 aspect-square rounded-xl flex justify-center items-center shadow-sm shadow-stone-500">
-                            <img src="/assets/Ae.png" className="w-2/3"></img>
+                        <div style={bgBrown} className="w-12 aspect-square rounded-xl flex justify-center items-center shadow-sm shadow-stone-500">
+                            <img src={Ae} alt="decorative Adobe after effects logo drawing"
+                            className="w-2/3"></img>
                         </div>
 
-                        <div className="bg-brown-texture w-12 aspect-square rounded-xl flex justify-center items-center shadow-sm shadow-stone-500">
-                            <img src="/assets/Ai.png" className="w-2/3"></img>
+                        <div style={bgBrown} className="w-12 aspect-square rounded-xl flex justify-center items-center shadow-sm shadow-stone-500">
+                            <img src={Ai} alt="decorative Adobe illustrator logo drawing"
+                            className="w-2/3"></img>
                         </div>
 
-                        <div className="bg-brown-texture w-12 aspect-square rounded-xl flex justify-center items-center shadow-sm shadow-stone-500">
-                            <img src="/assets/Pr.png" className="w-2/3"></img>
+                        <div style={bgBrown} className="w-12 aspect-square rounded-xl flex justify-center items-center shadow-sm shadow-stone-500">
+                            <img src={Pr} alt="decorative Adobe premire pro logo drawing"
+                            className="w-2/3"></img>
                         </div>
 
-                        <div className="bg-brown-texture w-12 aspect-square rounded-xl flex justify-center items-center shadow-sm shadow-stone-500">
-                            <img src="/assets/Ps.png" className="w-2/3"></img>
+                        <div style={bgBrown} className="w-12 aspect-square rounded-xl flex justify-center items-center shadow-sm shadow-stone-500">
+                            <img src={Ps} alt="decorative Adobe photoshop logo drawing"
+                            className="w-2/3"></img>
                         </div>
 
                     </div>
@@ -133,7 +152,7 @@ function About() {
 
             {/* RIGHT SIDE GRID */}
             
-            <div className="bg-green-texture
+            <div style={bgGreen} className="
             // ALL_SCREENS: relative transition-all right-0 top-0 duration-300 ease-in-out grid grid-cols-12 grid-rows-12
             // XS_SCREENS: w-full min-h-screen max-h-screen
             // LG_SCREENS: lg:w-1/2 lg:h-full
@@ -150,16 +169,18 @@ function About() {
                 xl:col-end-10">
                             
                     {/* ARCH SHAPE */}
-                    <div className="relative bg-tan-texture shadow-inner rounded-t-full w-full h-full shadow-stone-500
+                    <div style={bgTan} className="relative shadow-inner rounded-t-full w-full h-full shadow-stone-500
                     md:h-[95%] md:w-[90%]
                     lg:w-full lg:h-full">
 
                         {/* TOP TAPE */}
-                        <img src="/assets/small-tape.png" className="absolute w-1/2 max-w-[7rem] -rotate-[15deg] -translate-x-1/2 left-1/3 -translate-y-1/2 top-3 z-10 customShadow
+                        <img src={smallTape} alt="" aria-hidden="true"
+                        className="absolute w-1/2 max-w-[7rem] -rotate-[15deg] -translate-x-1/2 left-1/3 -translate-y-1/2 top-3 z-10 customShadow
                         lg:top-2"></img>
 
                         {/* BOTTOM TAPE */}
-                        <img src="/assets/long-tape.png" className="absolute w-2/3 max-w-[11rem] rotate-[100deg] right-0 bottom-[15rem] translate-x-1/2 z-10 customShadow
+                        <img src={longTape} alt="" aria-hidden="true"
+                        className="absolute w-2/3 max-w-[11rem] rotate-[100deg] right-0 bottom-[15rem] translate-x-1/2 z-10 customShadow
                         sm:bottom-[13rem]"></img>
 
                     </div>
@@ -173,7 +194,7 @@ function About() {
                     lg:top-2
                     xl:text-2xl xl:right-6">
 
-                        <h1 className="absolute top-5 w-full h-full bg-brown-texture flex justify-center items-center rounded-md z-10 -rotate-1 shadow-sm shadow-stone-400 gaegu-regular text-black">
+                        <h1 style={bgBrown} className="absolute top-5 w-full h-full flex justify-center items-center rounded-md z-10 -rotate-1 shadow-sm shadow-stone-400 gaegu-regular text-black">
                             About me
                         </h1>
 
@@ -185,7 +206,7 @@ function About() {
                     lg:justify-normal
                     xl:col-end-9">
 
-                        <div className="gaegu-regular font-black text-base bg-brown-texture shadow-md rounded-md rotate-1 w-full h-[95%] flex flex-col justify-between p-[7vw] relative bottom-5
+                        <div style={bgBrown} className="gaegu-regular font-black text-base shadow-md rounded-md rotate-1 w-full h-[95%] flex flex-col justify-between p-[7vw] relative bottom-5
                         sm:p-[5vw] sm:pb-2 sm:text-lg
                         md:text-xl md:w-[95%] md:right-0
                         lg:text-lg lg:p-6 lg:w-full">
@@ -226,12 +247,14 @@ function About() {
                             </div>
 
                             {/* SMALL QUESTION MARK */}
-                            <img src="/assets/white-question.png" className="absolute w-14 -top-16 left-[5vw] drop-shadow-md z-10 rotate-[-20deg]
+                            <img src={question} alt="decorative small question mark drawing"
+                            className="absolute w-14 -top-16 left-[5vw] drop-shadow-md z-10 rotate-[-20deg]
                             md:left-[9vw]
                             lg:left-[5vw]"></img>
 
                             {/* BIG QUESTION MARK */}
-                            <img src="/assets/white-question.png" className="absolute -bottom-8 -right-14 w-20 drop-shadow-md z-10 rotate-[10deg]"></img>
+                            <img src={question} alt="decorative larger question mark drawing"
+                            className="absolute -bottom-8 -right-14 w-20 drop-shadow-md z-10 rotate-[10deg]"></img>
                             
                         </div>
                     

@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
+import { bgBrown } from './Backgrounds';
 
 function NavTabs() {
   const currentPage = useLocation().pathname;
@@ -21,8 +22,8 @@ function NavTabs() {
       {tabs.map(({ name, path }) => (
         <li key={path}>
           <Link to={path} className={currentPage === path ? 'nav-link active' : 'nav-link'}>
-            <div className="
-              // ALL_SCREENS: bg-brown-texture shadow-md shadow-stone-500 
+            <div style={bgBrown} className="
+              // ALL_SCREENS: shadow-md shadow-stone-500 
               // XS_SCREENS: w-6 h-16
               // SM_SCREENS: sm:w-7 sm:h-20
               // MD_SCREENS: md:w-9 md:h-24
