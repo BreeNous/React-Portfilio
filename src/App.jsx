@@ -2,6 +2,7 @@ import { Outlet } from 'react-router-dom';
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 import BookShadow from './components/BookShadow.jsx';
+import bookMark from './assets/bookmark.png';
 
 function App() {
   return (
@@ -15,15 +16,10 @@ function App() {
 
       {/* bookmark */}
       <img
-        src="/assets/bookmark.png"
-        className="
-        // ALL_SCREENS: absolute -top-3 left-[50%] h-1/2 drop-shadow-lg shadow-black z-10 hidden
-        // SM_SCREENS:
-        // MD_SCREENS: md:hidden
-        // LG_SCREENS: lg:block
-        // XL_SCREENS: "
-        alt="Bookmark"
-      />
+        src={bookMark} alt="decorative bookmark"
+        className="absolute -top-3 left-[50%] h-1/2 drop-shadow-lg shadow-black z-10 hidden
+        md:hidden
+        lg:block"/>
       
       <Outlet/>
       

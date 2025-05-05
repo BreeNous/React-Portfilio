@@ -1,5 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import BulletTabs from '../../src/components/BulletTabs';
+import BulletTabs from '../components/BulletTabs';
+import { bgGreen, bgBrown, bgWhite } from '../components/Backgrounds';
+import polaroid from '../assets/polaroid.webp';
+import smallTape from '../assets/small-tape.webp';
+import longTape from '../assets/long-tape.webp';
+
+import frontEndArt from '../assets/front-end-drawing.webp';
+import frontEndCode from '../assets/frontend-code.webp';
+import frontEndSticker from '../assets/green-lightbulb.webp';
+
+import backEndArt from '../assets/back-end-drawing.webp';
+import backEndCode from '../assets/backend-code.webp';
+import backEndSticker from '../assets/green-files.webp';
+
+import techArt from '../assets/tools-drawing.webp';
+import techCode from '../assets/tools-code.webp';
+import techSticker from '../assets/green-tool.webp';
+
 
 
 function Home() {
@@ -10,31 +27,37 @@ function Home() {
         1: {
           listItems: ['HTML5', 'React', 'CSS', 'JavaScript', 'jQuery', 'Bootstrap', 'Tailwind', 'Handlebars', 'Materialize'],
           props: {
-            mainImage: '/assets/front-end-drawing.png',
+            mainImage: frontEndArt,
             mainImageAlt: 'Front-end drawing',
-            accentSticker: '/assets/green-lightbulb.png',
+            accentSticker: frontEndSticker,
+            accentStickerAlt: 'decorative lightbulb drawing',
             titleLabel: 'Front-end',
-            accentImg: '/assets/frontend-code.jpg',
+            accentImg: frontEndCode,
+            accentImgAlt: 'decorative screenshot of front end code text',
           },
         },
         2: {
           listItems: ['Node.js', 'Express', 'MongoDB', 'SQL', 'GraphQL'],
           props: {
-            mainImage: '/assets/back-end-drawing.png',
+            mainImage: backEndArt,
             mainImageAlt: 'Back-end drawing',
-            accentSticker: '/assets/green-files.png',
+            accentSticker: backEndSticker,
+            accentStickerAlt: 'decorative stack of files drawing',
             titleLabel: 'Back-end',
-            accentImg: '/assets/backend-code.jpg',
+            accentImg: backEndCode,
+            accentImgAlt: 'decorative screenshot of back end code text',
           },
         },
         3: {
           listItems: ['Git', 'Docker', 'Webpack', 'Babel', 'ESLint', 'Prettier'],
           props: {
-            mainImage: '/assets/tools-drawing.png',
+            mainImage: techArt,
             mainImageAlt: 'Tools drawing',
-            accentSticker: '/assets/green-tool.png',
+            accentSticker: techSticker,
+            accentStickerAlt: 'decorative hammer drawing',
             titleLabel: 'Tools & Tech',
-            accentImg: '/assets/tools-code.jpg',
+            accentImg: techCode,
+            accentImgAlt: 'decorative screenshot of tech/tool code text',
           },
         },
       };
@@ -53,7 +76,16 @@ function Home() {
         }
     }, [selectedTab]);
 
-    const renderTabLayout = ({ mainImage, mainImageAlt, accentSticker, titleLabel, accentImg }) => (
+    useEffect(() => {
+        const link = document.createElement('link');
+        link.rel = 'preload';
+        link.as = 'image';
+        link.href = polaroid;
+        link.type = 'image/webp';
+        document.head.appendChild(link);
+      }, []);
+
+    const renderTabLayout = ({ mainImage, mainImageAlt, accentSticker, accentStickerAlt, accentImgAlt, titleLabel, accentImg }) => (
         <>
 
             <div className='h-full w-full grid grid-col-5 grid-rows-5'>
@@ -64,18 +96,20 @@ function Home() {
                     {/* DECORATED MAIN PICTURE CONTAINER */}
                     <div className='max-h-fit min-h-fit absolute w-[90%] max-w-[16rem]'>
                         {/* SMALL TAPE */}
-                        <img src='assets/small-tape.png' className='absolute w-2/5 max-w-[7rem] -top-3 -left-2 z-50 -rotate-6 drop-shadow-sm'/>
+                        <img src={smallTape} alt="" aria-hidden="true"
+                        className='absolute w-2/5 max-w-[7rem] -top-3 -left-2 z-50 -rotate-6 drop-shadow-sm'/>
                         {/* MAIN PICTURE */}
                         <img src={mainImage} alt={mainImageAlt} className='relative w-full h-auto rounded-md drop-shadow-md' />
                         {/* GREEN STICKER */}
-                        <div className='absolute -bottom-5 -left-1 w-[10vw] h-[10vw] max-w-[3rem] max-h-[3rem] rounded-full bg-green-texture z-50 drop-shadow-md'></div>
+                        <div style={bgGreen} className='absolute -bottom-5 -left-1 w-[10vw] h-[10vw] max-w-[3rem] max-h-[3rem] rounded-full z-50 drop-shadow-md'></div>
                     </div>
 
                 </div>
 
                 {/* ACCENT IMAGE */}
                 <div className='relative col-start-1 col-end-5 row-start-2 row-end-5 z-10'>
-                    <img src={accentImg} className='w-full max-w-[17rem] h-[40vw] max-h-[11rem] object-cover absolute rotate-2 top-[12vw] overflow-hidden rounded-md shadow-md
+                    <img src={accentImg} alt={accentImgAlt}
+                    className='w-full max-w-[17rem] h-[40vw] max-h-[11rem] object-cover absolute rotate-2 top-[12vw] overflow-hidden rounded-md shadow-md
                     sm:top-20 sm:left-[3%]
                     lg:left-0' />
                 </div> 
@@ -84,14 +118,15 @@ function Home() {
                 <div className='relative col-start-2 col-end-6 row-start-4 row-end-6 z-30 flex justify-end'>
 
                     {/* ACCENT STICKER */}
-                    <img src={accentSticker} className='absolute z-50 drop-shadow-md min-w-[4rem] w-2/5 bottom-[80%] max-w-[6rem] -right-2
+                    <img src={accentSticker} alt={accentStickerAlt}
+                    className='absolute z-50 drop-shadow-md min-w-[4rem] w-2/5 bottom-[80%] max-w-[6rem] -right-2
                     md:right-[10%]
                     lg:-right-2
                     xl:right-0' />
 
                     <div className='absolute max-h-fit min-h-fit h-full w-full flex justify-end'>
                         {/* TITLE CARD */}
-                        <div className='relative bg-white-texture shadow-md -rotate-1 h-full z-40 w-full max-w-[15rem] flex items-center justify-center rounded-md
+                        <div style={bgWhite} className='relative shadow-md -rotate-1 h-full z-40 w-full max-w-[15rem] flex items-center justify-center rounded-md
                         sm:right-[3%]
                         lg:right-0'>
                             <h1 className='gaegu-regular text-base font-black
@@ -101,7 +136,8 @@ function Home() {
                             </h1>
                         
                             {/* LONG TAPE */}
-                            <img src='assets/long-tape.png' className='absolute z-50 -bottom-[5vw] right-3 w-3/4 max-w-[11rem] rotate-[6deg] drop-shadow-sm
+                            <img src={longTape} alt="" aria-hidden="true"
+                            className='absolute z-50 -bottom-[5vw] right-3 w-3/4 max-w-[11rem] rotate-[6deg] drop-shadow-sm
                             sm:-bottom-8'  />
                         </div>
                         
@@ -148,7 +184,7 @@ function Home() {
             // XL_SCREENS: xl:w-1/2 xl:h-full">
 
                 {/* HEY SQUARE CONTAINER */}
-                <div className='flex items-center gaegu-regular rounded-md shadow-md font-black relative bg-brown-texture z-20 w-full h-full text-xl justify-center pb-1 
+                <div style={bgBrown} className='flex items-center gaegu-regular rounded-md shadow-md font-black relative z-20 w-full h-full text-xl justify-center pb-1 
                 row-start-3 row-end-4 col-start-3 col-end-8
                 sm:row-start-4 sm:row-end-5 sm:justify-normal sm:top-3
                 md:row-end-6 md:col-end-9 md:h-2/3 md:col-start-4 md:text-2xl md:right-5
@@ -175,10 +211,10 @@ function Home() {
                     <div className='h-full relative '>
 
                         {/* PIC OF ME */}
-                        <img src='/assets/polaroid.png' alt='polaroid' className='max-h-full w-auto object-contain drop-shadow-lg'></img> 
+                        <img src={polaroid} alt='polaroid image of Breeanna' className='max-h-full w-auto object-contain drop-shadow-lg'></img> 
 
                         {/* SMALL TAPE DECORATION */}
-                        <img src="/assets/small-tape.png" alt="Tape" className="
+                        <img src={smallTape} alt="" aria-hidden="true" className="
                         absolute -top-[7%] left-1/2 -translate-x-1/2 w-2/5 rotate-[8deg] z-30 drop-shadow-sm
                         "/>
 
@@ -186,7 +222,7 @@ function Home() {
                 </div>
 
                 {/* WHITE INTO SQUARE CONTAINER CONTAINER */}
-                <div className='gaegu-regular -rotate-1 z-10 relative bg-white-texture shadow-md rounded-md flex h-full self-start
+                <div style={bgWhite} className='gaegu-regular -rotate-1 z-10 relative shadow-md rounded-md flex h-full self-start
                 row-start-7 row-end-11 col-start-3 col-end-9 
                 sm:row-start-6 sm:col-end-8
                 md:w-5/6
@@ -194,7 +230,8 @@ function Home() {
                 '>
 
                     {/* LEFT TAPE */}
-                    <img src="/assets/long-tape.png" className="
+                    <img src={longTape} alt="" aria-hidden="true"
+                    className="
                     // ALL_SCREENS: absolute z-30 rotate-[97deg] drop-shadow-sm w-3/4 max-w-[140px] bottom-[6rem] -translate-x-1/2"/>
 
                     {/* GREETING TEXT */}
@@ -209,7 +246,7 @@ function Home() {
                 </div>
 
                 {/* FULL STACK GREEN SQUARE CONTAINER */}
-                <div className='bg-green-texture z-30 rounded-md shadow-md rotate-1 flex items-center text-center px-5 text-black font-black gaegu-regular text-[clamp(.8rem,3.7vw,1.1rem)]
+                <div style={bgGreen} className=' z-30 rounded-md shadow-md rotate-1 flex items-center text-center px-5 text-black font-black gaegu-regular text-[clamp(.8rem,3.7vw,1.1rem)]
                 relative -top-4
                 row-start-10 row-end-11 col-start-4 col-end-11
                 sm:row-start-8 sm:row-end-10 sm:col-start-4 sm:top-4 sm:h-3/4 sm:self-end sm:text-xl
@@ -233,7 +270,7 @@ function Home() {
             xl:w-1/2 xl:h-full">
 
                 {/* NAV BAR CONTAINER */}
-                <div className='relative self-center items-center bg-green-texture rounded-md flex justify-center h-4/5 w-full shadow-md gaegu-regular
+                <div style={bgGreen} className='relative self-center items-center rounded-md flex justify-center h-4/5 w-full shadow-md gaegu-regular
                 col-start-2 col-end-12 row-start-1 top-3
                 lg:row-start-3'>
                     <BulletTabs onSelect={setSelectedTab} />

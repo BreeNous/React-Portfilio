@@ -1,10 +1,12 @@
 import NavTabs from './Navigation';
+import tornPaper1 from '../assets/ripped-paper-white.webp';
+import paperClip from '../assets/paper-clip.png';
 
 function Header({ onTabChange }) {
   return (
     <header className="fixed top-0 w-full gaegu-regular flex justify-between h-32 z-40 text-xl">
 
-      <img src='/assets/ripped-paper-white.png' alt="Ripped Paper" 
+      <img src={tornPaper1} alt="Torn Paper" 
       className="z-10 rotate-[-7deg] drop-shadow-md h-[9rem] w-[20rem] absolute -top-10 -translate-x-[40%]
       sm:h-[10rem] sm:w-[25rem] sm:-top-12
       md:h-[11rem] md:w-[32rem] md:-top-14
@@ -12,7 +14,7 @@ function Header({ onTabChange }) {
 
       <div className='w-1/2 z-10 h-2/3 flex relative items-center'>
 
-        <img src='/assets/paper-clip.png' alt="Paper Clip" 
+        <img src={paperClip} alt="Paper Clip" 
         className='absolute z-30 -left-7 customShadow
         // SM_SCREENS: hidden
         // MD_SCREENS: md:h-32 md:top-[-25px] md:rotate-[15deg] md:block md:-left-7'/>

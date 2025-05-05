@@ -1,5 +1,34 @@
 import React, { useState } from 'react';
 
+import smallTape from '../assets/small-tape.webp';
+
+import gutair from '../assets/guitar.webp';
+import list from '../assets/list.webp';
+import weather from '../assets/weather.webp';
+import wrench from '../assets/wrench.webp';
+
+import b1 from '../assets/b1.webp';
+import b2 from '../assets/b2.webp';
+import b3 from '../assets/b3.webp';
+import b4 from '../assets/b4.webp';
+
+import vwg01 from '../assets/vwg01.webp';
+import vwg02 from '../assets/vwg02.webp';
+import vwg03 from '../assets/vwg03.webp';
+import vwg04 from '../assets/vwg04.webp';
+
+import wd01 from '../assets/wd01.webp';
+import wd02 from '../assets/wd02.webp';
+import wd03 from '../assets/wd03.webp';
+import wd04 from '../assets/wd04.webp';
+
+import jeans1 from '../assets/jeans1.webp';
+import jeans2 from '../assets/jeans2.webp';
+import jeans3 from '../assets/jeans3.webp';
+import jeans4 from '../assets/jeans4.webp';
+
+import { bgGreen, bgBrown, bgWhite } from '../components/Backgrounds';
+
 function Portfolio() {
 
     const [activeEnvelope, setActiveEnvelope] = useState(null);
@@ -90,18 +119,18 @@ function Portfolio() {
                     <div className='max-w-[22rem] w-full h-full relative'>
 
                         {/* BROWN BG CARD DECORATION */}
-                        <div className='absolute bg-brown-texture shadow-md w-full h-full left-5 top-5'></div>
+                        <div style={bgBrown} className='absolute shadow-md w-full h-full left-5 top-5'></div>
                     
-                        <div className={`bg-[#5a7728] w-full h-full shadow-inner z-[100] envelope relative ${activeEnvelope === 0 ? 'active' : ''} 
+                        <div className={`bg-[#5a7728] w-full h-full shadow-inner envelope relative ${activeEnvelope === 0 ? 'active z-[100]' : ''} 
                         ${activeEnvelope !== null && activeEnvelope !== 0 ? 'hover-disabled lower-z' : ''}`} onClick={(e) => handleEnvelopeClick(0, e)}>
                         
                             {/* FRONT OF ENVELOPE */}
                             <div className='z-30 relative w-full h-full bottom-0 shadow-md'>
-                                <div className="absolute flex justify-center items-center z-10 bottom-0 bg-green-texture w-full h-5/6">
+                                <div style={bgGreen} className="absolute flex justify-center items-center z-10 bottom-0 w-full h-5/6">
 
                                     {/* ENVELOPE TITLE CARD */}
-                                    <div className='rounded-2xl gaegu-regular shadow-sm shadow-stone-600 absolute flex flex-col z-30 
-                                    bg-white-texture h-2/3 w-3/4 justify-center items-center'>
+                                    <div style={bgWhite} className='rounded-2xl gaegu-regular shadow-sm shadow-stone-600 absolute flex flex-col z-30 
+                                    h-2/3 w-3/4 justify-center items-center'>
 
                                         <p className='text-base
                                         xl:text-2xl'>
@@ -117,40 +146,34 @@ function Portfolio() {
                                     </div>
 
                                     {/* TAPE DECOR */}
-                                    <img src='./assets/small-tape.png' className='absolute z-30 top-10 right-0 translate-x-1/2 h-1/4 rotate-[-265deg] customShadow'></img>
+                                    <img src={smallTape} alt="" aria-hidden="true" 
+                                    className='absolute z-30 top-10 right-0 translate-x-1/2 h-1/4 rotate-[-265deg] customShadow'></img>
 
                                     {/* GUTAIR DECOR */}
-                                    <img src='./assets/guitar.png' className='h-3/4 absolute z-30 top-10 -left-7 rotate-[-5deg] drop-shadow-md'></img>
+                                    <img src={gutair} alt="decoritve gutair drawing" 
+                                    className='h-3/4 absolute z-30 top-10 -left-7 rotate-[-5deg] drop-shadow-md'></img>
 
                                 </div>
 
-                                <div className="absolute left-0 bottom-0 bg-green-texture w-10 h-full rounded-tr-2xl"></div>
+                                <div style={bgGreen} className="absolute left-0 bottom-0 w-10 h-full rounded-tr-2xl"></div>
 
-                                <div className="absolute right-0 bottom-0 bg-green-texture w-10 h-full rounded-tl-2xl"></div>
+                                <div style={bgGreen} className="absolute right-0 bottom-0 w-10 h-full rounded-tl-2xl"></div>
                             </div>
 
                             {/* INNER CARD PLACEMNT CONTAINER */}
                             <div className='w-full h-full flex justify-center absolute bottom-0'>
 
                                 {/* INNER CARD */}
-                                <div className={`inner-card bg-white-texture rounded drop-shadow-md z-20 overflow-scroll
-                                ${activeEnvelope === 0 ? 'fixed click-animation-xs-sm md:click-animation-md-xl ' : 'relative w-5/6 h-5/6 -top-5'}
+                                <div className={`inner-card rounded drop-shadow-md z-20 overflow-scroll
+                                ${activeEnvelope === 0 ? 'fixed click-animation-xs-sm md:click-animation-md-xl' : 'relative w-5/6 h-5/6 -top-5'}
                                 ${activeEnvelope === 0 && isClosing ? 'closing' : ''}`}
-                                style={activeEnvelope === 0 ? {
-                                top: 'var(--start-top)',
-                                left: 'var(--start-left)',
-                                width: 'var(--start-width)',
-                                height: 'var(--start-height)',} : {}}>
-
-                                    
-                                    {/* CONDITIONAL BACK BUTTON */}
-                                    {activeEnvelope === 0 && animationCompleted && !isClosing && (
-                                        <button onClick={handleCloseClick} className="back bg-green-texture rounded-sm shadow-md absolute flex
-                                        gaegu-regular text-base px-2 justify-center items-center top-3 left-3 z-[100]
-                                        lg:text-lg">
-                                            Back
-                                        </button>
-                                    )} 
+                                style={{ ...(activeEnvelope === 0 ? {
+                                        top: 'var(--start-top)',
+                                        left: 'var(--start-left)',
+                                        width: 'var(--start-width)',
+                                        height: 'var(--start-height)',
+                                        } : {}), ...bgWhite,
+                                }}>
                                     
                                     {activeEnvelope === 0 && animationCompleted && !isClosing && (
 
@@ -166,12 +189,21 @@ function Portfolio() {
                                                 sm:px-10 sm:pb-10
                                                 lg:pt-14 lg:pr-5 lg:pb-5'>
 
-                                                    <div className='w-full p-4 h-auto text-base gaegu-regular bg-brown-texture rounded-md shadow-sm shadow-[rgba(0,0,0,0.35)] space-y-4
+                                                    <div style={bgBrown} className='w-full p-4 h-auto text-base gaegu-regular rounded-md shadow-sm shadow-[rgba(0,0,0,0.35)] space-y-4 relative
                                                     sm:text-lg
                                                     md:p-5 md:w-full md:min-h-fit
                                                     xl:text-xl xl:p-6'>
 
-                                                        <p className='text-lg font-black
+                                                        {/* BACK BUTTON */}
+                                                        {activeEnvelope === 0 && animationCompleted && !isClosing && (
+                                                            <button onClick={handleCloseClick} style={bgGreen} className="back rounded-sm shadow-md flex absolute
+                                                            gaegu-regular text-base px-2 justify-center items-center top-3 left-3 z-[100]
+                                                            lg:text-lg">
+                                                                Back
+                                                            </button>
+                                                        )} 
+
+                                                        <p className='text-lg font-black flex justify-center
                                                         sm:text-xl
                                                         lg:text-2xl'>
                                                             Vibrawood Guitairs
@@ -204,8 +236,10 @@ function Portfolio() {
                                                 <div className=' shadow-[rgba(0,0,0,0.35)] w-full p-5 pb-0
                                                 md:px-5 md:py-5 hidden lg:block lg:pl-10 lg:pt-0'>
 
+                                                    {/* Large screen image only */}
                                                     <div className='w-auto min-h-fit items-center overflow-hidden hidden lg:flex'>
-                                                            <img src='./assets/vwg04.png' className='object-cover h-auto w-full rounded-md drop-shadow-md'></img>
+                                                        <img src={vwg04} alt="screenshot of vibrawood guitars website" 
+                                                        className='object-cover h-auto w-full rounded-md drop-shadow-md' />
                                                     </div>
 
                                                 </div>
@@ -221,22 +255,24 @@ function Portfolio() {
 
                                                     {/* PROJECT PHOTOS */}
                                                     <div className='w-auto min-h-fit pb-5 flex justify-center items-center overflow-hidden'>
-                                                        <img src='./assets/vwg01.png' className='object-cover h-auto w-full rounded-md drop-shadow-md'></img>
-                                                    </div>
+                                                        <img src={vwg01} alt="screenshot of vibrawood guitars website" 
+                                                            className='object-cover h-auto w-full rounded-md drop-shadow-md' />
+                                                        </div>
 
-                                                    <div className='w-auto min-h-fit pb-5 flex justify-center items-center overflow-hidden'>
-                                                        <img src='./assets/vwg02.png' className='object-cover h-auto w-full rounded-md drop-shadow-md'></img>
-                                                    </div>
+                                                        <div className='w-auto min-h-fit pb-5 flex justify-center items-center overflow-hidden'>
+                                                        <img src={vwg02} alt="screenshot of vibrawood guitars website"
+                                                            className='object-cover h-auto w-full rounded-md drop-shadow-md' />
+                                                        </div>
 
-                                                    <div className='w-auto min-h-fit  flex justify-center items-center overflow-hidden'>
-                                                        <img src='./assets/vwg03.png' className='object-cover h-auto w-full rounded-md drop-shadow-md'></img>
-                                                    </div>
+                                                        <div className='w-auto min-h-fit flex justify-center items-center overflow-hidden'>
+                                                        <img src={vwg03} alt="screenshot of vibrawood guitars website"
+                                                            className='object-cover h-auto w-full rounded-md drop-shadow-md' />
+                                                        </div>
 
-                                                    <div className='w-auto min-h-fit pt-5 flex justify-center items-center overflow-hidden lg:hidden'>
-                                                            <img src='./assets/vwg04.png' className='object-cover h-auto w-full rounded-md drop-shadow-md'></img>
+                                                        <div className='w-auto min-h-fit pt-5 flex justify-center items-center overflow-hidden lg:hidden'>
+                                                        <img src={vwg04} alt="screenshot of vibrawood guitars website"
+                                                            className='object-cover h-auto w-full rounded-md drop-shadow-md' />
                                                     </div>
-
-                                                    
 
                                                 </div>
 
@@ -267,19 +303,19 @@ function Portfolio() {
                     <div className='max-w-[22rem] w-full h-full relative'>
 
                         {/* BROWN BG CARD DECORATION */}
-                        <div className='absolute bg-brown-texture w-full h-full right-5 top-5'></div>
+                        <div style={bgBrown} className='absolute w-full h-full right-5 top-5'></div>
 
                         {/* ENVELOPE */}
-                        <div className={`bg-[#5a7728] w-full h-full shadow-inner envelope z-[100] relative ${activeEnvelope === 1 ? 'active' : ''} 
+                        <div className={`bg-[#5a7728] w-full h-full shadow-inner envelope relative ${activeEnvelope === 1 ? 'active z-[100]' : ''} 
                         ${activeEnvelope !== null && activeEnvelope !== 1 ? 'hover-disabled lower-z' : ''}`} onClick={(e) => handleEnvelopeClick(1, e)}>
                         
                             {/* FRONT OF ENVELOPE */}
                             <div className='z-30 relative w-full h-full bottom-0 shadow-md'>
-                                <div className="absolute flex justify-center items-center z-10 bottom-0 bg-green-texture w-full h-5/6">
+                                <div style={bgGreen} className="absolute flex justify-center items-center z-10 bottom-0 w-full h-5/6">
 
                                     {/* ENVELOPE TITLE CARD */}
-                                    <div className='rounded-2xl gaegu-regular shadow-sm shadow-stone-600 absolute flex flex-col z-30 
-                                    bg-white-texture h-2/3 w-3/4 justify-center items-center'>
+                                    <div style={bgWhite} className='rounded-2xl gaegu-regular shadow-sm shadow-stone-600 absolute flex flex-col z-30 
+                                    h-2/3 w-3/4 justify-center items-center'>
 
                                         <p className='text-base
                                         xl:text-2xl'>
@@ -295,40 +331,33 @@ function Portfolio() {
                                     </div>
 
                                     {/* TAPE DECOR */}
-                                    <img src='./assets/small-tape.png' className='absolute z-30 top-10 left-0 -translate-x-1/2 h-1/4 rotate-[-265deg] customShadow'></img>
+                                    <img src={smallTape} alt="" aria-hidden="true" 
+                                    className='absolute z-30 top-10 left-0 -translate-x-1/2 h-1/4 rotate-[-265deg] customShadow'></img>
 
                                     {/* WEATHER DECOR */}
-                                    <img src='./assets/weather.png' className='h-3/5 absolute z-30 top-20 -right-7 rotate-[5deg] drop-shadow-md'></img>
+                                    <img src={weather} alt="decoritive rain cloud drawing" className='h-3/5 absolute z-30 top-20 -right-7 rotate-[5deg] drop-shadow-md'></img>
 
                                 </div>
 
-                                <div className="absolute left-0 bottom-0 bg-green-texture w-10 h-full rounded-tr-2xl"></div>
+                                <div style={bgGreen} className="absolute left-0 bottom-0 w-10 h-full rounded-tr-2xl"></div>
 
-                                <div className="absolute right-0 bottom-0 bg-green-texture w-10 h-full rounded-tl-2xl"></div>
+                                <div style={bgGreen} className="absolute right-0 bottom-0 w-10 h-full rounded-tl-2xl"></div>
                             </div>
 
                             {/* INNER CARD PLACEMNT CONTAINER */}
                             <div className='w-full h-full flex justify-center absolute bottom-0'>
 
                                 {/* INNER CARD */}
-                                <div className={`inner-card bg-white-texture rounded drop-shadow-md z-20 overflow-scroll
-                                ${activeEnvelope === 1 ? 'fixed click-animation-xs-sm md:click-animation-md-xl ' : 'relative w-5/6 h-5/6 -top-5'}
+                                <div className={`inner-card rounded drop-shadow-md z-20 overflow-scroll
+                                ${activeEnvelope === 1 ? 'fixed click-animation-xs-sm md:click-animation-md-xl' : 'relative w-5/6 h-5/6 -top-5'}
                                 ${activeEnvelope === 1 && isClosing ? 'closing' : ''}`}
-                                style={activeEnvelope === 1 ? {
-                                top: 'var(--start-top)',
-                                left: 'var(--start-left)',
-                                width: 'var(--start-width)',
-                                height: 'var(--start-height)',} : {}}>
-
-                                    
-                                    {/* CONDITIONAL BACK BUTTON */}
-                                    {activeEnvelope === 1 && animationCompleted && !isClosing && (
-                                        <button onClick={handleCloseClick} className="back bg-green-texture rounded-sm shadow-md flex absolute
-                                        gaegu-regular text-base px-2 justify-center items-center top-3 left-3 z-[100]
-                                        lg:text-lg">
-                                            Back
-                                        </button>
-                                    )} 
+                                style={{ ...(activeEnvelope === 1 ? {
+                                        top: 'var(--start-top)',
+                                        left: 'var(--start-left)',
+                                        width: 'var(--start-width)',
+                                        height: 'var(--start-height)',
+                                        } : {}), ...bgWhite,
+                                }}>
                                     
                                     {activeEnvelope === 1 && animationCompleted && !isClosing && (
 
@@ -344,12 +373,21 @@ function Portfolio() {
                                                 sm:px-10 sm:pb-10
                                                 lg:pt-14 lg:pr-5 lg:pb-5'>
 
-                                                    <div className='w-full p-4 h-auto text-base gaegu-regular bg-brown-texture rounded-md shadow-sm shadow-[rgba(0,0,0,0.35)] space-y-4
+                                                    <div style={bgBrown} className='w-full p-4 h-auto text-base gaegu-regular rounded-md shadow-sm shadow-[rgba(0,0,0,0.35)] space-y-4 relative
                                                     sm:text-lg
                                                     md:p-5 md:w-full md:min-h-fit
                                                     xl:text-xl xl:p-6'>
 
-                                                        <span className='text-lg font-black
+                                                        {/* BACK BUTTON */}
+                                                        {activeEnvelope === 1 && animationCompleted && !isClosing && (
+                                                            <button onClick={handleCloseClick} style={bgGreen} className="back rounded-sm shadow-md flex absolute
+                                                            gaegu-regular text-base px-2 justify-center items-center top-3 left-3 z-[100]
+                                                            lg:text-lg">
+                                                                Back
+                                                            </button>
+                                                        )} 
+
+                                                        <span className='text-lg font-black flex justify-center
                                                         sm:text-xl
                                                         lg:text-2xl'>
                                                             Weather Dashboard
@@ -382,7 +420,8 @@ function Portfolio() {
                                                 md:px-5 md:py-5 hidden lg:block lg:pl-10 lg:pt-0'>
 
                                                     <div className='w-auto min-h-fit items-center overflow-hidden hidden lg:flex'>
-                                                            <img src='./assets/wd04.png' className='object-cover h-auto w-full rounded-md drop-shadow-md'></img>
+                                                            <img src={wd04} alt="screen shot from weather dashboard website"
+                                                            className='object-cover h-auto w-full rounded-md drop-shadow-md'></img>
                                                     </div>
 
                                                 </div>
@@ -398,20 +437,25 @@ function Portfolio() {
 
                                                     {/* PROJECT PHOTOS */}
                                                     <div className='w-auto min-h-fit pb-5 flex justify-center items-center overflow-hidden'>
-                                                        <img src='./assets/wd01.png' className='object-cover h-auto w-full rounded-md drop-shadow-md'></img>
+                                                        <img src={wd01} alt="screenshot from weather dashboard website"
+                                                            className='object-cover h-auto w-full rounded-md drop-shadow-md' />
+                                                        </div>
+
+                                                        <div className='w-auto min-h-fit pb-5 flex justify-center items-center overflow-hidden'>
+                                                        <img src={wd02} alt="screenshot from weather dashboard website"
+                                                            className='object-cover h-auto w-full rounded-md drop-shadow-md' />
+                                                        </div>
+
+                                                        <div className='w-auto min-h-fit flex justify-center items-center overflow-hidden'>
+                                                        <img src={wd03} alt="screenshot from weather dashboard website"
+                                                            className='object-cover h-auto w-full rounded-md drop-shadow-md' />
+                                                        </div>
+
+                                                        <div className='w-auto min-h-fit pt-5 flex justify-center items-center overflow-hidden lg:hidden'>
+                                                        <img src={wd04} alt="screenshot from weather dashboard website"
+                                                            className='object-cover h-auto w-full rounded-md drop-shadow-md' />
                                                     </div>
 
-                                                    <div className='w-auto min-h-fit pb-5 flex justify-center items-center overflow-hidden'>
-                                                        <img src='./assets/wd02.png' className='object-cover h-auto w-full rounded-md drop-shadow-md'></img>
-                                                    </div>
-
-                                                    <div className='w-auto min-h-fit  flex justify-center items-center overflow-hidden'>
-                                                        <img src='./assets/wd03.png' className='object-cover h-auto w-full rounded-md drop-shadow-md'></img>
-                                                    </div>
-
-                                                    <div className='w-auto min-h-fit pt-5 flex justify-center items-center overflow-hidden lg:hidden'>
-                                                            <img src='./assets/wd04.png' className='object-cover h-auto w-full rounded-md drop-shadow-md'></img>
-                                                    </div>
 
                                                     
 
@@ -454,19 +498,19 @@ function Portfolio() {
                     <div className='max-w-[22rem] w-full h-full relative'>
 
                         {/* BROWN BG CARD DECORATION */}
-                        <div className='absolute bg-brown-texture w-full h-full left-5 top-5'></div>
+                        <div style={bgBrown} className='absolute w-full h-full left-5 top-5'></div>
 
                         {/* ENVELOPE */}
-                        <div className={`bg-[#5a7728] w-full h-full shadow-inner z-[100] envelope relative ${activeEnvelope === 2 ? 'active' : ''} 
+                        <div className={`bg-[#5a7728] w-full h-full shadow-inner envelope relative ${activeEnvelope === 2 ? 'active z-[100]' : ''} 
                         ${activeEnvelope !== null && activeEnvelope !== 2 ? 'hover-disabled lower-z' : ''}`} onClick={(e) => handleEnvelopeClick(2, e)}>
                         
                             {/* FRONT OF ENVELOPE */}
                             <div className='z-30 relative w-full h-full bottom-0 shadow-md'>
-                                <div className="absolute flex justify-center items-center z-10 bottom-0 bg-green-texture w-full h-5/6">
+                                <div style={bgGreen} className="absolute flex justify-center items-center z-10 bottom-0 w-full h-5/6">
 
                                     {/* ENVELOPE TITLE CARD */}
-                                    <div className='rounded-2xl gaegu-regular shadow-sm shadow-stone-600 absolute flex flex-col z-30 
-                                    bg-white-texture h-2/3 w-3/4 justify-center items-center'>
+                                    <div style={bgWhite} className='rounded-2xl gaegu-regular shadow-sm shadow-stone-600 absolute flex flex-col z-30 
+                                    h-2/3 w-3/4 justify-center items-center'>
 
                                         <p className='text-base
                                         xl:text-2xl'>
@@ -482,40 +526,35 @@ function Portfolio() {
                                     </div>
 
                                     {/* TAPE DECOR */}
-                                    <img src='./assets/small-tape.png' className='absolute z-30 top-10 right-0 translate-x-1/2 h-1/4 rotate-[-265deg] customShadow'></img>
+                                    <img src={smallTape} alt="" aria-hidden="true" 
+                                    className='absolute z-30 top-10 right-0 translate-x-1/2 h-1/4 rotate-[-265deg] customShadow'></img>
 
                                     {/* WRENCH DECOR */}
-                                    <img src="./assets/wrench.png" className='h-3/4 absolute z-30 top-10 -left-7 rotate-[-5deg] drop-shadow-md'></img>
+                                    <img src={wrench} alt="decoraitve wrench drawing"
+                                    className='h-3/4 absolute z-30 top-10 -left-7 rotate-[-5deg] drop-shadow-md'></img>
 
                                 </div>
 
-                                <div className="absolute left-0 bottom-0 bg-green-texture w-10 h-full rounded-tr-2xl"></div>
+                                <div style={bgGreen} className="absolute left-0 bottom-0 w-10 h-full rounded-tr-2xl"></div>
 
-                                <div className="absolute right-0 bottom-0 bg-green-texture w-10 h-full rounded-tl-2xl"></div>
+                                <div style={bgGreen} className="absolute right-0 bottom-0 w-10 h-full rounded-tl-2xl"></div>
                             </div>
 
                             {/* INNER CARD PLACEMNT CONTAINER */}
                             <div className='w-full h-full flex justify-center absolute bottom-0'>
 
                                 {/* INNER CARD */}
-                                <div className={`inner-card bg-white-texture rounded drop-shadow-md z-20 overflow-scroll
-                                ${activeEnvelope === 2 ? 'fixed click-animation-xs-sm md:click-animation-md-xl ' : 'relative w-5/6 h-5/6 -top-5'}
+                                <div className={`inner-card rounded drop-shadow-md z-20 overflow-scroll
+                                ${activeEnvelope === 2 ? 'fixed click-animation-xs-sm md:click-animation-md-xl' : 'relative w-5/6 h-5/6 -top-5'}
                                 ${activeEnvelope === 2 && isClosing ? 'closing' : ''}`}
-                                style={activeEnvelope === 2 ? {
-                                top: 'var(--start-top)',
-                                left: 'var(--start-left)',
-                                width: 'var(--start-width)',
-                                height: 'var(--start-height)',} : {}}>
+                                style={{ ...(activeEnvelope === 2 ? {
+                                        top: 'var(--start-top)',
+                                        left: 'var(--start-left)',
+                                        width: 'var(--start-width)',
+                                        height: 'var(--start-height)',
+                                        } : {}), ...bgWhite,
+                                }}>
 
-                                    
-                                    {/* CONDITIONAL BACK BUTTON */}
-                                    {activeEnvelope === 2 && animationCompleted && !isClosing && (
-                                        <button onClick={handleCloseClick} className="back bg-green-texture rounded-sm shadow-md absolute flex
-                                        gaegu-regular text-base px-2 justify-center items-center top-3 left-3 z-[100]
-                                        lg:text-lg">
-                                            Back
-                                        </button>
-                                    )} 
                                     
                                     {activeEnvelope === 2 && animationCompleted && !isClosing && (
 
@@ -531,12 +570,19 @@ function Portfolio() {
                                                 sm:px-10 sm:pb-10
                                                 lg:pt-14 lg:pr-5 lg:pb-5'>
 
-                                                    <div className='w-full p-4 h-auto text-base gaegu-regular bg-brown-texture rounded-md shadow-sm shadow-[rgba(0,0,0,0.35)] space-y-4
+                                                    <div style={bgBrown} className='w-full p-4 h-auto text-base gaegu-regular rounded-md shadow-sm shadow-[rgba(0,0,0,0.35)] space-y-4 relative
                                                     sm:text-lg
                                                     md:p-5 md:w-full md:min-h-fit
                                                     xl:text-xl xl:p-6'>
 
-                                                        <p className='text-lg font-black
+                                                        {/* BACK BUTTON */}
+                                                        <button onClick={handleCloseClick} style={bgGreen} className="back rounded-sm shadow-md flex absolute
+                                                        gaegu-regular text-base px-2 justify-center items-center top-3 left-3 z-[100]
+                                                        lg:text-lg">
+                                                            Back
+                                                        </button>
+
+                                                        <p className='text-lg font-black flex justify-center
                                                         sm:text-xl
                                                         lg:text-2xl'>
                                                             Jeans
@@ -571,7 +617,8 @@ function Portfolio() {
                                                 md:px-5 md:py-5 hidden lg:block lg:pl-10 lg:pt-0'>
 
                                                     <div className='w-auto min-h-fit items-center overflow-hidden hidden lg:flex'>
-                                                            <img src='./assets/jeans4.png' className='object-cover h-auto w-full rounded-md drop-shadow-md'></img>
+                                                            <img src={jeans4} alt="screen shot from of website"
+                                                            className='object-cover h-auto w-full rounded-md drop-shadow-md'></img>
                                                     </div>
 
                                                 </div>
@@ -587,20 +634,25 @@ function Portfolio() {
 
                                                     {/* PROJECT PHOTOS */}
                                                     <div className='w-auto min-h-fit pb-5 flex justify-center items-center overflow-hidden'>
-                                                        <img src='./assets/jeans1.png' className='object-cover h-auto w-full rounded-md drop-shadow-md'></img>
+                                                        <img src={jeans1} alt="screenshot from jeans website"
+                                                            className='object-cover h-auto w-full rounded-md drop-shadow-md' />
+                                                        </div>
+
+                                                        <div className='w-auto min-h-fit pb-5 flex justify-center items-center overflow-hidden'>
+                                                        <img src={jeans2} alt="screenshot from jeans website"
+                                                            className='object-cover h-auto w-full rounded-md drop-shadow-md' />
+                                                        </div>
+
+                                                        <div className='w-auto min-h-fit flex justify-center items-center overflow-hidden'>
+                                                        <img src={jeans3} alt="screenshot from jeans website"
+                                                            className='object-cover h-auto w-full rounded-md drop-shadow-md' />
+                                                        </div>
+
+                                                        <div className='w-auto min-h-fit pt-5 flex justify-center items-center overflow-hidden lg:hidden'>
+                                                        <img src={jeans4} alt="screenshot from jeans website"
+                                                            className='object-cover h-auto w-full rounded-md drop-shadow-md' />
                                                     </div>
 
-                                                    <div className='w-auto min-h-fit pb-5 flex justify-center items-center overflow-hidden'>
-                                                        <img src='./assets/jeans2.png' className='object-cover h-auto w-full rounded-md drop-shadow-md'></img>
-                                                    </div>
-
-                                                    <div className='w-auto min-h-fit  flex justify-center items-center overflow-hidden'>
-                                                        <img src='./assets/jeans3.png' className='object-cover h-auto w-full rounded-md drop-shadow-md'></img>
-                                                    </div>
-
-                                                    <div className='w-auto min-h-fit pt-5 flex justify-center items-center overflow-hidden lg:hidden'>
-                                                            <img src='./assets/jeans4.png' className='object-cover h-auto w-full rounded-md drop-shadow-md'></img>
-                                                    </div>
 
                                                     
 
@@ -633,19 +685,19 @@ function Portfolio() {
                     <div className='max-w-[22rem] w-full h-full relative'>
 
                         {/* BROWN BG CARD DECORATION */}
-                        <div className='absolute bg-brown-texture w-full h-full right-5 top-5'></div>
+                        <div style={bgBrown} className='absolute w-full h-full right-5 top-5'></div>
 
                         {/* ENVELOPE */}
-                        <div className={`bg-[#5a7728] w-full h-full shadow-inner z-[100] envelope relative ${activeEnvelope === 3 ? 'active' : ''} 
+                        <div className={`bg-[#5a7728] w-full h-full shadow-inner envelope relative ${activeEnvelope === 3 ? 'active z-[100]' : ''} 
                                 ${activeEnvelope !== null && activeEnvelope !== 3 ? 'hover-disabled lower-z' : ''}`} onClick={(e) => handleEnvelopeClick(3, e)}>
                             
                                 {/* FRONT OF ENVELOPE */}
                                 <div className='z-30 relative w-full h-full bottom-0 shadow-md'>
-                                    <div className="absolute flex justify-center items-center z-10 bottom-0 bg-green-texture w-full h-5/6">
+                                    <div style={bgGreen} className="absolute flex justify-center items-center z-10 bottom-0 w-full h-5/6">
 
                                         {/* ENVELOPE TITLE CARD */}
-                                        <div className='rounded-2xl gaegu-regular shadow-sm shadow-stone-600 absolute flex flex-col z-30 
-                                        bg-white-texture h-2/3 w-3/4 justify-center items-center'>
+                                        <div style={bgWhite} className='rounded-2xl gaegu-regular shadow-sm shadow-stone-600 absolute flex flex-col z-30 
+                                        h-2/3 w-3/4 justify-center items-center'>
 
                                             <p className='text-base
                                             xl:text-2xl'>
@@ -661,40 +713,37 @@ function Portfolio() {
                                         </div>
 
                                         {/* TAPE DECOR */}
-                                        <img src='./assets/small-tape.png' className='absolute z-30 top-10 left-0 -translate-x-1/2 h-1/4 rotate-[-265deg] customShadow'></img>
+                                        <img src={smallTape} alt="" aria-hidden="true"
+                                        className='absolute z-30 top-10 left-0 -translate-x-1/2 h-1/4 rotate-[-265deg] customShadow'></img>
 
                                         {/* LIST DECOR */}
-                                        <img src="./assets/list.png" className='h-3/5 absolute z-30 top-20 -right-7 rotate-[5deg] drop-shadow-md'></img>
+                                        <img src={list} alt="decorative list drawing"
+                                        className='h-3/5 absolute z-30 top-20 -right-7 rotate-[5deg] drop-shadow-md'></img>
 
                                     </div>
 
-                                    <div className="absolute left-0 bottom-0 bg-green-texture w-10 h-full rounded-tr-2xl"></div>
+                                    <div style={bgGreen} className="absolute left-0 bottom-0 w-10 h-full rounded-tr-2xl"></div>
 
-                                    <div className="absolute right-0 bottom-0 bg-green-texture w-10 h-full rounded-tl-2xl"></div>
+                                    <div style={bgGreen} className="absolute right-0 bottom-0 w-10 h-full rounded-tl-2xl"></div>
                                 </div>
 
                                 {/* INNER CARD PLACEMNT CONTAINER */}
                                 <div className='w-full h-full flex justify-center absolute bottom-0'>
 
                                     {/* INNER CARD */}
-                                    <div className={`inner-card bg-white-texture rounded drop-shadow-md z-20 overflow-scroll
-                                    ${activeEnvelope === 3 ? 'fixed click-animation-xs-sm md:click-animation-md-xl ' : 'relative w-5/6 h-5/6 -top-5'}
-                                    ${activeEnvelope === 3 && isClosing ? 'closing' : ''}`}
-                                    style={activeEnvelope === 3 ? {
-                                    top: 'var(--start-top)',
-                                    left: 'var(--start-left)',
-                                    width: 'var(--start-width)',
-                                    height: 'var(--start-height)',} : {}}>
+                                        <div className={`inner-card rounded drop-shadow-md z-20 overflow-scroll
+                                        ${activeEnvelope === 3 ? 'fixed click-animation-xs-sm md:click-animation-md-xl' : 'relative w-5/6 h-5/6 -top-5'}
+                                        ${activeEnvelope === 3 && isClosing ? 'closing' : ''}`}
+                                        style={{ ...(activeEnvelope === 3 ? {
+                                        top: 'var(--start-top)',
+                                        left: 'var(--start-left)',
+                                        width: 'var(--start-width)',
+                                        height: 'var(--start-height)',
+                                        } : {}), ...bgWhite,
+                                }}>
 
                                         
-                                        {/* CONDITIONAL BACK BUTTON */}
-                                        {activeEnvelope === 3 && animationCompleted && !isClosing && (
-                                            <button onClick={handleCloseClick} className="back bg-green-texture rounded-sm shadow-md flex absolute
-                                            gaegu-regular text-base px-2 justify-center items-center top-3 left-3 z-[100]
-                                            lg:text-lg">
-                                                Back
-                                            </button>
-                                        )} 
+                                        
                                         
                                         {activeEnvelope === 3 && animationCompleted && !isClosing && (
 
@@ -710,12 +759,19 @@ function Portfolio() {
                                                     sm:px-10 sm:pb-10
                                                     lg:pt-14 lg:pr-5 lg:pb-5'>
 
-                                                        <div className='w-full p-4 h-auto text-base gaegu-regular bg-brown-texture rounded-md shadow-sm shadow-[rgba(0,0,0,0.35)] space-y-4
+                                                        <div style={bgBrown} className='w-full p-4 h-auto text-base gaegu-regular rounded-md shadow-sm shadow-[rgba(0,0,0,0.35)] space-y-4 relative
                                                         sm:text-lg
                                                         md:p-5 md:w-full md:min-h-fit
                                                         xl:text-xl xl:p-6'>
 
-                                                            <p className='text-lg font-black
+                                                            {/* BACK BUTTON */}
+                                                            <button onClick={handleCloseClick} style={bgGreen} className="back rounded-sm shadow-md flex absolute
+                                                            gaegu-regular text-base px-2 justify-center items-center top-3 left-3 z-[100]
+                                                            lg:text-lg">
+                                                                Back
+                                                            </button>
+                                                            
+                                                            <p className='text-lg font-black flex justify-center
                                                             sm:text-xl
                                                             lg:text-2xl'>
                                                                 Bucket
@@ -734,7 +790,7 @@ function Portfolio() {
                                                             </p>
 
                                                             <p>
-                                                                Although I initially worked with a team to create Bucket1.0, I ended up soloing the project and fully refactored it — redesigning the data models, rewriting the API with 
+                                                                Although I initially worked with a team to create Bucket, I ended up soloing the project and fully refactored it — redesigning the data models, rewriting the API with 
                                                                 GraphQL and Express, and rebuilding the front end to improve usability and structure. The app uses the MERN stack with JWT authentication, 
                                                                 secure sessions, Multer for image uploads, and a protected file system to ensure user privacy. This build gave me hands-on experience with 
                                                                 building real-world features from scratch, handling migrations, and structuring back-end logic for scalability and maintainability. While Buckets front 
@@ -748,7 +804,8 @@ function Portfolio() {
                                                     md:px-5 md:py-5 hidden lg:block lg:pl-10 lg:pt-0'>
 
                                                         <div className='w-auto min-h-fit items-center overflow-hidden hidden lg:flex'>
-                                                                <img src='./assets/b4.png' className='object-cover h-auto w-full rounded-md drop-shadow-md'></img>
+                                                                <img src={b4} alt="screenshot of bucket list website"
+                                                                className='object-cover h-auto w-full rounded-md drop-shadow-md'></img>
                                                         </div>
 
                                                     </div>
@@ -764,22 +821,24 @@ function Portfolio() {
 
                                                         {/* PROJECT PHOTOS */}
                                                         <div className='w-auto min-h-fit pb-5 flex justify-center items-center overflow-hidden'>
-                                                            <img src='./assets/b1.png' className='object-cover h-auto w-full rounded-md drop-shadow-md'></img>
+                                                        <img src={b1} alt="screenshot of bucket list website"
+                                                            className='object-cover h-auto w-full rounded-md drop-shadow-md' />
                                                         </div>
 
                                                         <div className='w-auto min-h-fit pb-5 flex justify-center items-center overflow-hidden'>
-                                                            <img src='./assets/b2.png' className='object-cover h-auto w-full rounded-md drop-shadow-md'></img>
+                                                        <img src={b2} alt="screenshot of bucket list website"
+                                                            className='object-cover h-auto w-full rounded-md drop-shadow-md' />
                                                         </div>
 
-                                                        <div className='w-auto min-h-fit  flex justify-center items-center overflow-hidden'>
-                                                            <img src='./assets/b3.png' className='object-cover h-auto w-full rounded-md drop-shadow-md'></img>
+                                                        <div className='w-auto min-h-fit flex justify-center items-center overflow-hidden'>
+                                                        <img src={b3} alt="screenshot of bucket list website"
+                                                            className='object-cover h-auto w-full rounded-md drop-shadow-md' />
                                                         </div>
 
                                                         <div className='w-auto min-h-fit pt-5 flex justify-center items-center overflow-hidden lg:hidden'>
-                                                                <img src='./assets/b4.png' className='object-cover h-auto w-full rounded-md drop-shadow-md'></img>
-                                                        </div>
-
-                                                        
+                                                        <img src={b4} alt="screenshot of bucket list website"
+                                                            className='object-cover h-auto w-full rounded-md drop-shadow-md' />
+                                                    </div>
 
                                                     </div>
 
