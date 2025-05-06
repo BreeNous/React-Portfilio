@@ -115,7 +115,7 @@ function Home() {
                 </div> 
         
                 {/* container to keep tape element visually stuck to bottom of title card  */}
-                <div className='relative col-start-2 col-end-6 row-start-4 row-end-6 z-30 flex justify-end'>
+                <div className='relative col-start-2 col-end-6 row-start-4 row-end-6 z-30 flex justify-end min-h-fit'>
 
                     {/* ACCENT STICKER */}
                     <img src={accentSticker} alt={accentStickerAlt}

@@ -42,15 +42,23 @@ function About() {
                             lg:w-full lg:h-full">
 
                                 {/* TOP TAPE */}
-                                <img src={smallTape} alt="" aria-hidden="true"
+                                <img src={smallTape} alt="" aria-hidden="true" loading='lazy'
                                 className="absolute w-1/2 max-w-[7rem] rotate-[60deg] right-0 translate-x-1/4 top-[8vw] z-10 customShadow
                                 md:right-4 md:top-[6vw]
                                 lg:top-[4vw] lg:right-0
                                 xl:top-[3vw] xl:right-2"></img>
 
                                 {/* BOTTOM TAPE */}
-                                <img src={longTape} alt="" aria-hidden="true"
+                                <img src={longTape} alt="" aria-hidden="true" loading='lazy'
                                 className="absolute w-2/3 max-w-[11rem] rotate-[10deg] -left-6 bottom-0 translate-y-1/2 z-10 customShadow"></img>
+
+                                {/* BOOK STICKER */}
+                                <img src={books} alt="decorative stack of books drawing" loading='lazy'
+                                className="w-16 absolute -bottom-5 translate-x-1/2 right-5 drop-shadow-md
+                                sm:w-24
+                                md:w-28 md:right-20 md:-bottom-12
+                                lg:right-14 lg:w-24 lg:-bottom-8
+                                xl:right-16 xl:w-28 xl:-bottom-12"></img>
 
                             </div>
                         
@@ -106,10 +114,6 @@ function About() {
                             <svg className="w-4 pt-3 self-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
                         </div>
 
-                        {/* BOOK STICKER */}
-                        <img src={books} alt="decorative stack of books drawing"
-                        className="w-1/2 max-w-[7rem] absolute -bottom-24 right-20 drop-shadow-md"></img>
-
                     </div>
 
                 </div>
@@ -123,22 +127,22 @@ function About() {
                     sm:items-center">
 
                         <div style={bgBrown} className="w-12 aspect-square rounded-xl flex justify-center items-center shadow-sm shadow-stone-500">
-                            <img src={Ae} alt="decorative Adobe after effects logo drawing"
+                            <img src={Ae} alt="decorative Adobe after effects logo drawing" loading='lazy'
                             className="w-2/3"></img>
                         </div>
 
                         <div style={bgBrown} className="w-12 aspect-square rounded-xl flex justify-center items-center shadow-sm shadow-stone-500">
-                            <img src={Ai} alt="decorative Adobe illustrator logo drawing"
+                            <img src={Ai} alt="decorative Adobe illustrator logo drawing" loading='lazy'
                             className="w-2/3"></img>
                         </div>
 
                         <div style={bgBrown} className="w-12 aspect-square rounded-xl flex justify-center items-center shadow-sm shadow-stone-500">
-                            <img src={Pr} alt="decorative Adobe premire pro logo drawing"
+                            <img src={Pr} alt="decorative Adobe premire pro logo drawing" loading='lazy'
                             className="w-2/3"></img>
                         </div>
 
                         <div style={bgBrown} className="w-12 aspect-square rounded-xl flex justify-center items-center shadow-sm shadow-stone-500">
-                            <img src={Ps} alt="decorative Adobe photoshop logo drawing"
+                            <img src={Ps} alt="decorative Adobe photoshop logo drawing" loading='lazy'
                             className="w-2/3"></img>
                         </div>
 
@@ -174,12 +178,12 @@ function About() {
                     lg:w-full lg:h-full">
 
                         {/* TOP TAPE */}
-                        <img src={smallTape} alt="" aria-hidden="true"
+                        <img src={smallTape} alt="" aria-hidden="true" loading='lazy'
                         className="absolute w-1/2 max-w-[7rem] -rotate-[15deg] -translate-x-1/2 left-1/3 -translate-y-1/2 top-3 z-10 customShadow
                         lg:top-2"></img>
 
                         {/* BOTTOM TAPE */}
-                        <img src={longTape} alt="" aria-hidden="true"
+                        <img src={longTape} alt="" aria-hidden="true" loading='lazy'
                         className="absolute w-2/3 max-w-[11rem] rotate-[100deg] right-0 bottom-[15rem] translate-x-1/2 z-10 customShadow
                         sm:bottom-[13rem]"></img>
 
@@ -194,7 +198,7 @@ function About() {
                     lg:top-2
                     xl:text-2xl xl:right-6">
 
-                        <h1 style={bgBrown} className="absolute top-5 w-full h-full flex justify-center items-center rounded-md z-10 -rotate-1 shadow-sm shadow-stone-400 gaegu-regular text-black">
+                        <h1 style={bgBrown} loading='lazy' className="absolute top-5 w-full h-full flex justify-center items-center rounded-md z-10 -rotate-1 shadow-sm shadow-stone-400 gaegu-regular text-black">
                             About me
                         </h1>
 
@@ -206,7 +210,7 @@ function About() {
                     lg:justify-normal
                     xl:col-end-9">
 
-                        <div style={bgBrown} className="gaegu-regular font-black text-base shadow-md rounded-md rotate-1 w-full h-[95%] flex flex-col justify-between p-[7vw] relative bottom-5
+                        <div style={bgBrown} loading='lazy' className="gaegu-regular font-black text-base shadow-md rounded-md rotate-1 w-full h-[95%] flex flex-col justify-between p-[7vw] relative bottom-5
                         sm:p-[5vw] sm:pb-2 sm:text-lg
                         md:text-xl md:w-[95%] md:right-0
                         lg:text-lg lg:p-6 lg:w-full">
@@ -247,13 +251,13 @@ function About() {
                             </div>
 
                             {/* SMALL QUESTION MARK */}
-                            <img src={question} alt="decorative small question mark drawing"
+                            <img src={question} alt="decorative small question mark drawing" loading='lazy'
                             className="absolute w-14 -top-16 left-[5vw] drop-shadow-md z-10 rotate-[-20deg]
                             md:left-[9vw]
                             lg:left-[5vw]"></img>
 
                             {/* BIG QUESTION MARK */}
-                            <img src={question} alt="decorative larger question mark drawing"
+                            <img src={question} alt="decorative larger question mark drawing" loading='lazy'
                             className="absolute -bottom-8 -right-14 w-20 drop-shadow-md z-10 rotate-[10deg]"></img>
                             
                         </div>
