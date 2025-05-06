@@ -126,8 +126,8 @@ function Home() {
 
                     <div className='absolute max-h-fit min-h-fit h-full w-full flex justify-end'>
                         {/* TITLE CARD */}
-                        <div style={bgWhite} className='relative shadow-md -rotate-1 min-h-full z-40 w-full max-w-[15rem] flex items-center justify-center rounded-md
-                        sm:right-[3%]
+                        <div style={bgWhite} className='relative shadow-md -rotate-1 z-40 w-full max-w-[15rem] flex items-center justify-center rounded-md h-32
+                        sm:right-[3%] sm:h-36
                         lg:right-0'>
                             <h1 className='gaegu-regular text-base font-black
                             sm:text-lg
