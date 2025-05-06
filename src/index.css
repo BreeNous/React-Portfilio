@@ -16,25 +16,6 @@ html, body {
     font-style: normal;
   }
   
-  
-/* BACKGROUND CLASSES */
-
-.bg-front-end {
-    background-image: url('/assets/front-end.jpg');
-    background-size: cover;
-    
-}
-
-.bg-back-end {
-    background-image: url('/assets/backend.jpg');
-    background-size: 310px;
-}
-
-.bg-tools {
-    background-image: url('/assets/tools.jpg');
-    background-size: cover;
-}
-
 /* CONFIGURATION */
 
 .arch-shadow::before {
@@ -78,26 +59,22 @@ html, body {
 
 /* CONTENT ADJUSTMENTS */
 
+
 .Outlet {
     height: 75vh;
 }
 
 /* CUSTOM STYLING CLASSES */
 
-.customShadow {
-    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.18));
-}
-
-.textHighlight {
-    text-shadow:
-    -1px 0px 1px rgba(0, 0, 0, 0.272),
-    1px 0px 2px rgba(255, 232, 189, 0.519);
+/* in index.css */
+.custom-shadow {
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.25));
     
-}
+}  
 
 /* --------------- HOME PAGE --------------- */
 
-/* Common style for all spans */
+/* highlight effect on home page list */
 .highlight {
     display: inline-block;
     position: relative;
@@ -106,8 +83,6 @@ html, body {
     padding-left: 5px;
     padding-right: 5px;
 }
-
-/* Horizontal sweep animation */
 @keyframes horizontal-sweep {
     from {
         background-size: 0% 100%; /* Start with no highlight */
@@ -116,7 +91,6 @@ html, body {
         background-size: 100% 100%; /* Expand highlight across the text */
     }
 }
-
 .highlight-active {
     background-repeat: no-repeat;
     background-position: left;
@@ -126,7 +100,6 @@ html, body {
     padding-right: 5px;
     border-radius: 4px; /* Optional rounded edges for the highlight */
 }
-
 /* Specific highlight colors */
 .front-end-highlight {
     background-image: linear-gradient(to right, #a9bd6d75, #a9bd6d75);
@@ -152,8 +125,18 @@ html, body {
 
 .inner-card {
     transition: transform 0.3s ease-in-out;
-    
+    will-change: transform;
+    backface-visibility: hidden;
+    contain: layout paint;
+    transform: translateZ(0); /* GPU hinting */
+    perspective: 1000;
+  }
+  
+.envelope .inner-card {
+    will-change: transform, opacity;
+    contain: layout style;
 }
+  
 
 .lower-z {
     z-index: 1;
