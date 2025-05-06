@@ -171,6 +171,7 @@ function ProjectCard({ index, activeEnvelope, isClosing, animationCompleted, onC
                         <img
                           src={conditionalImage}
                           alt='feature project image'
+                          loading='lazy'
                           className='object-cover h-auto w-full rounded-md drop-shadow-md'
                         />
                       </div>
