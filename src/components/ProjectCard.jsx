@@ -139,10 +139,10 @@ function ProjectCard({ index, activeEnvelope, isClosing, animationCompleted, onC
                 {/* LEFT COL */}
                 <div className='w-full flex flex-col items-center lg:w-1/2'>
 
-                  <div className='flex flex-grow px-5 pt-12 pb-5 sm:px-10 sm:pb-10 lg:pt-14 lg:pr-5 lg:pb-5'>
+                  <div className='flex h-[44rem] flex-grow px-5 pt-12 pb-5 sm:px-10 sm:pb-10 lg:pt-14 lg:pr-5 lg:pb-5'>
                     <div
                       style={bgBrown}
-                      className='w-full p-4 h-[44rem] md:overflow-scroll overflow-auto text-base gaegu-regular rounded-md shadow-sm custom-shadow space-y-4 relative
+                      className='w-full p-4 h-full md:overflow-scroll overflow-auto text-base gaegu-regular rounded-md shadow-sm custom-shadow space-y-4 relative
                       sm:text-lg md:p-5 xl:text-xl xl:p-6'
                     >
                       <button
