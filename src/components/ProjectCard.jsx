@@ -118,7 +118,7 @@ function ProjectCard({ index, activeEnvelope, isClosing, animationCompleted, onC
 
         <div className='w-full h-full flex justify-center absolute bottom-0'>
           <div
-            className={`inner-card rounded drop-shadow-md z-20 overflow-auto md:overflow-scroll
+            className={`inner-card rounded z-20 overflow-auto md:overflow-scroll
             ${isActive ? 'fixed click-animation-xs-sm md:click-animation-md-xl' : 'relative w-5/6 h-5/6 -top-5'}
             ${isActive && isClosing ? 'closing' : ''}`}
             style={{
@@ -134,20 +134,21 @@ function ProjectCard({ index, activeEnvelope, isClosing, animationCompleted, onC
             }}
           >
             {isActive && animationCompleted && !isClosing && (
-              <div className='min-h-fit flex flex-col lg:flex-row reveal-content'>
+              <div className='min-h-fit flex flex-col lg:flex-row reveal-content pb-9'>
     
                 {/* LEFT COL */}
                 <div className='w-full flex flex-col items-center lg:w-1/2'>
+
                   <div className='flex flex-grow px-5 pt-12 pb-5 sm:px-10 sm:pb-10 lg:pt-14 lg:pr-5 lg:pb-5'>
                     <div
                       style={bgBrown}
-                      className='w-full p-4 h-auto text-base gaegu-regular rounded-md shadow-sm custom-shadow space-y-4 relative
-                      sm:text-lg md:p-5 md:w-full md:min-h-fit xl:text-xl xl:p-6'
+                      className='w-full p-4 h-[44rem] md:overflow-scroll overflow-auto text-base gaegu-regular rounded-md shadow-sm custom-shadow space-y-4 relative
+                      sm:text-lg md:p-5 xl:text-xl xl:p-6'
                     >
                       <button
                         onClick={onClose}
                         style={bgGreen}
-                        className='back rounded-sm shadow-md flex absolute gaegu-regular text-base px-2 justify-center items-center top-3 left-3 z-[100] lg:text-lg'
+                        className='back rounded-sm shadow-md flex sticky gaegu-regular text-base px-2 justify-center items-center top-3 left-3 z-[100] lg:text-lg'
                       >
                         Back
                       </button>
@@ -168,11 +169,8 @@ function ProjectCard({ index, activeEnvelope, isClosing, animationCompleted, onC
                   {conditionalImage && (
                     <div className='custom-shadow w-full p-5 pb-0 md:px-5 md:py-5 hidden lg:block lg:pl-10 lg:pt-0'>
                       <div className='w-auto min-h-fit items-center overflow-hidden hidden lg:flex'>
-                        <img
-                          src={conditionalImage}
-                          alt='feature project image'
-                          loading='lazy'
-                          className='object-cover h-auto w-full rounded-md drop-shadow-md'
+                        <img src={conditionalImage} alt='feature project image' loading='lazy' width="1200" height="900"
+                          className='object-cover h-full w-full rounded-md drop-shadow-md'
                         />
                       </div>
                     </div>
@@ -180,24 +178,23 @@ function ProjectCard({ index, activeEnvelope, isClosing, animationCompleted, onC
                 </div>
     
                 {/* RIGHT COL */}
-                <div className='custom-shadow w-full flex justify-center p-5 pt-0 min-h-fit flex-grow sm:p-10 sm:pt-0 lg:w-1/2 lg:flex-grow-0 lg:pr-10 lg:pt-14 lg:pl-5 lg:pb-5'>
+                <div className='custom-shadow w-full flex justify-center px-5 min-h-fit flex-grow sm:px-10 lg:w-1/2 lg:flex-grow-0 lg:pr-10 lg:pt-14 lg:pl-5'>
                   <div className='flex flex-col justify-between'>
+
                     {projectImages.map((img, i) => (
-                      <div
-                        key={i}
-                        className={`w-auto min-h-fit ${i < projectImages.length - 1 ? 'pb-5' : 'pt-5'} flex justify-center items-center overflow-hidden ${
+                      <div key={i}
+                        className={`w-full min-w-68 h-auto min-h-fit pb-5 flex justify-center items-center overflow-hidden ${
                           i === projectImages.length - 1 ? 'lg:hidden' : ''
-                        }`}
-                      >
-                        <img
-                          src={img}
-                          alt={`screenshot of ${title}`}
-                          loading='lazy'
-                          className='object-cover h-auto w-full rounded-md drop-shadow-md'
-                        />
+                        }`}>
+
+                        <img src={img} alt={`screenshot of ${title}`} loading='lazy' width="1200" height="900"
+                          className='object-cover h-full w-full rounded-md drop-shadow-md'/>
+
                       </div>
+
                     ))}
                   </div>
+
                 </div>
               </div>
             )}
