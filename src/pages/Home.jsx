@@ -208,10 +208,15 @@ function Home() {
                 xl:col-start-6 xl:col-end-11 xl:row-end-9'>
 
                     {/* container to keep tape element visually stuck to top of image */}
-                    <div className='h-full relative '>
+                    <div className='relative w-full aspect-[3/4] max-w-[13rem]
+                    sm:max-w-[15rem]
+                    md:max-w-[16rem]
+                    lg:max-w-[13rem] 
+                    xl:max-w-[15rem]'>
 
                         {/* PIC OF ME */}
-                        <img src={polaroid} alt='polaroid image of Breeanna' className='max-h-full w-auto object-contain drop-shadow-lg'></img> 
+                        <img src={polaroid} alt='polaroid image of Breeanna' 
+                        className='max-h-full w-auto object-contain drop-shadow-lg'></img> 
 
                         {/* SMALL TAPE DECORATION */}
                         <img src={smallTape} alt="" aria-hidden="true" className="

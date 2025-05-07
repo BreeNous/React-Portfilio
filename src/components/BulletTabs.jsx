@@ -29,10 +29,10 @@ const BulletTabs = ({ onSelect }) => {
     };
 
     return (
-        <div className='w-full flex justify-center font-bold'>
+        <div className='w-full flex justify-evenly font-bold'>
             {items.map(item => (
                 <div 
-                    className={`w-52 flex justify-center items-center ${hoveredId === item.id ? 'text-base sm:text-lg md:text-xl xl:text-2xl' : 'text-sm sm:text-base md:text-lg xl:text-xl'}`} 
+                    className={` flex justify-center items-center ${hoveredId === item.id ? 'text-xs sm:text-lg md:text-xl xl:text-2xl' : 'text-xs sm:text-base md:text-lg xl:text-xl'}`} 
                     style={textStyle}
                     key={item.id} 
                     onClick={() => handleClick(item.id)}
