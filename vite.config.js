@@ -9,4 +9,8 @@ export default defineConfig({
     port: 3000,
     open: true
   },
+  build: {
+    outDir: 'dist', // Make sure the build is output to the correct directory
+    emptyOutDir: true, // Clean the dist folder before building
+  },
 })
