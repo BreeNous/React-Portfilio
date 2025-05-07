@@ -32,14 +32,13 @@ function ProjectCard({ index, activeEnvelope, isClosing, animationCompleted, onC
                 Vibrawood Guitars is a fully functional e-commerce website built for a local guitar shop owner to sell custom instruments online. 
                 Collaborating with a small team, I focused on the front end using React, Tailwind CSS, and Flowbite, connecting dynamic front-end 
                 components to data provided by the Node.js/Express/MongoDB back end. The site allows users to browse by instrument category, create 
-                an account, add items to their cart, and securely purchase through Stripe integration — all within a responsive and intuitive interface.
+                an account, add items to their cart, and securely purchase through Stripe integration.
             `,
             descriptionP2: `
-                I led the front-end logic, including routing, UI functionality, and rendering product data from the backend. I also proposed and 
-                implemented key features like category filtering on the homepage and a media page to promote the business with live Instagram 
-                integration and an embedded Google Maps location. While I didn't build the backend itself, I helped integrate the external APIs 
-                and ensured the front-end experience communicated seamlessly with our server-side setup. Built in just one week with daily Agile 
-                sprints, this project pushed me to think quickly, adapt often, and deliver a polished, production-ready user experience.
+                I led the front-end logic, including routing, UI functionality, and rendering product data from the backend. I implemented features like category 
+                filtering on the homepage and Instagram integrationa on the media page. I helped integrate the external APIs 
+                and ensured the front-end experience connected with our server-side setup. This project pushed me to think quickly, adapt often, and deliver a
+                polished, production-ready user experience.
             `,
             conditionalImage: vwg04,
             projectImages: [vwg01, vwg02, vwg03, vwg04],
@@ -49,11 +48,9 @@ function ProjectCard({ index, activeEnvelope, isClosing, animationCompleted, onC
             title: 'Weather Dashboard',
             repo: 'https://github.com/BreeNous/Weather-Dashboard',
             descriptionP1: `
-                Weather Dashboard is a dynamic front-end application that lets users search for the current and 5-day
-                forecast of any city using the OpenWeather API. Built with vanilla JavaScript, HTML, and CSS, the app 
-                features a responsive layout, persistent local storage, and live weather data fetched via RESTful API calls. 
-                Users can view real-time temperature, wind speed, humidity, and weather icons for any searched city, which is 
-                then added to a search history for quick future access.
+                Weather Dashboard is a responsive front-end app that lets users search for current and 5-day city forecasts using the 
+                OpenWeather API. Built with vanilla JavaScript, HTML, and CSS, it features real-time weather data, search history persistence 
+                via localStorage, and intuitive UI components for seamless interaction.
             `,
             descriptionP2: `
                 I focused on implementing clean, modular JavaScript to handle API requests, parse and display data, and manage user 
@@ -70,17 +67,15 @@ function ProjectCard({ index, activeEnvelope, isClosing, animationCompleted, onC
             repo: 'https://github.com/frenzie24/jeans',
             descriptionP1: `
                 This app was built to support developers who may not have a design background by helping them find visually 
-                cohesive assets — specifically color palettes and royalty-free images — to use in web projects. Working as part of a team, 
-                we created an interactive front-end tool that allows users to search a color (via text or color picker) and instantly 
-                receive eight curated color themes powered by The Color API. On the same interface, users can search for high-quality images 
-                related to their project using the Pixabay API. Results can be copied and reused easily, making asset gathering fast and 
+                cohesive assets, specifically color palettes and royalty-free images, to use in web projects. My team created an interactive front-end 
+                tool that allows users to search a color (via text or color picker) and receive eight curated color themes powered by The Color API. 
+                Using the Pixabay API, users can search for royalty free image assets.
                 user-friendly.
             `,
             descriptionP2: `
-                My focus on this project was building front-end features and wiring together the UI logic with our API responses. 
-                I helped integrate the color and image APIs into functional, dynamic sections, ensuring smooth rendering and 
-                interactive behavior. I also worked on refining the user experience with modal-based instructions and structured 
-                layout using Tailwind CSS. The concept was driven by the idea that a unified color scheme and strong visual 
+                Using tailwind CSS, my focus was building front-end features and wiring together the UI logic with our API responses. 
+                I integrated the color and image APIs into functional, dynamic sections, ensuring smooth interactive behavior. 
+                The concept was driven by the idea that a unified color scheme and strong visual 
                 elements are essential — and often overlooked — parts of clean design. We built this tool to help bridge that gap.
             `,
             conditionalImage: jeans4,
@@ -91,18 +86,14 @@ function ProjectCard({ index, activeEnvelope, isClosing, animationCompleted, onC
             title: 'Bucket',
             repo: 'https://github.com/BreeNous/Bucket',
             descriptionP1: `
-                Bucket is a virtual bucket list app built to inspire people to follow through on the goals that matter to them. I wanted it to feel
-                more motivating than a list on paper — something interactive, personal, and always in your pocket. Users can create meaningful goals, 
-                edit or complete them, and even upload images to capture their progress. It's a small push toward accountability — a way to remind 
-                yourself to actually do the things you said you would. From password reset emails to image uploads, every feature was designed with 
-                real-life use and privacy in mind.
+                Bucket is a personal goal-setting app designed to keep users motivated and accountable. It allows users to create, edit, and track goals 
+                with features like image uploads and personalized progress tracking. Built with the MERN stack, it includes robust user authentication with JWT, 
+                secure file uploads via Multer, and a protected backend for enhanced privacy.
             `,
             descriptionP2: `
-                Although I initially worked with a team to create Bucket, I ended up soloing the project and fully refactored it — redesigning the data models, rewriting the API with 
-                GraphQL and Express, and rebuilding the front end to improve usability and structure. The app uses the MERN stack with JWT authentication, 
-                secure sessions, Multer for image uploads, and a protected file system to ensure user privacy. This build gave me hands-on experience with 
-                building real-world features from scratch, handling migrations, and structuring back-end logic for scalability and maintainability. While Buckets front 
-                end may not be perfect, throughout this project I learned how intense but utterly facinating the back-end world was and fell in love with it.
+                Originally a team project, I later took full ownership, refactoring the data models, rewriting the API with GraphQL and Express, and overhauling 
+                the front end to improve usability. This solo effort gave me hands-on experience with backend architecture, API design, and building scalable, 
+                real-world applications.
             `,
             conditionalImage: b4,
             projectImages: [b1, b2, b3, b4],
@@ -117,6 +108,7 @@ function ProjectCard({ index, activeEnvelope, isClosing, animationCompleted, onC
     return(
 
         <div className='w-full h-full flex justify-center absolute bottom-0'>
+          
           <div
             className={`inner-card rounded z-20 overflow-auto md:overflow-scroll
             ${isActive ? 'fixed click-animation-xs-sm md:click-animation-md-xl' : 'relative w-5/6 h-5/6 -top-5'}
@@ -133,8 +125,14 @@ function ProjectCard({ index, activeEnvelope, isClosing, animationCompleted, onC
               ...bgWhite,
             }}
           >
+            
             {isActive && animationCompleted && !isClosing && (
-              <div className='min-h-fit flex flex-col lg:flex-row reveal-content pb-9'>
+              <div className='min-h-fit flex flex-col lg:flex-row reveal-content pb-9 relative mt-8'>
+
+                <button onClick={onClose} style={bgGreen}
+                  className='back rounded-sm shadow-md flex absolute gaegu-regular text-base px-2 justify-center items-center top-3 left-5 sm:left-10 z-[100] lg:text-lg w-14 '>
+                  Back
+                </button>
     
                 {/* LEFT COL */}
                 <div className='w-full flex flex-col items-center lg:w-1/2'>
@@ -142,16 +140,9 @@ function ProjectCard({ index, activeEnvelope, isClosing, animationCompleted, onC
                   <div className='flex h-[44rem] flex-grow px-5 pt-12 pb-5 sm:px-10 sm:pb-10 lg:pt-14 lg:pr-5 lg:pb-5'>
                     <div
                       style={bgBrown}
-                      className='w-full p-4 h-full md:overflow-scroll overflow-auto text-base gaegu-regular rounded-md shadow-sm custom-shadow space-y-4 relative
+                      className='w-full p-4 h-full text-sm gaegu-regular rounded-md shadow-sm custom-shadow space-y-4 relative
                       sm:text-lg md:p-5 xl:text-xl xl:p-6'
                     >
-                      <button
-                        onClick={onClose}
-                        style={bgGreen}
-                        className='back rounded-sm shadow-md flex sticky gaegu-regular text-base px-2 justify-center items-center top-3 left-3 z-[100] lg:text-lg'
-                      >
-                        Back
-                      </button>
     
                       <p className='text-lg font-black flex justify-center sm:text-xl lg:text-2xl'>
                         {title}
