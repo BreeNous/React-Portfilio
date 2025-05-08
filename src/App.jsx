@@ -21,11 +21,8 @@ function App() {
         md:hidden
         lg:block"/>
       
-      <main className='safe-area-paddiing h-full w-full'>
-        <Outlet/>
-      </main>
+      <Outlet/>
       
-
       <Footer />
       
     </div>
