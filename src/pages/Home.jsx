@@ -173,7 +173,7 @@ function Home() {
         // XS_SCREENS: flex-col 
         // SM_SCREENS: sm:flex-col
         // MD_SCREENS: md:flex-col
-        // LG_SCREENS: lg:flex-row
+        // LG_SCREENS: lg:flex-row lg:h-screen
         // XL_SCREENS: xl:flex-row">
 
             {/* LEFT SIDE GRID */}

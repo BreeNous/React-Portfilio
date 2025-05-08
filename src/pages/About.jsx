@@ -14,18 +14,18 @@ import { bgGreen, bgBrown, bgWhite, bgTan } from '../components/Backgrounds';
 function About() {
 
     return(
-        <div className=" flex-1 relative overflow-y-auto
-        // ALL_SCREENS: flex h-full w-full
+        <div className=" flex-1 relative
+        // ALL_SCREENS: flex min-h-dvh w-full
         // XS_SCREENS: flex-col 
         // SM_SCREENS: sm:flex-col
         // MD_SCREENS: md:flex-col
-        // LG_SCREENS: lg:flex-row
+        // LG_SCREENS: lg:flex-row lg:h-screen
         // XL_SCREENS: xl:flex-row">
 
             {/* LEFT SIDE GRID */}
             <div className="
             // ALL_SCREENS: relative transition-all left-0 top-0 duration-300 ease-in-out grid grid-cols-12 grid-rows-12
-            // XS_SCREENS: w-full min-h-screen max-h-screen
+            // XS_SCREENS: w-full h-dvh
             // LG_SCREENS: lg:w-1/2 lg:h-full
             // XL_SCREENS: xl:w-1/2 xl:h-full">
 
@@ -158,7 +158,7 @@ function About() {
             
             <div style={bgGreen} className="
             // ALL_SCREENS: relative transition-all right-0 top-0 duration-300 ease-in-out grid grid-cols-12 grid-rows-12
-            // XS_SCREENS: w-full min-h-screen max-h-screen
+            // XS_SCREENS: w-full h-dvh
             // LG_SCREENS: lg:w-1/2 lg:h-full
             // XL_SCREENS: xl:w-1/2 xl:h-full">
 
