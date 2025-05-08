@@ -4,7 +4,7 @@
 
 html, body {
     height: 100%;
-    overflow: hidden;
+    overflow: scroll;
   }
   
 
@@ -58,11 +58,6 @@ html, body {
 }
 
 /* CONTENT ADJUSTMENTS */
-
-
-.Outlet {
-    height: 75vh;
-}
 
 /* CUSTOM STYLING CLASSES */
 

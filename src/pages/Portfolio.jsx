@@ -69,9 +69,7 @@ function Portfolio() {
     return (
 
         // FULL PORTFOLIO PAGE
-        <div className="flex-1 relative overflow-y-auto
-        // ALL_SCREENS: flex h-full w-full
-        // XS_SCREENS: flex-col 
+        <div className="relative flex h-full w-full flex-col 
         // SM_SCREENS: sm:flex-col
         // MD_SCREENS: md:flex-row
         // LG_SCREENS: lg:flex-row

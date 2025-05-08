@@ -7,7 +7,7 @@ function Footer() {
 
     return (
         <footer className="
-        // ALL_SCREENS: gaegu-regular flex justify-between items-center px-6 mt-auto w-full text-slate-950 absolute overflow-clip bottom-0 z-30
+        // ALL_SCREENS: gaegu-regular flex justify-between items-center px-6 mt-auto w-full text-slate-950 fixed overflow-clip bottom-0 z-30
         // SM_SCREENS: flex-wrap py-4 h-32
         // MD_SCREENS: md:flex-nowrap md:py-4 md:h-28
         // LG_SCREENS: lg:flex-nowrap lg:py-4 lg:h-28
