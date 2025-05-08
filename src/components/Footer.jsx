@@ -1,6 +1,7 @@
-import { GitHubIcon, LinkedinIcon, DiscordIcon, SlackIcon } from './Icons';
+import { GitHubIcon, LinkedinIcon, EmailIcon } from './Icons';
 import tornPaper2 from '../assets/ripped-paper-white-2.webp';
 import { bgBrown } from './Backgrounds';
+import ButtonMailto from '../components/ButtonMailTo.jsx';
 
 
 function Footer() {
@@ -42,23 +43,14 @@ function Footer() {
                 </li>
 
                 <li className="flex justify-center items-center">
-                    <a href="https://discord.com/" style={bgBrown}
-                    className=" text-slate-950 hover:text-amber-50 ms-5 rounded-full flex items-center justify-center shadow-sm shadow-stone-500
-                    w-7 h-7
-                    sm:w-9 sm:h-9 
-                    md:w-10 md:h-10">
-                        {DiscordIcon}<span className="sr-only">Discord</span>
-                    </a>
-                </li>
-
-                <li className="flex justify-center items-center">
-                    <a href="https://slack.com/" style={bgBrown}
+                    <div style={bgBrown}  
                     className="text-slate-950 hover:text-amber-50 ms-5 rounded-full flex items-center justify-center shadow-sm shadow-stone-500
                     w-7 h-7
                     sm:w-9 sm:h-9 
-                    md:w-10 md:h-10">
-                        {SlackIcon}<span className="sr-only">Slack</span>
-                    </a>
+                    md:w-10 md:h-10 cursor-pointer"
+                    onClick={() => window.location.href = "mailto:bree.nous@gmail.com"}>
+                        {EmailIcon}
+                    </div>
                 </li>
 
             </ul>
