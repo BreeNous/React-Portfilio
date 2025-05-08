@@ -21,7 +21,7 @@ function App() {
         md:hidden
         lg:block"/>
       
-      <main className='pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]'>
+      <main className='safe-area-paddiing'>
         <Outlet/>
       </main>
       
