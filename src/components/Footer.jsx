@@ -1,8 +1,6 @@
 import { GitHubIcon, LinkedinIcon, EmailIcon } from './Icons';
 import tornPaper2 from '../assets/ripped-paper-white-2.webp';
 import { bgBrown } from './Backgrounds';
-import ButtonMailto from '../components/ButtonMailTo.jsx';
-
 
 function Footer() {
 
@@ -73,9 +71,7 @@ function Footer() {
                 // ALL_SCREENS: absolute -bottom-10 rotate-[-10deg] drop-shadow-sm
                 // SM_SCREENS: hidden
                 // MD_SCREENS: md:-right-40 md:-bottom-24 md:w-[30rem] md:block
-                // LG_SCREENS: lg:-right-32 lg:-bottom-24 lg:w-[30rem]
-
-                ">
+                // LG_SCREENS: lg:-right-32 lg:-bottom-24 lg:w-[30rem]">
             </img>
 
         </footer>
