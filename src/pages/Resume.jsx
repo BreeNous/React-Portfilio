@@ -9,16 +9,15 @@ function Resume() {;
 
     return (
         <div className=" flex-1 relative overflow-y-auto
-        // ALL_SCREENS: flex h-full w-full
+        // ALL_SCREENS: flex h-dvh w-full
         // XS_SCREENS: flex-col 
         // SM_SCREENS: sm:flex-col
-        // MD_SCREENS: md:flex-row
-        // LG_SCREENS: lg:flex-row
+        // LG_SCREENS: lg:flex-row lg:h-screen
         // XL_SCREENS: xl:flex-row">
             
 
             {/* LEFT SIDE */}
-            <div className="transition-all left-0 top-0 duration-300 ease-in-out flex justify-center items-center w-full min-h-screen max-h-screen
+            <div className="transition-all left-0 top-0 duration-300 ease-in-out flex justify-center items-center w-full min-h-dvh
             lg:w-1/2 lg:h-full
             xl:w-1/2 xl:h-full">
 
@@ -37,7 +36,7 @@ function Resume() {;
             {/* RIGHT SIDE GRID */}
             <div style={bgGreen} className="
             // ALL_SCREENS: relative transition-all left-0 top-0 duration-300 ease-in-out grid grid-cols-12 grid-rows-12
-            // XS_SCREENS: w-full min-h-screen max-h-screen
+            // XS_SCREENS: w-full min-h-dvh
             // LG_SCREENS: lg:w-1/2 lg:h-full
             // XL_SCREENS: xl:w-1/2 xl:h-full">
 

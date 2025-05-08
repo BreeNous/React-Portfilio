@@ -69,16 +69,16 @@ function Portfolio() {
     return (
 
         // FULL PORTFOLIO PAGE
-        <div className="relative flex h-full w-full flex-col 
+        <div className="relative flex h-dvh w-full flex-col 
         // SM_SCREENS: sm:flex-col
-        // MD_SCREENS: md:flex-row
-        // LG_SCREENS: lg:flex-row
+        // MD_SCREENS: md:flex-row md:h-screen
+        // LG_SCREENS: lg:flex-row 
         // XL_SCREENS: xl:flex-row">
 
             {/* LEFT SIDE GRID */}
             <div className="
             // ALL_SCREENS: relative transition-all left-0 top-0 duration-300 ease-in-out grid grid-cols-12 grid-rows-12
-            // XS_SCREENS: w-full min-h-screen max-h-screen
+            // XS_SCREENS: w-full h-dvh
             // MD_SCREENS: md:w-1/2
             // LG_SCREENS: lg:w-1/2 lg:h-full
             // XL_SCREENS: xl:w-1/2 xl:h-full">
@@ -228,7 +228,7 @@ function Portfolio() {
             {/* RIGHT SIDE GRID */}
             <div className="
             // ALL_SCREENS: relative transition-all right-0 top-0 duration-300 ease-in-out grid grid-cols-12 grid-rows-12
-            // XS_SCREENS: w-full min-h-screen max-h-screen
+            // XS_SCREENS: w-full h-dvh
             // MD_SCREENS: md:w-1/2
             // LG_SCREENS: lg:w-1/2 lg:h-full
             // XL_SCREENS: xl:w-1/2 xl:h-full">
