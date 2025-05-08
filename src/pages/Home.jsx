@@ -179,7 +179,7 @@ function Home() {
             {/* LEFT SIDE GRID */}
             <div className="
             // ALL_SCREENS: relative transition-all left-0 top-0 duration-300 ease-in-out grid grid-cols-12 grid-rows-12
-            // XS_SCREENS: w-full min-h-screen max-h-screen
+            // XS_SCREENS: w-full min-h-dvh
             // LG_SCREENS: lg:w-1/2 lg:h-full
             // XL_SCREENS: xl:w-1/2 xl:h-full">
 
@@ -270,7 +270,7 @@ function Home() {
 
             {/* RIGHT SIDE GRID */}
             <div className="relative transition-all right-0 top-0 duration-300 ease-in-out grid grid-cols-12 grid-rows-12
-            w-full max-h-[85vh] min-h-[85vh]
+            w-full min-h-[85dvh]
             lg:w-1/2 lg:min-h-screen
             xl:w-1/2 xl:h-full">
 
