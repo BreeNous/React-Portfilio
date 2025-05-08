@@ -7,11 +7,11 @@ function Footer() {
 
     return (
         <footer className="
-        // ALL_SCREENS: gaegu-regular flex justify-between items-center px-6 mt-auto w-full text-slate-950 fixed overflow-clip bottom-0 z-30
-        // SM_SCREENS: flex-wrap py-4 h-32
-        // MD_SCREENS: md:flex-nowrap md:py-4 md:h-28
-        // LG_SCREENS: lg:flex-nowrap lg:py-4 lg:h-28
-        ">
+        gaegu-regular flex justify-between items-center px-6 mt-auto w-full text-slate-950 fixed overflow-clip bottom-0 z-30
+        flex-wrap py-4 h-28
+        sm:h-32
+        md:flex-nowrap md:py-4 md:h-28
+        lg:flex-nowrap lg:py-4 lg:h-28">
 
             <ul className="
             // ALL_SCREENS: flex mt-5
@@ -23,7 +23,9 @@ function Footer() {
                 <li className="flex justify-center items-center">
                     <a href="https://github.com/BreeNous" style={bgBrown}
                     className="text-slate-950 hover:text-amber-50 rounded-full flex items-center justify-center shadow-sm shadow-stone-500
-                    w-9 h-9 md:w-10 md:h-10">
+                    w-7 h-7
+                    sm:w-9 sm:h-9 
+                    md:w-10 md:h-10">
                         {GitHubIcon}<span className="sr-only">GitHub</span>
                     </a>
                 </li>
@@ -32,7 +34,9 @@ function Footer() {
                 flex justify-center items-center">
                     <a href="https://www.linkedin.com/in/breeanna-nouskhajian-259658318/" style={bgBrown}
                     className=" text-slate-950 hover:text-amber-50 ms-5 rounded-full flex items-center justify-center shadow-sm shadow-stone-500
-                    w-9 h-9 md:w-10 md:h-10">
+                    w-7 h-7
+                    sm:w-9 sm:h-9 
+                    md:w-10 md:h-10">
                         {LinkedinIcon}<span className="sr-only">Linkedin</span>
                     </a>
                 </li>
@@ -40,7 +44,9 @@ function Footer() {
                 <li className="flex justify-center items-center">
                     <a href="https://discord.com/" style={bgBrown}
                     className=" text-slate-950 hover:text-amber-50 ms-5 rounded-full flex items-center justify-center shadow-sm shadow-stone-500
-                    w-9 h-9 md:w-10 md:h-10">
+                    w-7 h-7
+                    sm:w-9 sm:h-9 
+                    md:w-10 md:h-10">
                         {DiscordIcon}<span className="sr-only">Discord</span>
                     </a>
                 </li>
@@ -48,7 +54,9 @@ function Footer() {
                 <li className="flex justify-center items-center">
                     <a href="https://slack.com/" style={bgBrown}
                     className="text-slate-950 hover:text-amber-50 ms-5 rounded-full flex items-center justify-center shadow-sm shadow-stone-500
-                     w-9 h-9 md:w-10 md:h-10">
+                    w-7 h-7
+                    sm:w-9 sm:h-9 
+                    md:w-10 md:h-10">
                         {SlackIcon}<span className="sr-only">Slack</span>
                     </a>
                 </li>
