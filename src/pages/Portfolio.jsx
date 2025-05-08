@@ -69,18 +69,16 @@ function Portfolio() {
     return (
 
         // FULL PORTFOLIO PAGE
-        <div className="flex-1 relative overflow-y-auto
-        // ALL_SCREENS: flex h-full w-full
-        // XS_SCREENS: flex-col 
+        <div className="relative flex h-dvh w-full flex-col 
         // SM_SCREENS: sm:flex-col
-        // MD_SCREENS: md:flex-row
-        // LG_SCREENS: lg:flex-row
+        // MD_SCREENS: md:flex-row md:h-screen
+        // LG_SCREENS: lg:flex-row 
         // XL_SCREENS: xl:flex-row">
 
             {/* LEFT SIDE GRID */}
             <div className="
             // ALL_SCREENS: relative transition-all left-0 top-0 duration-300 ease-in-out grid grid-cols-12 grid-rows-12
-            // XS_SCREENS: w-full min-h-screen max-h-screen
+            // XS_SCREENS: w-full min-h-dvh
             // MD_SCREENS: md:w-1/2
             // LG_SCREENS: lg:w-1/2 lg:h-full
             // XL_SCREENS: xl:w-1/2 xl:h-full">
@@ -93,7 +91,7 @@ function Portfolio() {
                 <div className=' col-start-3 col-end-11 row-start-4 row-end-7 flex justify-center'>
 
                     {/* ALIGNMENT CONTAINER FOR ENVELOPE AND BROWN BG DECOR */}
-                    <div className='max-w-[22rem] w-full h-full relative'>
+                    <div className='max-w-[22rem] w-full h-full relative bottom-10'>
 
                         {/* BROWN BG CARD DECORATION */}
                         <div style={bgBrown} className='absolute shadow-md w-full h-full left-5 top-5'></div>
@@ -163,7 +161,7 @@ function Portfolio() {
                 <div className='col-start-3 col-end-11 row-start-8 row-end-11 flex justify-center'>
 
                     {/* ALIGNMENT CONTAINER FOR ENVELOPE AND BROWN BG DECOR */}
-                    <div className='max-w-[22rem] w-full h-full relative'>
+                    <div className='max-w-[22rem] w-full h-full relative bottom-10'>
 
                         {/* BROWN BG CARD DECORATION */}
                         <div style={bgBrown} className='absolute w-full h-full right-5 top-5'></div>
@@ -230,7 +228,7 @@ function Portfolio() {
             {/* RIGHT SIDE GRID */}
             <div className="
             // ALL_SCREENS: relative transition-all right-0 top-0 duration-300 ease-in-out grid grid-cols-12 grid-rows-12
-            // XS_SCREENS: w-full min-h-screen max-h-screen
+            // XS_SCREENS: w-full min-h-dvh
             // MD_SCREENS: md:w-1/2
             // LG_SCREENS: lg:w-1/2 lg:h-full
             // XL_SCREENS: xl:w-1/2 xl:h-full">
@@ -243,7 +241,7 @@ function Portfolio() {
                 <div className='col-start-3 col-end-11 row-start-4 row-end-7 flex justify-center'>
 
                     {/* ALIGNMENT CONTAINER FOR ENVELOPE AND BROWN BG DECOR */}
-                    <div className='max-w-[22rem] w-full h-full relative'>
+                    <div className='max-w-[22rem] w-full h-full relative bottom-10'>
 
                         {/* BROWN BG CARD DECORATION */}
                         <div style={bgBrown} className='absolute w-full h-full left-5 top-5'></div>
@@ -315,7 +313,7 @@ function Portfolio() {
                 <div className='col-start-3 col-end-11 row-start-8 row-end-11 flex justify-center'>
 
                     {/* ALIGNMENT CONTAINER FOR ENVELOPE AND BROWN BG DECOR */}
-                    <div className='max-w-[22rem] w-full h-full relative'>
+                    <div className='max-w-[22rem] w-full h-full relative bottom-10'>
 
                         {/* BROWN BG CARD DECORATION */}
                         <div style={bgBrown} className='absolute w-full h-full right-5 top-5'></div>
@@ -381,7 +379,7 @@ function Portfolio() {
                 </div>
 
             {/* SCREEN BLUR OVERLAY */}
-            <div className={`w-screen h-screen absolute top-0 left-0 ${isBlurred ? 'blur-active' : ''} ${reFocus ? 'reFocus-active' : ''}`}></div>
+            {/* <div className={`w-screen h-screen absolute top-0 left-0 ${isBlurred ? 'blur-active' : ''} ${reFocus ? 'reFocus-active' : ''}`}></div> */}
             
         </div>
     );

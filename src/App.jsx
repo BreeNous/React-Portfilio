@@ -6,7 +6,7 @@ import bookMark from './assets/bookmark.png';
 
 function App() {
   return (
-    <div className="relative min-h-screen max-h-screen flex flex-col z-0">
+    <div className="bg-yellow-200 relative min-h-100vh flex flex-col z-0">
       
       {/* Always at the top */}
       <Header/>
@@ -21,9 +21,11 @@ function App() {
         md:hidden
         lg:block"/>
       
-      <Outlet/>
+      <div className='absolute w-full top-0 min-h-full'>
+        <Outlet/>
+      </div>
       
-
+      
       <Footer />
       
     </div>
