@@ -6,7 +6,7 @@ import bookMark from './assets/bookmark.png';
 
 function App() {
   return (
-    <div className="bg-yellow-200 relative min-h-dvh flex flex-col z-0 pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]">
+    <div className="bg-yellow-200 relative min-h-dvh flex flex-col z-0">
       
       {/* Always at the top */}
       <Header/>
@@ -21,7 +21,7 @@ function App() {
         md:hidden
         lg:block"/>
       
-      <main className=''>
+      <main className='pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]'>
         <Outlet/>
       </main>
       
