@@ -21,7 +21,10 @@ function App() {
         md:hidden
         lg:block"/>
       
-      <Outlet/>
+      <div className='absolute w-full top-0 h-dvh'>
+        <Outlet/>
+      </div>
+      
       
       <Footer />
       
