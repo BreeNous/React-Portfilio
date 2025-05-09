@@ -21,7 +21,7 @@ function App() {
         md:hidden
         lg:block"/>
       
-      <div className='absolute w-full top-0 min-h-full'>
+      <div className='min-h-dvh'>
         <Outlet/>
       </div>
       

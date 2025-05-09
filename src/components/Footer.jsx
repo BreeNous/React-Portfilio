@@ -6,7 +6,7 @@ function Footer() {
 
     return (
         <footer className="
-        gaegu-regular flex justify-between items-center px-6 mt-auto w-full text-slate-950 fixed overflow-clip bottom-0 z-30
+        gaegu-regular flex justify-between items-center px-6 mt-auto w-full text-slate-950 absolute lg:fixed overflow-clip bottom-0 lg:z-30
         flex-wrap py-4 h-28
         sm:h-32
         md:flex-nowrap md:py-4 md:h-28
