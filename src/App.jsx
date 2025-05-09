@@ -6,7 +6,7 @@ import bookMark from './assets/bookmark.png';
 
 function App() {
   return (
-    <div className="bg-yellow-200 relative min-h-100vh flex flex-col z-0">
+    <div className="relative min-h-100vh flex flex-col z-0">
       
       {/* Always at the top */}
       <Header/>
