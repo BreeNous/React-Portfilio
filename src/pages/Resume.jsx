@@ -9,7 +9,7 @@ function Resume() {;
 
     return (
         <div className=" flex-1 relative overflow-y-auto
-        // ALL_SCREENS: flex h-dvh w-full
+        // ALL_SCREENS: flex h-full w-full
         // XS_SCREENS: flex-col 
         // SM_SCREENS: sm:flex-col
         // LG_SCREENS: lg:flex-row lg:h-screen

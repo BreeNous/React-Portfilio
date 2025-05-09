@@ -169,7 +169,7 @@ function Home() {
 
     return (
         <div className="flex-1 relative
-        // ALL_SCREENS: flex min-h-dvh w-full
+        // ALL_SCREENS: flex h-full w-full
         // XS_SCREENS: flex-col 
         // SM_SCREENS: sm:flex-col
         // MD_SCREENS: md:flex-col
