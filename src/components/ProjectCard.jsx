@@ -35,8 +35,8 @@ function ProjectCard({ index, activeEnvelope, isClosing, animationCompleted, onC
                 an account, add items to their cart, and securely purchase through Stripe integration.
             `,
             descriptionP2: `
-                I led the front-end logic, including routing, UI functionality, and rendering product data from the backend. I implemented features like category 
-                filtering on the homepage and Instagram integrationa on the media page. I helped integrate the external APIs 
+                A teamate and I led the front-end logic, including routing, UI functionality, and rendering product data from the backend. I implemented features like category 
+                catagorey filtering on the homepage and Instagram integrationa on the media page. I helped integrate the external APIs 
                 and ensured the front-end experience connected with our server-side setup. This project pushed me to think quickly, adapt often, and deliver a
                 polished, production-ready user experience.
             `,

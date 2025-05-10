@@ -91,7 +91,7 @@ function Portfolio() {
                 <div className=' col-start-3 col-end-11 row-start-4 row-end-7 flex justify-center'>
 
                     {/* ALIGNMENT CONTAINER FOR ENVELOPE AND BROWN BG DECOR */}
-                    <div className='max-w-[22rem] w-full h-full relative bottom-10'>
+                    <div className='max-w-[22rem] w-full h-full relative bottom-5'>
 
                         {/* BROWN BG CARD DECORATION */}
                         <div style={bgBrown} className='absolute shadow-md w-full h-full left-5 top-5'></div>
@@ -161,7 +161,7 @@ function Portfolio() {
                 <div className='col-start-3 col-end-11 row-start-8 row-end-11 flex justify-center'>
 
                     {/* ALIGNMENT CONTAINER FOR ENVELOPE AND BROWN BG DECOR */}
-                    <div className='max-w-[22rem] w-full h-full relative bottom-10'>
+                    <div className='max-w-[22rem] w-full h-full relative'>
 
                         {/* BROWN BG CARD DECORATION */}
                         <div style={bgBrown} className='absolute w-full h-full right-5 top-5'></div>
@@ -241,7 +241,7 @@ function Portfolio() {
                 <div className='col-start-3 col-end-11 row-start-4 row-end-7 flex justify-center'>
 
                     {/* ALIGNMENT CONTAINER FOR ENVELOPE AND BROWN BG DECOR */}
-                    <div className='max-w-[22rem] w-full h-full relative bottom-10'>
+                    <div className='max-w-[22rem] w-full h-full relative bottom-5'>
 
                         {/* BROWN BG CARD DECORATION */}
                         <div style={bgBrown} className='absolute w-full h-full left-5 top-5'></div>
@@ -313,7 +313,7 @@ function Portfolio() {
                 <div className='col-start-3 col-end-11 row-start-8 row-end-11 flex justify-center'>
 
                     {/* ALIGNMENT CONTAINER FOR ENVELOPE AND BROWN BG DECOR */}
-                    <div className='max-w-[22rem] w-full h-full relative bottom-10'>
+                    <div className='max-w-[22rem] w-full h-full relative'>
 
                         {/* BROWN BG CARD DECORATION */}
                         <div style={bgBrown} className='absolute w-full h-full right-5 top-5'></div>
